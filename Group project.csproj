@@ -44,16 +44,55 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interaction1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interaction1.Designer.cs">
+      <DependentUpon>Interaction1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InteractionBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InteractionBase.Designer.cs">
+      <DependentUpon>InteractionBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuForm.Designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Section1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section1.Designer.cs">
+      <DependentUpon>Section1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SectionFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectionFormBase.Designer.cs">
+      <DependentUpon>SectionFormBase.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interaction1.resx">
+      <DependentUpon>Interaction1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InteractionBase.resx">
+      <DependentUpon>InteractionBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -63,7 +102,14 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Section1.resx">
+      <DependentUpon>Section1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectionFormBase.resx">
+      <DependentUpon>SectionFormBase.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -76,6 +122,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlaceholderLogo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
