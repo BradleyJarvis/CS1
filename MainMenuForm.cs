@@ -19,9 +19,14 @@ namespace Group_project
 
         private void buttonSection1Click(object sender, EventArgs e)
         {
-            Section1 Section1 = new Section1();
-            Section1.Show();
-            this.Hide();
+            if (CeasarShift.Visible == true)
+            {
+                CeasarShift.Visible = false;
+            }
+            else
+            {
+                CeasarShift.Visible = true;
+            }
         }
 
         private void mainMenuClose(object sender, FormClosedEventArgs e)
@@ -32,6 +37,13 @@ namespace Group_project
         private void exitProgram(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void button1_MouseClick(object sender, MouseEventArgs e)
+        {
+            Section1 Section1 = new Section1();
+            Section1.Show();
+            this.Hide();
         }
     }
 }
