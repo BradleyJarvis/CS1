@@ -62,12 +62,6 @@
     <Compile Include="DigitalCertificatesAndHttpsForm.Designer.cs">
       <DependentUpon>DigitalCertificatesAndHttpsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interaction1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Interaction1.Designer.cs">
-      <DependentUpon>Interaction1.cs</DependentUpon>
-    </Compile>
     <Compile Include="InteractionBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,9 +136,6 @@
     <Compile Include="WhitelistsAndEncryptionForm.Designer.cs">
       <DependentUpon>WhitelistsAndEncryptionForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Interaction1.resx">
-      <DependentUpon>Interaction1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="InteractionBase.resx">
       <DependentUpon>InteractionBase.cs</DependentUpon>
     </EmbeddedResource>

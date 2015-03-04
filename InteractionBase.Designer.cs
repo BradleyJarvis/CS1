@@ -90,6 +90,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitProgram);
             // 
             // InteractionBase
             // 
@@ -101,6 +102,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "InteractionBase";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edu-cyber scelus";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.returnToMenu);
             this.menuStrip1.ResumeLayout(false);

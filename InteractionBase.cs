@@ -22,5 +22,10 @@ namespace Group_project
             MainMenuForm menuForm = new MainMenuForm();
             menuForm.Show();
         }
+
+        private void exitProgram(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
