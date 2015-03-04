@@ -59,13 +59,16 @@
             // 
             // textBoxIntro
             // 
+            this.textBoxIntro.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxIntro.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxIntro.Location = new System.Drawing.Point(256, 27);
             this.textBoxIntro.Multiline = true;
             this.textBoxIntro.Name = "textBoxIntro";
             this.textBoxIntro.ReadOnly = true;
             this.textBoxIntro.Size = new System.Drawing.Size(723, 200);
             this.textBoxIntro.TabIndex = 1;
-            this.textBoxIntro.Text = "Introduction text";
+            this.textBoxIntro.Text = "Welcome to Edu Cyber Scelus , this program will help you understand the world of " +
+    "cyber crime and cyber security so that you can lead a safer life online.";
             // 
             // Cryptography
             // 
@@ -152,7 +155,6 @@
             this.CeasarShift.Text = "Ceasar Shift";
             this.CeasarShift.UseVisualStyleBackColor = true;
             this.CeasarShift.Visible = false;
-
             // 
             // CeasarShiftContinued
             // 
@@ -306,7 +308,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(991, 524);
+            this.ClientSize = new System.Drawing.Size(991, 336);
             this.Controls.Add(this.Quiz);
             this.Controls.Add(this.WhitelistsAndEncrption);
             this.Controls.Add(this.NetworkFirewalls);
