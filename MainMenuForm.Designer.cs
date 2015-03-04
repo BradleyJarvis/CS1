@@ -29,10 +29,7 @@
         private void InitializeComponent()
         {
             this.textBoxIntro = new System.Windows.Forms.TextBox();
-            this.buttonSection1 = new System.Windows.Forms.Button();
-            this.buttonSection2 = new System.Windows.Forms.Button();
-            this.buttonExit = new System.Windows.Forms.Button();
-            this.buttonSection3 = new System.Windows.Forms.Button();
+            this.Cryptography = new System.Windows.Forms.Button();
             this.imageLogo = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.jumpToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,10 +40,19 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CeasarShift = new System.Windows.Forms.Button();
             this.CeasarShiftContinued = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.SymetricalKeys = new System.Windows.Forms.Button();
+            this.PublicAndPrivateKeys = new System.Windows.Forms.Button();
+            this.TwoFactorAuthentication = new System.Windows.Forms.Button();
+            this.DigitalCertificatesAndHttps = new System.Windows.Forms.Button();
+            this.PasswordManagers = new System.Windows.Forms.Button();
+            this.PasswordStrength = new System.Windows.Forms.Button();
+            this.PasswordsAndDigitalSecurity = new System.Windows.Forms.Button();
+            this.WhitelistsAndEncrption = new System.Windows.Forms.Button();
+            this.NetworkFirewalls = new System.Windows.Forms.Button();
+            this.PublicWifi = new System.Windows.Forms.Button();
+            this.PhysicalHacking = new System.Windows.Forms.Button();
+            this.NetworkSecurity = new System.Windows.Forms.Button();
+            this.Quiz = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imageLogo)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -57,57 +63,29 @@
             this.textBoxIntro.Multiline = true;
             this.textBoxIntro.Name = "textBoxIntro";
             this.textBoxIntro.ReadOnly = true;
-            this.textBoxIntro.Size = new System.Drawing.Size(354, 200);
+            this.textBoxIntro.Size = new System.Drawing.Size(723, 200);
             this.textBoxIntro.TabIndex = 1;
             this.textBoxIntro.Text = "Introduction text";
             // 
-            // buttonSection1
+            // Cryptography
             // 
-            this.buttonSection1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonSection1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSection1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonSection1.Location = new System.Drawing.Point(12, 233);
-            this.buttonSection1.Name = "buttonSection1";
-            this.buttonSection1.Size = new System.Drawing.Size(238, 91);
-            this.buttonSection1.TabIndex = 2;
-            this.buttonSection1.Text = "Cryptography";
-            this.buttonSection1.UseVisualStyleBackColor = false;
-            this.buttonSection1.Click += new System.EventHandler(this.buttonSection1Click);
-            // 
-            // buttonSection2
-            // 
-            this.buttonSection2.Location = new System.Drawing.Point(692, 233);
-            this.buttonSection2.Name = "buttonSection2";
-            this.buttonSection2.Size = new System.Drawing.Size(238, 91);
-            this.buttonSection2.TabIndex = 3;
-            this.buttonSection2.Text = "Section 2";
-            this.buttonSection2.UseVisualStyleBackColor = true;
-            // 
-            // buttonExit
-            // 
-            this.buttonExit.Location = new System.Drawing.Point(1040, 233);
-            this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(238, 91);
-            this.buttonExit.TabIndex = 5;
-            this.buttonExit.Text = "Exit";
-            this.buttonExit.UseVisualStyleBackColor = true;
-            this.buttonExit.Click += new System.EventHandler(this.exitProgram);
-            // 
-            // buttonSection3
-            // 
-            this.buttonSection3.Location = new System.Drawing.Point(343, 233);
-            this.buttonSection3.Name = "buttonSection3";
-            this.buttonSection3.Size = new System.Drawing.Size(238, 91);
-            this.buttonSection3.TabIndex = 4;
-            this.buttonSection3.Text = "Section 3";
-            this.buttonSection3.UseVisualStyleBackColor = true;
+            this.Cryptography.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Cryptography.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cryptography.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Cryptography.Location = new System.Drawing.Point(12, 233);
+            this.Cryptography.Name = "Cryptography";
+            this.Cryptography.Size = new System.Drawing.Size(238, 91);
+            this.Cryptography.TabIndex = 2;
+            this.Cryptography.Text = "Cryptography";
+            this.Cryptography.UseVisualStyleBackColor = false;
+            this.Cryptography.Click += new System.EventHandler(this.buttonSection1Click);
             // 
             // imageLogo
             // 
             this.imageLogo.Image = global::Group_project.Properties.Resources.PlaceholderLogo;
             this.imageLogo.Location = new System.Drawing.Point(12, 27);
             this.imageLogo.Name = "imageLogo";
-            this.imageLogo.Size = new System.Drawing.Size(200, 200);
+            this.imageLogo.Size = new System.Drawing.Size(238, 200);
             this.imageLogo.TabIndex = 0;
             this.imageLogo.TabStop = false;
             // 
@@ -119,7 +97,7 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1313, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(991, 24);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -174,7 +152,7 @@
             this.CeasarShift.Text = "Ceasar Shift";
             this.CeasarShift.UseVisualStyleBackColor = true;
             this.CeasarShift.Visible = false;
-            this.CeasarShift.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
+
             // 
             // CeasarShiftContinued
             // 
@@ -184,59 +162,168 @@
             this.CeasarShiftContinued.TabIndex = 8;
             this.CeasarShiftContinued.Text = "Ceasar Shift Continued";
             this.CeasarShiftContinued.UseVisualStyleBackColor = true;
+            this.CeasarShiftContinued.Visible = false;
             // 
-            // button3
+            // SymetricalKeys
             // 
-            this.button3.Location = new System.Drawing.Point(506, 357);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.SymetricalKeys.Location = new System.Drawing.Point(28, 431);
+            this.SymetricalKeys.Name = "SymetricalKeys";
+            this.SymetricalKeys.Size = new System.Drawing.Size(184, 39);
+            this.SymetricalKeys.TabIndex = 13;
+            this.SymetricalKeys.Text = "Symetrical Keys";
+            this.SymetricalKeys.UseVisualStyleBackColor = true;
+            this.SymetricalKeys.Visible = false;
             // 
-            // button4
+            // PublicAndPrivateKeys
             // 
-            this.button4.Location = new System.Drawing.Point(506, 443);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.PublicAndPrivateKeys.Location = new System.Drawing.Point(28, 476);
+            this.PublicAndPrivateKeys.Name = "PublicAndPrivateKeys";
+            this.PublicAndPrivateKeys.Size = new System.Drawing.Size(184, 39);
+            this.PublicAndPrivateKeys.TabIndex = 14;
+            this.PublicAndPrivateKeys.Text = "Public And Private Keys";
+            this.PublicAndPrivateKeys.UseVisualStyleBackColor = true;
+            this.PublicAndPrivateKeys.Visible = false;
             // 
-            // button5
+            // TwoFactorAuthentication
             // 
-            this.button5.Location = new System.Drawing.Point(855, 357);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.TwoFactorAuthentication.Location = new System.Drawing.Point(272, 476);
+            this.TwoFactorAuthentication.Name = "TwoFactorAuthentication";
+            this.TwoFactorAuthentication.Size = new System.Drawing.Size(184, 39);
+            this.TwoFactorAuthentication.TabIndex = 19;
+            this.TwoFactorAuthentication.Text = "Two Factor Authentication";
+            this.TwoFactorAuthentication.UseVisualStyleBackColor = true;
+            this.TwoFactorAuthentication.Visible = false;
             // 
-            // button6
+            // DigitalCertificatesAndHttps
             // 
-            this.button6.Location = new System.Drawing.Point(855, 443);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 12;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.DigitalCertificatesAndHttps.Location = new System.Drawing.Point(272, 431);
+            this.DigitalCertificatesAndHttps.Name = "DigitalCertificatesAndHttps";
+            this.DigitalCertificatesAndHttps.Size = new System.Drawing.Size(184, 39);
+            this.DigitalCertificatesAndHttps.TabIndex = 18;
+            this.DigitalCertificatesAndHttps.Text = "Digital Certificates And Https";
+            this.DigitalCertificatesAndHttps.UseVisualStyleBackColor = true;
+            this.DigitalCertificatesAndHttps.Visible = false;
+            // 
+            // PasswordManagers
+            // 
+            this.PasswordManagers.Location = new System.Drawing.Point(272, 386);
+            this.PasswordManagers.Name = "PasswordManagers";
+            this.PasswordManagers.Size = new System.Drawing.Size(184, 39);
+            this.PasswordManagers.TabIndex = 17;
+            this.PasswordManagers.Text = "Password Managers";
+            this.PasswordManagers.UseVisualStyleBackColor = true;
+            this.PasswordManagers.Visible = false;
+            // 
+            // PasswordStrength
+            // 
+            this.PasswordStrength.Location = new System.Drawing.Point(272, 343);
+            this.PasswordStrength.Name = "PasswordStrength";
+            this.PasswordStrength.Size = new System.Drawing.Size(184, 37);
+            this.PasswordStrength.TabIndex = 16;
+            this.PasswordStrength.Text = "Password Strength";
+            this.PasswordStrength.UseVisualStyleBackColor = true;
+            this.PasswordStrength.Visible = false;
+            // 
+            // PasswordsAndDigitalSecurity
+            // 
+            this.PasswordsAndDigitalSecurity.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.PasswordsAndDigitalSecurity.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordsAndDigitalSecurity.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.PasswordsAndDigitalSecurity.Location = new System.Drawing.Point(256, 233);
+            this.PasswordsAndDigitalSecurity.Name = "PasswordsAndDigitalSecurity";
+            this.PasswordsAndDigitalSecurity.Size = new System.Drawing.Size(238, 91);
+            this.PasswordsAndDigitalSecurity.TabIndex = 15;
+            this.PasswordsAndDigitalSecurity.Text = "Passwords And Digital Security";
+            this.PasswordsAndDigitalSecurity.UseVisualStyleBackColor = false;
+            this.PasswordsAndDigitalSecurity.Click += new System.EventHandler(this.PasswordsAndDigitalSecurity_Click);
+            // 
+            // WhitelistsAndEncrption
+            // 
+            this.WhitelistsAndEncrption.Location = new System.Drawing.Point(516, 476);
+            this.WhitelistsAndEncrption.Name = "WhitelistsAndEncrption";
+            this.WhitelistsAndEncrption.Size = new System.Drawing.Size(184, 39);
+            this.WhitelistsAndEncrption.TabIndex = 24;
+            this.WhitelistsAndEncrption.Text = "Whitelists And Encrption";
+            this.WhitelistsAndEncrption.UseVisualStyleBackColor = true;
+            this.WhitelistsAndEncrption.Visible = false;
+            // 
+            // NetworkFirewalls
+            // 
+            this.NetworkFirewalls.Location = new System.Drawing.Point(516, 431);
+            this.NetworkFirewalls.Name = "NetworkFirewalls";
+            this.NetworkFirewalls.Size = new System.Drawing.Size(184, 39);
+            this.NetworkFirewalls.TabIndex = 23;
+            this.NetworkFirewalls.Text = "Network Firewalls";
+            this.NetworkFirewalls.UseVisualStyleBackColor = true;
+            this.NetworkFirewalls.Visible = false;
+            // 
+            // PublicWifi
+            // 
+            this.PublicWifi.Location = new System.Drawing.Point(516, 386);
+            this.PublicWifi.Name = "PublicWifi";
+            this.PublicWifi.Size = new System.Drawing.Size(184, 39);
+            this.PublicWifi.TabIndex = 22;
+            this.PublicWifi.Text = "Public Wifi";
+            this.PublicWifi.UseVisualStyleBackColor = true;
+            this.PublicWifi.Visible = false;
+            // 
+            // PhysicalHacking
+            // 
+            this.PhysicalHacking.Location = new System.Drawing.Point(516, 343);
+            this.PhysicalHacking.Name = "PhysicalHacking";
+            this.PhysicalHacking.Size = new System.Drawing.Size(184, 37);
+            this.PhysicalHacking.TabIndex = 21;
+            this.PhysicalHacking.Text = "Physical Hacking";
+            this.PhysicalHacking.UseVisualStyleBackColor = true;
+            this.PhysicalHacking.Visible = false;
+            // 
+            // NetworkSecurity
+            // 
+            this.NetworkSecurity.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.NetworkSecurity.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NetworkSecurity.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.NetworkSecurity.Location = new System.Drawing.Point(500, 233);
+            this.NetworkSecurity.Name = "NetworkSecurity";
+            this.NetworkSecurity.Size = new System.Drawing.Size(238, 91);
+            this.NetworkSecurity.TabIndex = 20;
+            this.NetworkSecurity.Text = "Network Security";
+            this.NetworkSecurity.UseVisualStyleBackColor = false;
+            this.NetworkSecurity.Click += new System.EventHandler(this.NetworkSecurity_Click);
+            // 
+            // Quiz
+            // 
+            this.Quiz.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Quiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quiz.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Quiz.Location = new System.Drawing.Point(741, 233);
+            this.Quiz.Name = "Quiz";
+            this.Quiz.Size = new System.Drawing.Size(238, 91);
+            this.Quiz.TabIndex = 25;
+            this.Quiz.Text = "Quiz";
+            this.Quiz.UseVisualStyleBackColor = false;
             // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1313, 557);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.ClientSize = new System.Drawing.Size(991, 524);
+            this.Controls.Add(this.Quiz);
+            this.Controls.Add(this.WhitelistsAndEncrption);
+            this.Controls.Add(this.NetworkFirewalls);
+            this.Controls.Add(this.PublicWifi);
+            this.Controls.Add(this.PhysicalHacking);
+            this.Controls.Add(this.NetworkSecurity);
+            this.Controls.Add(this.TwoFactorAuthentication);
+            this.Controls.Add(this.DigitalCertificatesAndHttps);
+            this.Controls.Add(this.PasswordManagers);
+            this.Controls.Add(this.PasswordStrength);
+            this.Controls.Add(this.PasswordsAndDigitalSecurity);
+            this.Controls.Add(this.PublicAndPrivateKeys);
+            this.Controls.Add(this.SymetricalKeys);
             this.Controls.Add(this.CeasarShiftContinued);
             this.Controls.Add(this.CeasarShift);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.buttonExit);
-            this.Controls.Add(this.buttonSection3);
-            this.Controls.Add(this.buttonSection2);
-            this.Controls.Add(this.buttonSection1);
+            this.Controls.Add(this.Cryptography);
             this.Controls.Add(this.textBoxIntro);
             this.Controls.Add(this.imageLogo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -258,10 +345,7 @@
 
         private System.Windows.Forms.PictureBox imageLogo;
         private System.Windows.Forms.TextBox textBoxIntro;
-        private System.Windows.Forms.Button buttonSection1;
-        private System.Windows.Forms.Button buttonSection2;
-        private System.Windows.Forms.Button buttonExit;
-        private System.Windows.Forms.Button buttonSection3;
+        private System.Windows.Forms.Button Cryptography;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem jumpToToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mainMenuToolStripMenuItem;
@@ -271,10 +355,19 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Button CeasarShift;
         private System.Windows.Forms.Button CeasarShiftContinued;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button SymetricalKeys;
+        private System.Windows.Forms.Button PublicAndPrivateKeys;
+        private System.Windows.Forms.Button TwoFactorAuthentication;
+        private System.Windows.Forms.Button DigitalCertificatesAndHttps;
+        private System.Windows.Forms.Button PasswordManagers;
+        private System.Windows.Forms.Button PasswordStrength;
+        private System.Windows.Forms.Button PasswordsAndDigitalSecurity;
+        private System.Windows.Forms.Button WhitelistsAndEncrption;
+        private System.Windows.Forms.Button NetworkFirewalls;
+        private System.Windows.Forms.Button PublicWifi;
+        private System.Windows.Forms.Button PhysicalHacking;
+        private System.Windows.Forms.Button NetworkSecurity;
+        private System.Windows.Forms.Button Quiz;
 
     }
 }
