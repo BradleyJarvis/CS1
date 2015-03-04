@@ -160,13 +160,13 @@ namespace Group_project
                 NetworkFirewalls.Visible = true;
             }
 
-            if (WhitelistsAndEncrption.Visible == true)
+            if (WhitelistsAndEncryption.Visible == true)
             {
-                WhitelistsAndEncrption.Visible = false;
+                WhitelistsAndEncryption.Visible = false;
             }
             else
             {
-                WhitelistsAndEncrption.Visible = true;
+                WhitelistsAndEncryption.Visible = true;
             }
             if (this.Height < 500)
             {
@@ -180,6 +180,99 @@ namespace Group_project
             }
             }
 
+        }
+
+        private void CeasarShift_Click(object sender, EventArgs e)
+        {
+            CeasarShiftForm CeasarShiftF = new CeasarShiftForm();
+            CeasarShiftF.Show();
+            this.Hide();
+        }
+
+        private void CeasarShiftContinued_Click(object sender, EventArgs e)
+        {
+            CeasarShiftContinuedForm CeasarShiftContinuedF = new CeasarShiftContinuedForm();
+            CeasarShiftContinuedF.Show();
+            this.Hide();
+        }
+
+        private void SymetricalKeys_Click(object sender, EventArgs e)
+        {
+            SymetricalKeysForm SymetricalKeysF = new SymetricalKeysForm();
+            SymetricalKeysF.Show();
+            this.Hide();
+        }
+
+        private void PublicAndPrivateKeys_Click(object sender, EventArgs e)
+        {
+            PublicAndPrivateKeysForm PublicAndPrivateKeysF = new PublicAndPrivateKeysForm();
+            PublicAndPrivateKeysF.Show();
+            this.Hide();
+        }
+
+        private void PasswordStrength_Click(object sender, EventArgs e)
+        {
+            PasswordStrengthForm PasswordStrengthF = new PasswordStrengthForm();
+            PasswordStrengthF.Show();
+            this.Hide();
+        }
+
+        private void PasswordManagers_Click(object sender, EventArgs e)
+        {
+            PasswordManagersForm PasswordManagersF = new PasswordManagersForm();
+            PasswordManagersF.Show();
+            this.Hide();
+        }
+
+        private void DigitalCertificatesAndHttps_Click(object sender, EventArgs e)
+        {
+            DigitalCertificatesAndHttpsForm DigitalCertificatesAndHttpsF = new DigitalCertificatesAndHttpsForm();
+            DigitalCertificatesAndHttpsF.Show();
+            this.Hide();
+        }
+
+        private void TwoFactorAuthentication_Click(object sender, EventArgs e)
+        {
+            TwoFactorAuthenticationForm TwoFactorAuthenticationF = new TwoFactorAuthenticationForm();
+            TwoFactorAuthenticationF.Show();
+            this.Hide();
+
+        }
+
+        private void PhysicalHacking_Click(object sender, EventArgs e)
+        {
+            PhysicalHackingForm PhysicalHackingF = new PhysicalHackingForm();
+            PhysicalHackingF.Show();
+            this.Hide();
+        }
+
+        private void PublicWifi_Click(object sender, EventArgs e)
+        {
+            PublicWifiForm PublicWifiF = new PublicWifiForm();
+            PublicWifiF.Show();
+            this.Hide();
+        }
+
+        private void NetworkFirewalls_Click(object sender, EventArgs e)
+        {
+            NetworkFirewallsForm NetworkFirewallsF = new NetworkFirewallsForm();
+            NetworkFirewallsF.Show();
+            this.Hide();
+        }
+
+        private void WhitelistsAndEncrption_Click(object sender, EventArgs e)
+        {
+            WhitelistsAndEncryptionForm WhitelistsAndEncrptionF = new WhitelistsAndEncryptionForm();
+            WhitelistsAndEncrptionF.Show();
+            this.Hide();
+
+        }
+
+        private void Quiz_Click(object sender, EventArgs e)
+        {
+            QuizForm QuizF = new QuizForm();
+            QuizF.Show();
+            this.Hide();
         }
 
 

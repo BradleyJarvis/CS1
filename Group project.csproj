@@ -44,6 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CeasarShiftContinuedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CeasarShiftContinuedForm.Designer.cs">
+      <DependentUpon>CeasarShiftContinuedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CeasarShiftForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CeasarShiftForm.Designer.cs">
+      <DependentUpon>CeasarShiftForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalCertificatesAndHttpsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DigitalCertificatesAndHttpsForm.Designer.cs">
+      <DependentUpon>DigitalCertificatesAndHttpsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interaction1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,8 +80,68 @@
     <Compile Include="MainMenuForm.Designer.cs">
       <DependentUpon>MainMenuForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NetworkFirewallsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetworkFirewallsForm.Designer.cs">
+      <DependentUpon>NetworkFirewallsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordManagersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordManagersForm.Designer.cs">
+      <DependentUpon>PasswordManagersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordStrengthForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordStrengthForm.Designer.cs">
+      <DependentUpon>PasswordStrengthForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicalHackingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhysicalHackingForm.Designer.cs">
+      <DependentUpon>PhysicalHackingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicAndPrivateKeysForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PublicAndPrivateKeysForm.Designer.cs">
+      <DependentUpon>PublicAndPrivateKeysForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PublicWifiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PublicWifiForm.Designer.cs">
+      <DependentUpon>PublicWifiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizForm.Designer.cs">
+      <DependentUpon>QuizForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SymetricalKeysForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SymetricalKeysForm.Designer.cs">
+      <DependentUpon>SymetricalKeysForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TwoFactorAuthenticationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TwoFactorAuthenticationForm.Designer.cs">
+      <DependentUpon>TwoFactorAuthenticationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WhitelistsAndEncryptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WhitelistsAndEncryptionForm.Designer.cs">
+      <DependentUpon>WhitelistsAndEncryptionForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Interaction1.resx">
       <DependentUpon>Interaction1.cs</DependentUpon>
     </EmbeddedResource>

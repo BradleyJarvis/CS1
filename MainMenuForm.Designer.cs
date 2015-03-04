@@ -47,7 +47,7 @@
             this.PasswordManagers = new System.Windows.Forms.Button();
             this.PasswordStrength = new System.Windows.Forms.Button();
             this.PasswordsAndDigitalSecurity = new System.Windows.Forms.Button();
-            this.WhitelistsAndEncrption = new System.Windows.Forms.Button();
+            this.WhitelistsAndEncryption = new System.Windows.Forms.Button();
             this.NetworkFirewalls = new System.Windows.Forms.Button();
             this.PublicWifi = new System.Windows.Forms.Button();
             this.PhysicalHacking = new System.Windows.Forms.Button();
@@ -155,6 +155,7 @@
             this.CeasarShift.Text = "Ceasar Shift";
             this.CeasarShift.UseVisualStyleBackColor = true;
             this.CeasarShift.Visible = false;
+            this.CeasarShift.Click += new System.EventHandler(this.CeasarShift_Click);
             // 
             // CeasarShiftContinued
             // 
@@ -165,6 +166,7 @@
             this.CeasarShiftContinued.Text = "Ceasar Shift Continued";
             this.CeasarShiftContinued.UseVisualStyleBackColor = true;
             this.CeasarShiftContinued.Visible = false;
+            this.CeasarShiftContinued.Click += new System.EventHandler(this.CeasarShiftContinued_Click);
             // 
             // SymetricalKeys
             // 
@@ -175,6 +177,7 @@
             this.SymetricalKeys.Text = "Symetrical Keys";
             this.SymetricalKeys.UseVisualStyleBackColor = true;
             this.SymetricalKeys.Visible = false;
+            this.SymetricalKeys.Click += new System.EventHandler(this.SymetricalKeys_Click);
             // 
             // PublicAndPrivateKeys
             // 
@@ -185,6 +188,7 @@
             this.PublicAndPrivateKeys.Text = "Public And Private Keys";
             this.PublicAndPrivateKeys.UseVisualStyleBackColor = true;
             this.PublicAndPrivateKeys.Visible = false;
+            this.PublicAndPrivateKeys.Click += new System.EventHandler(this.PublicAndPrivateKeys_Click);
             // 
             // TwoFactorAuthentication
             // 
@@ -195,6 +199,7 @@
             this.TwoFactorAuthentication.Text = "Two Factor Authentication";
             this.TwoFactorAuthentication.UseVisualStyleBackColor = true;
             this.TwoFactorAuthentication.Visible = false;
+            this.TwoFactorAuthentication.Click += new System.EventHandler(this.TwoFactorAuthentication_Click);
             // 
             // DigitalCertificatesAndHttps
             // 
@@ -205,6 +210,7 @@
             this.DigitalCertificatesAndHttps.Text = "Digital Certificates And Https";
             this.DigitalCertificatesAndHttps.UseVisualStyleBackColor = true;
             this.DigitalCertificatesAndHttps.Visible = false;
+            this.DigitalCertificatesAndHttps.Click += new System.EventHandler(this.DigitalCertificatesAndHttps_Click);
             // 
             // PasswordManagers
             // 
@@ -215,6 +221,7 @@
             this.PasswordManagers.Text = "Password Managers";
             this.PasswordManagers.UseVisualStyleBackColor = true;
             this.PasswordManagers.Visible = false;
+            this.PasswordManagers.Click += new System.EventHandler(this.PasswordManagers_Click);
             // 
             // PasswordStrength
             // 
@@ -225,6 +232,7 @@
             this.PasswordStrength.Text = "Password Strength";
             this.PasswordStrength.UseVisualStyleBackColor = true;
             this.PasswordStrength.Visible = false;
+            this.PasswordStrength.Click += new System.EventHandler(this.PasswordStrength_Click);
             // 
             // PasswordsAndDigitalSecurity
             // 
@@ -239,15 +247,16 @@
             this.PasswordsAndDigitalSecurity.UseVisualStyleBackColor = false;
             this.PasswordsAndDigitalSecurity.Click += new System.EventHandler(this.PasswordsAndDigitalSecurity_Click);
             // 
-            // WhitelistsAndEncrption
+            // WhitelistsAndEncryption
             // 
-            this.WhitelistsAndEncrption.Location = new System.Drawing.Point(516, 476);
-            this.WhitelistsAndEncrption.Name = "WhitelistsAndEncrption";
-            this.WhitelistsAndEncrption.Size = new System.Drawing.Size(184, 39);
-            this.WhitelistsAndEncrption.TabIndex = 24;
-            this.WhitelistsAndEncrption.Text = "Whitelists And Encrption";
-            this.WhitelistsAndEncrption.UseVisualStyleBackColor = true;
-            this.WhitelistsAndEncrption.Visible = false;
+            this.WhitelistsAndEncryption.Location = new System.Drawing.Point(516, 476);
+            this.WhitelistsAndEncryption.Name = "WhitelistsAndEncryption";
+            this.WhitelistsAndEncryption.Size = new System.Drawing.Size(184, 39);
+            this.WhitelistsAndEncryption.TabIndex = 24;
+            this.WhitelistsAndEncryption.Text = "Whitelists And Encryption";
+            this.WhitelistsAndEncryption.UseVisualStyleBackColor = true;
+            this.WhitelistsAndEncryption.Visible = false;
+            this.WhitelistsAndEncryption.Click += new System.EventHandler(this.WhitelistsAndEncrption_Click);
             // 
             // NetworkFirewalls
             // 
@@ -258,6 +267,7 @@
             this.NetworkFirewalls.Text = "Network Firewalls";
             this.NetworkFirewalls.UseVisualStyleBackColor = true;
             this.NetworkFirewalls.Visible = false;
+            this.NetworkFirewalls.Click += new System.EventHandler(this.NetworkFirewalls_Click);
             // 
             // PublicWifi
             // 
@@ -268,6 +278,7 @@
             this.PublicWifi.Text = "Public Wifi";
             this.PublicWifi.UseVisualStyleBackColor = true;
             this.PublicWifi.Visible = false;
+            this.PublicWifi.Click += new System.EventHandler(this.PublicWifi_Click);
             // 
             // PhysicalHacking
             // 
@@ -278,6 +289,7 @@
             this.PhysicalHacking.Text = "Physical Hacking";
             this.PhysicalHacking.UseVisualStyleBackColor = true;
             this.PhysicalHacking.Visible = false;
+            this.PhysicalHacking.Click += new System.EventHandler(this.PhysicalHacking_Click);
             // 
             // NetworkSecurity
             // 
@@ -303,14 +315,15 @@
             this.Quiz.TabIndex = 25;
             this.Quiz.Text = "Quiz";
             this.Quiz.UseVisualStyleBackColor = false;
+            this.Quiz.Click += new System.EventHandler(this.Quiz_Click);
             // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(991, 336);
+            this.ClientSize = new System.Drawing.Size(991, 338);
             this.Controls.Add(this.Quiz);
-            this.Controls.Add(this.WhitelistsAndEncrption);
+            this.Controls.Add(this.WhitelistsAndEncryption);
             this.Controls.Add(this.NetworkFirewalls);
             this.Controls.Add(this.PublicWifi);
             this.Controls.Add(this.PhysicalHacking);
@@ -364,7 +377,7 @@
         private System.Windows.Forms.Button PasswordManagers;
         private System.Windows.Forms.Button PasswordStrength;
         private System.Windows.Forms.Button PasswordsAndDigitalSecurity;
-        private System.Windows.Forms.Button WhitelistsAndEncrption;
+        private System.Windows.Forms.Button WhitelistsAndEncryption;
         private System.Windows.Forms.Button NetworkFirewalls;
         private System.Windows.Forms.Button PublicWifi;
         private System.Windows.Forms.Button PhysicalHacking;
