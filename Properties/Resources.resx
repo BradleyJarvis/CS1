@@ -118,6 +118,51 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnCryptCaesar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuButtons\btnCryptCaesar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnCryptCaesarCont" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuButtons\btnCryptCaesarCont.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnCryptKeys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuButtons\btnCryptKeys.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnCryptSymmetrical" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuButtons\btnCryptSymmetrical.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnDigitalAuthentication" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuButtons\btnDigitalAuthentication.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnDigitalCertificates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuButtons\btnDigitalCertificates.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnDigitalManager" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuButtons\btnDigitalManager.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnDigitalStrength" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuButtons\btnDigitalStrength.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnMenuCryptography" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuButtons\btnMenuCryptography.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnMenuDigital" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuButtons\btnMenuDigital.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnMenuNetwork" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuButtons\btnMenuNetwork.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnNetworkEncyrpt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuButtons\btnNetworkEncyrpt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnNetworkFirewall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuButtons\btnNetworkFirewall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnNetworkHacking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuButtons\btnNetworkHacking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnNetworkWiFi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuButtons\btnNetworkWiFi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PlaceholderLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PlaceholderLogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
