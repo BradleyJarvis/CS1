@@ -16,5 +16,11 @@ namespace Group_project
         {
             InitializeComponent();
         }
+
+        private void returnToMenu(object sender, FormClosedEventArgs e)
+        {
+            MainMenuForm menuForm = new MainMenuForm();
+            menuForm.Show();
+        }
     }
 }

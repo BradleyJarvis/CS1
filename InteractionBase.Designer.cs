@@ -102,6 +102,7 @@
             this.MinimizeBox = false;
             this.Name = "InteractionBase";
             this.Text = "Edu-cyber scelus";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.returnToMenu);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
