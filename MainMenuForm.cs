@@ -17,6 +17,12 @@ namespace Group_project
             InitializeComponent();
         }
 
+        private void mainMenuClose(object sender, FormClosedEventArgs e)
+        {//Ensures program exits correctly
+            Environment.Exit(0);
+        }
+
+        #region Window resize code
         private void buttonSection1Click(object sender, EventArgs e)
         {
             if (CeasarShift.Visible == true)
@@ -68,18 +74,6 @@ namespace Group_project
 
         }
 
-        private void mainMenuClose(object sender, FormClosedEventArgs e)
-        {//Ensures program exits correctly
-            Environment.Exit(0);
-        }
-
-        private void exitProgram(object sender, EventArgs e)
-        {
-            Environment.Exit(0);
-        }
-
-
-
         private void PasswordsAndDigitalSecurity_Click(object sender, EventArgs e)
         {
             if (PasswordStrength.Visible == true)
@@ -130,7 +124,6 @@ namespace Group_project
             }
 
         }
-
         private void NetworkSecurity_Click(object sender, EventArgs e)
         {
             if (PhysicalHacking.Visible == true)
@@ -181,7 +174,9 @@ namespace Group_project
             }
 
         }
+        #endregion
 
+        #region Navigation code
         private void CeasarShift_Click(object sender, EventArgs e)
         {
             CeasarShiftForm CeasarShiftF = new CeasarShiftForm();
@@ -274,7 +269,113 @@ namespace Group_project
             QuizF.Show();
             this.Hide();
         }
+        #endregion
 
+        #region menuStrip code
+        private void exitProgram(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
 
+        private void openHelp(object sender, EventArgs e)
+        {
+            HelpForm helpF = new HelpForm();
+            helpF.Show();
+        }
+        private void openAbout(object sender, EventArgs e)
+        {
+            AboutForm aboutF = new AboutForm();
+            aboutF.Show();
+        }
+
+        private void mainMenuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ceasarShiftToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CeasarShiftForm CeasarShiftF = new CeasarShiftForm();
+            CeasarShiftF.Show();
+        }
+
+        private void ceasarShiftContToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CeasarShiftContinuedForm CeaserShiftContF = new CeasarShiftContinuedForm();
+            CeaserShiftContF.Show();
+        }
+
+        private void symetricalKeysToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SymetricalKeysForm SymetricaKeysF = new SymetricalKeysForm();
+            SymetricaKeysF.Show();
+        }
+
+        private void publicAndPrivateKeysToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PublicAndPrivateKeysForm PubPrivKeysF = new PublicAndPrivateKeysForm();
+            PubPrivKeysF.Show();
+        }
+
+        private void passwordStrengthToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PasswordStrengthForm PassStrF = new PasswordStrengthForm();
+            PassStrF.Show();
+        }
+
+        private void passwordManagersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PasswordManagersForm PassManF = new PasswordManagersForm();
+            PassManF.Show();
+        }
+
+        private void digitalCertificatesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DigitalCertificatesAndHttpsForm DigitalCertF = new DigitalCertificatesAndHttpsForm();
+            DigitalCertF.Show();
+        }
+
+        private void factorAuthenticationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TwoFactorAuthenticationForm TwoFactorF = new TwoFactorAuthenticationForm();
+            TwoFactorF.Show();
+        }
+
+        private void physicalHackingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PhysicalHackingForm HackF = new PhysicalHackingForm();
+            HackF.Show();
+        }
+
+        private void publicWifiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PublicWifiForm PubWifiF = new PublicWifiForm();
+            PubWifiF.Show();
+        }
+
+        private void firewallsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NetworkFirewallsForm FirewallF = new NetworkFirewallsForm();
+            FirewallF.Show();
+        }
+
+        private void whitelistsEncryptionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            WhitelistsAndEncryptionForm WhitelistF = new WhitelistsAndEncryptionForm();
+            WhitelistF.Show();
+        }
+        #endregion
     }
 }

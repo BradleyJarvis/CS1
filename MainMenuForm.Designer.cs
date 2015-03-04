@@ -30,14 +30,6 @@
         {
             this.textBoxIntro = new System.Windows.Forms.TextBox();
             this.Cryptography = new System.Windows.Forms.Button();
-            this.imageLogo = new System.Windows.Forms.PictureBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.jumpToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CeasarShift = new System.Windows.Forms.Button();
             this.CeasarShiftContinued = new System.Windows.Forms.Button();
             this.SymetricalKeys = new System.Windows.Forms.Button();
@@ -53,8 +45,31 @@
             this.PhysicalHacking = new System.Windows.Forms.Button();
             this.NetworkSecurity = new System.Windows.Forms.Button();
             this.Quiz = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.imageLogo)).BeginInit();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.jumpToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cryptographyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ceasarShiftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ceasarShiftContToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.symetricalKeysToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.publicAndPrivateKeysToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.digitalSecurityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.passwordStrengthToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.passwordManagersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.digitalCertificatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.factorAuthenticationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.networkSecurityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.physicalHackingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.publicWifiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.firewallsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.whitelistsEncryptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.imageLogo = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxIntro
@@ -82,69 +97,6 @@
             this.Cryptography.Text = "Cryptography";
             this.Cryptography.UseVisualStyleBackColor = false;
             this.Cryptography.Click += new System.EventHandler(this.buttonSection1Click);
-            // 
-            // imageLogo
-            // 
-            this.imageLogo.Image = global::Group_project.Properties.Resources.PlaceholderLogo;
-            this.imageLogo.Location = new System.Drawing.Point(12, 27);
-            this.imageLogo.Name = "imageLogo";
-            this.imageLogo.Size = new System.Drawing.Size(238, 200);
-            this.imageLogo.TabIndex = 0;
-            this.imageLogo.TabStop = false;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.jumpToToolStripMenuItem,
-            this.helpToolStripMenuItem,
-            this.exitToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(991, 24);
-            this.menuStrip1.TabIndex = 6;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // jumpToToolStripMenuItem
-            // 
-            this.jumpToToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mainMenuToolStripMenuItem});
-            this.jumpToToolStripMenuItem.Name = "jumpToToolStripMenuItem";
-            this.jumpToToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.jumpToToolStripMenuItem.Text = "Jump to";
-            // 
-            // mainMenuToolStripMenuItem
-            // 
-            this.mainMenuToolStripMenuItem.Name = "mainMenuToolStripMenuItem";
-            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.mainMenuToolStripMenuItem.Text = "Main menu";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.helpToolStripMenuItem1,
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // helpToolStripMenuItem1
-            // 
-            this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
-            this.helpToolStripMenuItem1.Text = "Help";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-            this.aboutToolStripMenuItem.Text = "About";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitProgram);
             // 
             // CeasarShift
             // 
@@ -317,11 +269,197 @@
             this.Quiz.UseVisualStyleBackColor = false;
             this.Quiz.Click += new System.EventHandler(this.Quiz_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.jumpToToolStripMenuItem,
+            this.helpToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(991, 24);
+            this.menuStrip1.TabIndex = 26;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // jumpToToolStripMenuItem
+            // 
+            this.jumpToToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mainMenuToolStripMenuItem,
+            this.cryptographyToolStripMenuItem,
+            this.digitalSecurityToolStripMenuItem,
+            this.networkSecurityToolStripMenuItem});
+            this.jumpToToolStripMenuItem.Name = "jumpToToolStripMenuItem";
+            this.jumpToToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.jumpToToolStripMenuItem.Text = "Jump to";
+            // 
+            // mainMenuToolStripMenuItem
+            // 
+            this.mainMenuToolStripMenuItem.Name = "mainMenuToolStripMenuItem";
+            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.mainMenuToolStripMenuItem.Text = "Main menu";
+            // 
+            // cryptographyToolStripMenuItem
+            // 
+            this.cryptographyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ceasarShiftToolStripMenuItem,
+            this.ceasarShiftContToolStripMenuItem,
+            this.symetricalKeysToolStripMenuItem,
+            this.publicAndPrivateKeysToolStripMenuItem});
+            this.cryptographyToolStripMenuItem.Name = "cryptographyToolStripMenuItem";
+            this.cryptographyToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.cryptographyToolStripMenuItem.Text = "Cryptography";
+            // 
+            // ceasarShiftToolStripMenuItem
+            // 
+            this.ceasarShiftToolStripMenuItem.Name = "ceasarShiftToolStripMenuItem";
+            this.ceasarShiftToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.ceasarShiftToolStripMenuItem.Text = "Ceasar Shift";
+            this.ceasarShiftToolStripMenuItem.Click += new System.EventHandler(this.CeasarShift_Click);
+            // 
+            // ceasarShiftContToolStripMenuItem
+            // 
+            this.ceasarShiftContToolStripMenuItem.Name = "ceasarShiftContToolStripMenuItem";
+            this.ceasarShiftContToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.ceasarShiftContToolStripMenuItem.Text = "Ceasar Shift cont.";
+            this.ceasarShiftContToolStripMenuItem.Click += new System.EventHandler(this.CeasarShiftContinued_Click);
+            // 
+            // symetricalKeysToolStripMenuItem
+            // 
+            this.symetricalKeysToolStripMenuItem.Name = "symetricalKeysToolStripMenuItem";
+            this.symetricalKeysToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.symetricalKeysToolStripMenuItem.Text = "Symetrical Keys";
+            this.symetricalKeysToolStripMenuItem.Click += new System.EventHandler(this.SymetricalKeys_Click);
+            // 
+            // publicAndPrivateKeysToolStripMenuItem
+            // 
+            this.publicAndPrivateKeysToolStripMenuItem.Name = "publicAndPrivateKeysToolStripMenuItem";
+            this.publicAndPrivateKeysToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.publicAndPrivateKeysToolStripMenuItem.Text = "Public And Private Keys";
+            this.publicAndPrivateKeysToolStripMenuItem.Click += new System.EventHandler(this.PublicAndPrivateKeys_Click);
+            // 
+            // digitalSecurityToolStripMenuItem
+            // 
+            this.digitalSecurityToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.passwordStrengthToolStripMenuItem,
+            this.passwordManagersToolStripMenuItem,
+            this.digitalCertificatesToolStripMenuItem,
+            this.factorAuthenticationToolStripMenuItem});
+            this.digitalSecurityToolStripMenuItem.Name = "digitalSecurityToolStripMenuItem";
+            this.digitalSecurityToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.digitalSecurityToolStripMenuItem.Text = "Digital Security";
+            // 
+            // passwordStrengthToolStripMenuItem
+            // 
+            this.passwordStrengthToolStripMenuItem.Name = "passwordStrengthToolStripMenuItem";
+            this.passwordStrengthToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.passwordStrengthToolStripMenuItem.Text = "Password Strength";
+            this.passwordStrengthToolStripMenuItem.Click += new System.EventHandler(this.PasswordStrength_Click);
+            // 
+            // passwordManagersToolStripMenuItem
+            // 
+            this.passwordManagersToolStripMenuItem.Name = "passwordManagersToolStripMenuItem";
+            this.passwordManagersToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.passwordManagersToolStripMenuItem.Text = "Password managers";
+            this.passwordManagersToolStripMenuItem.Click += new System.EventHandler(this.PasswordManagers_Click);
+            // 
+            // digitalCertificatesToolStripMenuItem
+            // 
+            this.digitalCertificatesToolStripMenuItem.Name = "digitalCertificatesToolStripMenuItem";
+            this.digitalCertificatesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.digitalCertificatesToolStripMenuItem.Text = "Digital certificates";
+            this.digitalCertificatesToolStripMenuItem.Click += new System.EventHandler(this.DigitalCertificatesAndHttps_Click);
+            // 
+            // factorAuthenticationToolStripMenuItem
+            // 
+            this.factorAuthenticationToolStripMenuItem.Name = "factorAuthenticationToolStripMenuItem";
+            this.factorAuthenticationToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.factorAuthenticationToolStripMenuItem.Text = "2 Factor Authentication";
+            this.factorAuthenticationToolStripMenuItem.Click += new System.EventHandler(this.TwoFactorAuthentication_Click);
+            // 
+            // networkSecurityToolStripMenuItem
+            // 
+            this.networkSecurityToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.physicalHackingToolStripMenuItem,
+            this.publicWifiToolStripMenuItem,
+            this.firewallsToolStripMenuItem,
+            this.whitelistsEncryptionToolStripMenuItem});
+            this.networkSecurityToolStripMenuItem.Name = "networkSecurityToolStripMenuItem";
+            this.networkSecurityToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.networkSecurityToolStripMenuItem.Text = "Network Security";
+            // 
+            // physicalHackingToolStripMenuItem
+            // 
+            this.physicalHackingToolStripMenuItem.Name = "physicalHackingToolStripMenuItem";
+            this.physicalHackingToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.physicalHackingToolStripMenuItem.Text = "Physical hacking";
+            this.physicalHackingToolStripMenuItem.Click += new System.EventHandler(this.PhysicalHacking_Click);
+            // 
+            // publicWifiToolStripMenuItem
+            // 
+            this.publicWifiToolStripMenuItem.Name = "publicWifiToolStripMenuItem";
+            this.publicWifiToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.publicWifiToolStripMenuItem.Text = "Public Wifi";
+            this.publicWifiToolStripMenuItem.Click += new System.EventHandler(this.PublicWifi_Click);
+            // 
+            // firewallsToolStripMenuItem
+            // 
+            this.firewallsToolStripMenuItem.Name = "firewallsToolStripMenuItem";
+            this.firewallsToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.firewallsToolStripMenuItem.Text = "Firewalls";
+            this.firewallsToolStripMenuItem.Click += new System.EventHandler(this.NetworkFirewalls_Click);
+            // 
+            // whitelistsEncryptionToolStripMenuItem
+            // 
+            this.whitelistsEncryptionToolStripMenuItem.Name = "whitelistsEncryptionToolStripMenuItem";
+            this.whitelistsEncryptionToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.whitelistsEncryptionToolStripMenuItem.Text = "Whitelists and Encryption";
+            this.whitelistsEncryptionToolStripMenuItem.Click += new System.EventHandler(this.WhitelistsAndEncrption_Click);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.helpToolStripMenuItem1,
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // helpToolStripMenuItem1
+            // 
+            this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.helpToolStripMenuItem1.Text = "Help";
+            this.helpToolStripMenuItem1.Click += new System.EventHandler(this.openHelp);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.openAbout);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitProgram);
+            // 
+            // imageLogo
+            // 
+            this.imageLogo.Image = global::Group_project.Properties.Resources.PlaceholderLogo;
+            this.imageLogo.Location = new System.Drawing.Point(12, 27);
+            this.imageLogo.Name = "imageLogo";
+            this.imageLogo.Size = new System.Drawing.Size(238, 200);
+            this.imageLogo.TabIndex = 0;
+            this.imageLogo.TabStop = false;
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 338);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.Quiz);
             this.Controls.Add(this.WhitelistsAndEncryption);
             this.Controls.Add(this.NetworkFirewalls);
@@ -337,7 +475,6 @@
             this.Controls.Add(this.SymetricalKeys);
             this.Controls.Add(this.CeasarShiftContinued);
             this.Controls.Add(this.CeasarShift);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.Cryptography);
             this.Controls.Add(this.textBoxIntro);
             this.Controls.Add(this.imageLogo);
@@ -348,9 +485,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edu-cyber scelus";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.mainMenuClose);
-            ((System.ComponentModel.ISupportInitialize)(this.imageLogo)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,13 +498,6 @@
         private System.Windows.Forms.PictureBox imageLogo;
         private System.Windows.Forms.TextBox textBoxIntro;
         private System.Windows.Forms.Button Cryptography;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem jumpToToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mainMenuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Button CeasarShift;
         private System.Windows.Forms.Button CeasarShiftContinued;
         private System.Windows.Forms.Button SymetricalKeys;
@@ -383,6 +513,28 @@
         private System.Windows.Forms.Button PhysicalHacking;
         private System.Windows.Forms.Button NetworkSecurity;
         private System.Windows.Forms.Button Quiz;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem jumpToToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mainMenuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cryptographyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ceasarShiftToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ceasarShiftContToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem symetricalKeysToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem publicAndPrivateKeysToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem digitalSecurityToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem passwordStrengthToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem passwordManagersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem digitalCertificatesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem factorAuthenticationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem networkSecurityToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem physicalHackingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem publicWifiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem firewallsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem whitelistsEncryptionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
 
     }
 }

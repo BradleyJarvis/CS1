@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CeasarShiftContinuedForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,12 @@
     </Compile>
     <Compile Include="DigitalCertificatesAndHttpsForm.Designer.cs">
       <DependentUpon>DigitalCertificatesAndHttpsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="InteractionBase.cs">
       <SubType>Form</SubType>
@@ -136,6 +148,12 @@
     <Compile Include="WhitelistsAndEncryptionForm.Designer.cs">
       <DependentUpon>WhitelistsAndEncryptionForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InteractionBase.resx">
       <DependentUpon>InteractionBase.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +185,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PlaceholderLogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButtons\btnCryptCaesar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButtons\btnCryptCaesarCont.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButtons\btnCryptKeys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButtons\btnCryptSymmetrical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButtons\btnDigitalAuthentication.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButtons\btnDigitalCertificates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButtons\btnDigitalManager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButtons\btnDigitalStrength.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButtons\btnMenuCryptography.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButtons\btnMenuDigital.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButtons\btnMenuNetwork.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButtons\btnNetworkEncyrpt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButtons\btnNetworkFirewall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButtons\btnNetworkHacking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButtons\btnNetworkWiFi.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
