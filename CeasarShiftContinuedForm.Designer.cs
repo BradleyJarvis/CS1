@@ -370,6 +370,7 @@
             this.Unshift.TabIndex = 40;
             this.Unshift.Text = "Unshift";
             this.Unshift.UseVisualStyleBackColor = true;
+            this.Unshift.Click += new System.EventHandler(this.Unshift_Click);
             // 
             // CeasarShiftContinuedForm
             // 
