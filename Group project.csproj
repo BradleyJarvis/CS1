@@ -151,6 +151,9 @@
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CeasarShiftContinuedForm.resx">
+      <DependentUpon>CeasarShiftContinuedForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CeasarShiftForm.resx">
       <DependentUpon>CeasarShiftForm.cs</DependentUpon>
     </EmbeddedResource>

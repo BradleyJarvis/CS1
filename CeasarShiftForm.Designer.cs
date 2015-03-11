@@ -82,7 +82,7 @@
             // ExplanationOfCeasarShiftLabel
             // 
             this.ExplanationOfCeasarShiftLabel.AutoSize = true;
-            this.ExplanationOfCeasarShiftLabel.Location = new System.Drawing.Point(9, 307);
+            this.ExplanationOfCeasarShiftLabel.Location = new System.Drawing.Point(12, 307);
             this.ExplanationOfCeasarShiftLabel.Name = "ExplanationOfCeasarShiftLabel";
             this.ExplanationOfCeasarShiftLabel.Size = new System.Drawing.Size(136, 13);
             this.ExplanationOfCeasarShiftLabel.TabIndex = 12;
@@ -101,7 +101,7 @@
             // CeasarShiftForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(1170, 535);
+            this.ClientSize = new System.Drawing.Size(832, 535);
             this.Controls.Add(this.Unshift);
             this.Controls.Add(this.ExplanationOfCeasarShiftLabel);
             this.Controls.Add(this.ShiftButton);
