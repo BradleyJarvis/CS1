@@ -31,7 +31,7 @@
             this.passOutputBox = new System.Windows.Forms.TextBox();
             this.passLengthBox = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.enPassButton = new System.Windows.Forms.Button();
+            this.GenPassButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.passLengthBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,21 +74,21 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Password length";
             // 
-            // enPassButton
+            // GenPassButton
             // 
-            this.enPassButton.Location = new System.Drawing.Point(14, 59);
-            this.enPassButton.Name = "enPassButton";
-            this.enPassButton.Size = new System.Drawing.Size(120, 23);
-            this.enPassButton.TabIndex = 11;
-            this.enPassButton.Text = "Generate password";
-            this.enPassButton.UseVisualStyleBackColor = true;
-            this.enPassButton.Click += new System.EventHandler(this.genPassword);
+            this.GenPassButton.Location = new System.Drawing.Point(14, 59);
+            this.GenPassButton.Name = "GenPassButton";
+            this.GenPassButton.Size = new System.Drawing.Size(120, 23);
+            this.GenPassButton.TabIndex = 11;
+            this.GenPassButton.Text = "Generate password";
+            this.GenPassButton.UseVisualStyleBackColor = true;
+            this.GenPassButton.Click += new System.EventHandler(this.genPassword);
             // 
             // PasswordManagersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(453, 314);
-            this.Controls.Add(this.enPassButton);
+            this.Controls.Add(this.GenPassButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.passLengthBox);
             this.Controls.Add(this.passOutputBox);
@@ -96,7 +96,7 @@
             this.Controls.SetChildIndex(this.passOutputBox, 0);
             this.Controls.SetChildIndex(this.passLengthBox, 0);
             this.Controls.SetChildIndex(this.label1, 0);
-            this.Controls.SetChildIndex(this.enPassButton, 0);
+            this.Controls.SetChildIndex(this.GenPassButton, 0);
             ((System.ComponentModel.ISupportInitialize)(this.passLengthBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -108,6 +108,6 @@
         private System.Windows.Forms.TextBox passOutputBox;
         private System.Windows.Forms.NumericUpDown passLengthBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button enPassButton;
+        private System.Windows.Forms.Button GenPassButton;
     }
 }
