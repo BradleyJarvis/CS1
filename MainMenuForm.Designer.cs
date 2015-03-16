@@ -126,7 +126,7 @@
             this.SymetricalKeys.Name = "SymetricalKeys";
             this.SymetricalKeys.Size = new System.Drawing.Size(184, 39);
             this.SymetricalKeys.TabIndex = 13;
-            this.SymetricalKeys.Text = "Symetrical Keys";
+            this.SymetricalKeys.Text = "Symmetrical Keys";
             this.SymetricalKeys.UseVisualStyleBackColor = true;
             this.SymetricalKeys.Visible = false;
             this.SymetricalKeys.Click += new System.EventHandler(this.SymetricalKeys_Click);
@@ -327,7 +327,7 @@
             // 
             this.symetricalKeysToolStripMenuItem.Name = "symetricalKeysToolStripMenuItem";
             this.symetricalKeysToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.symetricalKeysToolStripMenuItem.Text = "Symetrical Keys";
+            this.symetricalKeysToolStripMenuItem.Text = "Symmetrical Keys";
             this.symetricalKeysToolStripMenuItem.Click += new System.EventHandler(this.SymetricalKeys_Click);
             // 
             // publicAndPrivateKeysToolStripMenuItem
@@ -427,14 +427,14 @@
             // helpToolStripMenuItem1
             // 
             this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
             this.helpToolStripMenuItem1.Text = "Help";
             this.helpToolStripMenuItem1.Click += new System.EventHandler(this.openHelp);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.openAbout);
             // 
