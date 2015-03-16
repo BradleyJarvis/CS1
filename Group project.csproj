@@ -175,6 +175,9 @@
     <EmbeddedResource Include="PasswordManagersForm.resx">
       <DependentUpon>PasswordManagersForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PasswordStrengthForm.resx">
+      <DependentUpon>PasswordStrengthForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
