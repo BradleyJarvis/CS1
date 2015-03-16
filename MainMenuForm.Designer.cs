@@ -30,8 +30,8 @@
         {
             this.textBoxIntro = new System.Windows.Forms.TextBox();
             this.Cryptography = new System.Windows.Forms.Button();
-            this.CeasarShift = new System.Windows.Forms.Button();
-            this.CeasarShiftContinued = new System.Windows.Forms.Button();
+            this.CaesarShift = new System.Windows.Forms.Button();
+            this.CaesarShiftContinued = new System.Windows.Forms.Button();
             this.SymetricalKeys = new System.Windows.Forms.Button();
             this.PublicAndPrivateKeys = new System.Windows.Forms.Button();
             this.TwoFactorAuthentication = new System.Windows.Forms.Button();
@@ -49,8 +49,8 @@
             this.jumpToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cryptographyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ceasarShiftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ceasarShiftContToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.caesarShiftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.caesarShiftContToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.symetricalKeysToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.publicAndPrivateKeysToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.digitalSecurityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -98,27 +98,27 @@
             this.Cryptography.UseVisualStyleBackColor = false;
             this.Cryptography.Click += new System.EventHandler(this.buttonSection1Click);
             // 
-            // CeasarShift
+            // CaesarShift
             // 
-            this.CeasarShift.Location = new System.Drawing.Point(28, 343);
-            this.CeasarShift.Name = "CeasarShift";
-            this.CeasarShift.Size = new System.Drawing.Size(184, 37);
-            this.CeasarShift.TabIndex = 7;
-            this.CeasarShift.Text = "Ceasar Shift";
-            this.CeasarShift.UseVisualStyleBackColor = true;
-            this.CeasarShift.Visible = false;
-            this.CeasarShift.Click += new System.EventHandler(this.CeasarShift_Click);
+            this.CaesarShift.Location = new System.Drawing.Point(28, 343);
+            this.CaesarShift.Name = "CaesarShift";
+            this.CaesarShift.Size = new System.Drawing.Size(184, 37);
+            this.CaesarShift.TabIndex = 7;
+            this.CaesarShift.Text = "Caesar Shift";
+            this.CaesarShift.UseVisualStyleBackColor = true;
+            this.CaesarShift.Visible = false;
+            this.CaesarShift.Click += new System.EventHandler(this.CeasarShift_Click);
             // 
-            // CeasarShiftContinued
+            // CaesarShiftContinued
             // 
-            this.CeasarShiftContinued.Location = new System.Drawing.Point(28, 386);
-            this.CeasarShiftContinued.Name = "CeasarShiftContinued";
-            this.CeasarShiftContinued.Size = new System.Drawing.Size(184, 39);
-            this.CeasarShiftContinued.TabIndex = 8;
-            this.CeasarShiftContinued.Text = "Ceasar Shift Continued";
-            this.CeasarShiftContinued.UseVisualStyleBackColor = true;
-            this.CeasarShiftContinued.Visible = false;
-            this.CeasarShiftContinued.Click += new System.EventHandler(this.CeasarShiftContinued_Click);
+            this.CaesarShiftContinued.Location = new System.Drawing.Point(28, 386);
+            this.CaesarShiftContinued.Name = "CaesarShiftContinued";
+            this.CaesarShiftContinued.Size = new System.Drawing.Size(184, 39);
+            this.CaesarShiftContinued.TabIndex = 8;
+            this.CaesarShiftContinued.Text = "Caesar Shift Continued";
+            this.CaesarShiftContinued.UseVisualStyleBackColor = true;
+            this.CaesarShiftContinued.Visible = false;
+            this.CaesarShiftContinued.Click += new System.EventHandler(this.CeasarShiftContinued_Click);
             // 
             // SymetricalKeys
             // 
@@ -301,27 +301,27 @@
             // cryptographyToolStripMenuItem
             // 
             this.cryptographyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ceasarShiftToolStripMenuItem,
-            this.ceasarShiftContToolStripMenuItem,
+            this.caesarShiftToolStripMenuItem,
+            this.caesarShiftContToolStripMenuItem,
             this.symetricalKeysToolStripMenuItem,
             this.publicAndPrivateKeysToolStripMenuItem});
             this.cryptographyToolStripMenuItem.Name = "cryptographyToolStripMenuItem";
             this.cryptographyToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.cryptographyToolStripMenuItem.Text = "Cryptography";
             // 
-            // ceasarShiftToolStripMenuItem
+            // caesarShiftToolStripMenuItem
             // 
-            this.ceasarShiftToolStripMenuItem.Name = "ceasarShiftToolStripMenuItem";
-            this.ceasarShiftToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.ceasarShiftToolStripMenuItem.Text = "Ceasar Shift";
-            this.ceasarShiftToolStripMenuItem.Click += new System.EventHandler(this.CeasarShift_Click);
+            this.caesarShiftToolStripMenuItem.Name = "caesarShiftToolStripMenuItem";
+            this.caesarShiftToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.caesarShiftToolStripMenuItem.Text = "Caesar Shift";
+            this.caesarShiftToolStripMenuItem.Click += new System.EventHandler(this.CeasarShift_Click);
             // 
-            // ceasarShiftContToolStripMenuItem
+            // caesarShiftContToolStripMenuItem
             // 
-            this.ceasarShiftContToolStripMenuItem.Name = "ceasarShiftContToolStripMenuItem";
-            this.ceasarShiftContToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.ceasarShiftContToolStripMenuItem.Text = "Ceasar Shift cont.";
-            this.ceasarShiftContToolStripMenuItem.Click += new System.EventHandler(this.CeasarShiftContinued_Click);
+            this.caesarShiftContToolStripMenuItem.Name = "caesarShiftContToolStripMenuItem";
+            this.caesarShiftContToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.caesarShiftContToolStripMenuItem.Text = "Ceasar Shift cont.";
+            this.caesarShiftContToolStripMenuItem.Click += new System.EventHandler(this.CeasarShiftContinued_Click);
             // 
             // symetricalKeysToolStripMenuItem
             // 
@@ -458,7 +458,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(991, 338);
+            this.ClientSize = new System.Drawing.Size(991, 329);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.Quiz);
             this.Controls.Add(this.WhitelistsAndEncryption);
@@ -473,8 +473,8 @@
             this.Controls.Add(this.PasswordsAndDigitalSecurity);
             this.Controls.Add(this.PublicAndPrivateKeys);
             this.Controls.Add(this.SymetricalKeys);
-            this.Controls.Add(this.CeasarShiftContinued);
-            this.Controls.Add(this.CeasarShift);
+            this.Controls.Add(this.CaesarShiftContinued);
+            this.Controls.Add(this.CaesarShift);
             this.Controls.Add(this.Cryptography);
             this.Controls.Add(this.textBoxIntro);
             this.Controls.Add(this.imageLogo);
@@ -498,8 +498,8 @@
         private System.Windows.Forms.PictureBox imageLogo;
         private System.Windows.Forms.TextBox textBoxIntro;
         private System.Windows.Forms.Button Cryptography;
-        private System.Windows.Forms.Button CeasarShift;
-        private System.Windows.Forms.Button CeasarShiftContinued;
+        private System.Windows.Forms.Button CaesarShift;
+        private System.Windows.Forms.Button CaesarShiftContinued;
         private System.Windows.Forms.Button SymetricalKeys;
         private System.Windows.Forms.Button PublicAndPrivateKeys;
         private System.Windows.Forms.Button TwoFactorAuthentication;
@@ -517,8 +517,8 @@
         private System.Windows.Forms.ToolStripMenuItem jumpToToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mainMenuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cryptographyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ceasarShiftToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ceasarShiftContToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem caesarShiftToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem caesarShiftContToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem symetricalKeysToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem publicAndPrivateKeysToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem digitalSecurityToolStripMenuItem;

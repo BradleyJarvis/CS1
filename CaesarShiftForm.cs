@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Group_project
 {
-    public partial class CeasarShiftForm : Group_project.InteractionBase
+    public partial class CaesarShiftForm : Group_project.InteractionBase
     {
-        public CeasarShiftForm()
+        public CaesarShiftForm()
         {
             InitializeComponent();
         }

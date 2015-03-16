@@ -117,4 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CaesarShiftExplanationTextBox.Text" xml:space="preserve">
+    <value>A Caesar shift cypher is a method of encryption that is very simple but is very resilient to brute force attacks. The way it works is that it takes a word and changes each letter in it by a certain amount. For example, if you have the letter ‘H’ and you shift it by 4 it goes to ‘I’ then to ‘J’ then to ‘K’ then to ‘L’, 4 steps. If this is done on a word like “Hello World” each letter is changed by 4 giving “Lipps Asvph”. If you look you can see that the ‘W’ has become an ‘A’. This is because it loops round on itself and a ‘Z’ shifted by 1 becomes ‘A’. 
+
+You can try this yourself by typing the message you want to shift into the text box on the left, selecting the amount to shift using the number in the middle and pressing the shift button. The shifted message will be shown in the right box. If you want to go the other way type the box in the right and select the amount it was shifted with the number in the middle, then press the unshift button.  This is a basic example of encrypting (shifting) and decrypting (unshifting).
+
+This method can be used to send messages in secret but both people must know how much the message was shifted; this number is called the key. Because both people know the key but can’t let anyone else know it, this is called a private key. </value>
+  </data>
 </root>

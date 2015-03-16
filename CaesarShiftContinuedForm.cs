@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Group_project
 {
-    public partial class CeasarShiftContinuedForm : Group_project.InteractionBase
+    public partial class CaesarShiftContinuedForm : Group_project.InteractionBase
     {
-        public CeasarShiftContinuedForm()
+        public CaesarShiftContinuedForm()
         {
             InitializeComponent();
         }
@@ -280,7 +280,7 @@ namespace Group_project
 
 
 
-            FirstCharracterUnshiftedTextBox.Text = TenthCharracterShiftedTextBox.Text;
+            FirstCharracterUnshiftedTextBox.Text = FirstCharracterShiftedTextBox.Text;
             if ((FirstCharracterUnshiftedTextBox.Text != "") && (Char.IsLetter(FirstCharracterUnshiftedTextBox.Text[0]))) //If the text is a letter
             {
                 for (int i = 0; i < FirstNumericUpDown.Value; i++)//For each time it must be shifted

@@ -32,8 +32,8 @@
             this.jumpToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cryptographyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ceasarShiftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ceasarShiftContToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.caesarShiftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.caesarShiftContToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.symetricalKeysToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.publicAndPrivateKeysToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.digitalSecurityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -86,27 +86,27 @@
             // cryptographyToolStripMenuItem
             // 
             this.cryptographyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ceasarShiftToolStripMenuItem,
-            this.ceasarShiftContToolStripMenuItem,
+            this.caesarShiftToolStripMenuItem,
+            this.caesarShiftContToolStripMenuItem,
             this.symetricalKeysToolStripMenuItem,
             this.publicAndPrivateKeysToolStripMenuItem});
             this.cryptographyToolStripMenuItem.Name = "cryptographyToolStripMenuItem";
             this.cryptographyToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.cryptographyToolStripMenuItem.Text = "Cryptography";
             // 
-            // ceasarShiftToolStripMenuItem
+            // caesarShiftToolStripMenuItem
             // 
-            this.ceasarShiftToolStripMenuItem.Name = "ceasarShiftToolStripMenuItem";
-            this.ceasarShiftToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.ceasarShiftToolStripMenuItem.Text = "Ceasar Shift";
-            this.ceasarShiftToolStripMenuItem.Click += new System.EventHandler(this.ceasarShiftToolStripMenuItem_Click);
+            this.caesarShiftToolStripMenuItem.Name = "caesarShiftToolStripMenuItem";
+            this.caesarShiftToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.caesarShiftToolStripMenuItem.Text = "Caesar Shift";
+            this.caesarShiftToolStripMenuItem.Click += new System.EventHandler(this.ceasarShiftToolStripMenuItem_Click);
             // 
-            // ceasarShiftContToolStripMenuItem
+            // caesarShiftContToolStripMenuItem
             // 
-            this.ceasarShiftContToolStripMenuItem.Name = "ceasarShiftContToolStripMenuItem";
-            this.ceasarShiftContToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.ceasarShiftContToolStripMenuItem.Text = "Ceasar Shift cont.";
-            this.ceasarShiftContToolStripMenuItem.Click += new System.EventHandler(this.ceasarShiftContToolStripMenuItem_Click);
+            this.caesarShiftContToolStripMenuItem.Name = "caesarShiftContToolStripMenuItem";
+            this.caesarShiftContToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.caesarShiftContToolStripMenuItem.Text = "Caesar Shift cont.";
+            this.caesarShiftContToolStripMenuItem.Click += new System.EventHandler(this.ceasarShiftContToolStripMenuItem_Click);
             // 
             // symetricalKeysToolStripMenuItem
             // 
@@ -260,8 +260,8 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cryptographyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ceasarShiftToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ceasarShiftContToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem caesarShiftToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem caesarShiftContToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem symetricalKeysToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem publicAndPrivateKeysToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem digitalSecurityToolStripMenuItem;

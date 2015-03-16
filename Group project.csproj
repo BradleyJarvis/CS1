@@ -50,17 +50,17 @@
     <Compile Include="AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CeasarShiftContinuedForm.cs">
+    <Compile Include="CaesarShiftContinuedForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CeasarShiftContinuedForm.Designer.cs">
-      <DependentUpon>CeasarShiftContinuedForm.cs</DependentUpon>
+    <Compile Include="CaesarShiftContinuedForm.Designer.cs">
+      <DependentUpon>CaesarShiftContinuedForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CeasarShiftForm.cs">
+    <Compile Include="CaesarShiftForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CeasarShiftForm.Designer.cs">
-      <DependentUpon>CeasarShiftForm.cs</DependentUpon>
+    <Compile Include="CaesarShiftForm.Designer.cs">
+      <DependentUpon>CaesarShiftForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DigitalCertificatesAndHttpsForm.cs">
       <SubType>Form</SubType>
@@ -157,11 +157,11 @@
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CeasarShiftContinuedForm.resx">
-      <DependentUpon>CeasarShiftContinuedForm.cs</DependentUpon>
+    <EmbeddedResource Include="CaesarShiftContinuedForm.resx">
+      <DependentUpon>CaesarShiftContinuedForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CeasarShiftForm.resx">
-      <DependentUpon>CeasarShiftForm.cs</DependentUpon>
+    <EmbeddedResource Include="CaesarShiftForm.resx">
+      <DependentUpon>CaesarShiftForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HelpForm.resx">
       <DependentUpon>HelpForm.cs</DependentUpon>
@@ -188,6 +188,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SymetricalKeysForm.resx">
+      <DependentUpon>SymetricalKeysForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TwoFactorAuthCode.resx">
       <DependentUpon>TwoFactorAuthCode.cs</DependentUpon>
     </EmbeddedResource>

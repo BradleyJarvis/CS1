@@ -49,14 +49,14 @@ namespace Group_project
         private void ceasarShiftToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CeasarShiftForm CeasarShiftF = new CeasarShiftForm();
+            CaesarShiftForm CeasarShiftF = new CaesarShiftForm();
             CeasarShiftF.Show();
         }
 
         private void ceasarShiftContToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CeasarShiftContinuedForm CeaserShiftContF = new CeasarShiftContinuedForm();
+            CaesarShiftContinuedForm CeaserShiftContF = new CaesarShiftContinuedForm();
             CeaserShiftContF.Show();
         }
 

@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="PrivateKeyExplanationTextBox.Text" xml:space="preserve">
+    <value>In the previous section we looked at how a simple substitution cipher can be used to protect information, they used symmetrical key algorithms. What this means is that both parties require a copy of the key in order to read the message. And person who intercepts a message between the two will not know what it says. While it is true that they can break through this encryption it will take time (the amount of time depends on the algorithm).
+
+The example above uses a Caesar shift enter the text, choose the amount to shift by and click send.</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>68</value>
+  </metadata>
 </root>

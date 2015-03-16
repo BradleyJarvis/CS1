@@ -25,22 +25,22 @@ namespace Group_project
         #region Window resize code
         private void buttonSection1Click(object sender, EventArgs e)
         {
-            if (CeasarShift.Visible == true)
+            if (CaesarShift.Visible == true)
             {
-                CeasarShift.Visible = false;
+                CaesarShift.Visible = false;
             }
             else
             {
-                CeasarShift.Visible = true;
+                CaesarShift.Visible = true;
             }
 
-            if (CeasarShiftContinued.Visible == true)
+            if (CaesarShiftContinued.Visible == true)
             {
-                CeasarShiftContinued.Visible = false;
+                CaesarShiftContinued.Visible = false;
             }
             else
             {
-                CeasarShiftContinued.Visible = true;
+                CaesarShiftContinued.Visible = true;
             }
 
             if (SymetricalKeys.Visible == true)
@@ -66,7 +66,7 @@ namespace Group_project
             }
             else
             {
-                if ((CeasarShift.Visible == false) && (PasswordStrength.Visible == false) && (PhysicalHacking.Visible == false))
+                if ((CaesarShift.Visible == false) && (PasswordStrength.Visible == false) && (PhysicalHacking.Visible == false))
                 {
                     this.Height = 366;
                 }
@@ -117,7 +117,7 @@ namespace Group_project
             }
             else
             {
-            if ((CeasarShift.Visible == false)&&(PasswordStrength.Visible == false)&&(PhysicalHacking.Visible == false))
+            if ((CaesarShift.Visible == false)&&(PasswordStrength.Visible == false)&&(PhysicalHacking.Visible == false))
             {
                 this.Height = 366;
             }
@@ -167,7 +167,7 @@ namespace Group_project
             }
             else
             {
-            if ((CeasarShift.Visible == false)&&(PasswordStrength.Visible == false)&&(PhysicalHacking.Visible == false))
+            if ((CaesarShift.Visible == false)&&(PasswordStrength.Visible == false)&&(PhysicalHacking.Visible == false))
             {
                 this.Height = 366;
             }
@@ -179,14 +179,14 @@ namespace Group_project
         #region Navigation code
         private void CeasarShift_Click(object sender, EventArgs e)
         {
-            CeasarShiftForm CeasarShiftF = new CeasarShiftForm();
+            CaesarShiftForm CeasarShiftF = new CaesarShiftForm();
             CeasarShiftF.Show();
             this.Hide();
         }
 
         private void CeasarShiftContinued_Click(object sender, EventArgs e)
         {
-            CeasarShiftContinuedForm CeasarShiftContinuedF = new CeasarShiftContinuedForm();
+            CaesarShiftContinuedForm CeasarShiftContinuedF = new CaesarShiftContinuedForm();
             CeasarShiftContinuedF.Show();
             this.Hide();
         }
@@ -296,14 +296,14 @@ namespace Group_project
         private void ceasarShiftToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CeasarShiftForm CeasarShiftF = new CeasarShiftForm();
+            CaesarShiftForm CeasarShiftF = new CaesarShiftForm();
             CeasarShiftF.Show();
         }
 
         private void ceasarShiftContToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CeasarShiftContinuedForm CeaserShiftContF = new CeasarShiftContinuedForm();
+            CaesarShiftContinuedForm CeaserShiftContF = new CaesarShiftContinuedForm();
             CeaserShiftContF.Show();
         }
 
