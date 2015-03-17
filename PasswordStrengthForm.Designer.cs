@@ -49,7 +49,7 @@
             // timeTakenLabel
             // 
             this.timeTakenLabel.AutoSize = true;
-            this.timeTakenLabel.Location = new System.Drawing.Point(104, 113);
+            this.timeTakenLabel.Location = new System.Drawing.Point(37, 107);
             this.timeTakenLabel.Name = "timeTakenLabel";
             this.timeTakenLabel.Size = new System.Drawing.Size(188, 13);
             this.timeTakenLabel.TabIndex = 9;
