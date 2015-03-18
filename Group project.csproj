@@ -211,9 +211,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\PlaceholderLogo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\MenuButtons\btnCryptCaesar.png" />
   </ItemGroup>
   <ItemGroup>
@@ -257,6 +254,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MenuButtons\btnNetworkWiFi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo200.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

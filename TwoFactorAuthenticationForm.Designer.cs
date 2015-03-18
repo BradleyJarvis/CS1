@@ -41,7 +41,7 @@
             this.GenCodeButton.Location = new System.Drawing.Point(12, 28);
             this.GenCodeButton.Name = "GenCodeButton";
             this.GenCodeButton.Size = new System.Drawing.Size(75, 23);
-            this.GenCodeButton.TabIndex = 8;
+            this.GenCodeButton.TabIndex = 1;
             this.GenCodeButton.Text = "Send code";
             this.GenCodeButton.UseVisualStyleBackColor = true;
             this.GenCodeButton.Click += new System.EventHandler(this.genAuthCode);
@@ -51,14 +51,14 @@
             this.codeInputBox.Location = new System.Drawing.Point(12, 57);
             this.codeInputBox.Name = "codeInputBox";
             this.codeInputBox.Size = new System.Drawing.Size(100, 20);
-            this.codeInputBox.TabIndex = 9;
+            this.codeInputBox.TabIndex = 3;
             // 
             // OpenAuthButton
             // 
             this.OpenAuthButton.Location = new System.Drawing.Point(157, 26);
             this.OpenAuthButton.Name = "OpenAuthButton";
             this.OpenAuthButton.Size = new System.Drawing.Size(115, 23);
-            this.OpenAuthButton.TabIndex = 10;
+            this.OpenAuthButton.TabIndex = 2;
             this.OpenAuthButton.Text = "Open authenticator";
             this.OpenAuthButton.UseVisualStyleBackColor = true;
             this.OpenAuthButton.Click += new System.EventHandler(this.showAuth);
@@ -68,7 +68,7 @@
             this.LoginButton.Location = new System.Drawing.Point(12, 83);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(75, 23);
-            this.LoginButton.TabIndex = 11;
+            this.LoginButton.TabIndex = 4;
             this.LoginButton.Text = "Login";
             this.LoginButton.UseVisualStyleBackColor = true;
             this.LoginButton.Click += new System.EventHandler(this.attemptLogin);
@@ -95,6 +95,7 @@
             // 
             // TwoFactorAuthenticationForm
             // 
+            this.AcceptButton = this.LoginButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.loginResultLabel);
@@ -104,6 +105,7 @@
             this.Controls.Add(this.codeInputBox);
             this.Controls.Add(this.GenCodeButton);
             this.Name = "TwoFactorAuthenticationForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.closeAuth);
             this.Controls.SetChildIndex(this.GenCodeButton, 0);
             this.Controls.SetChildIndex(this.codeInputBox, 0);
             this.Controls.SetChildIndex(this.OpenAuthButton, 0);

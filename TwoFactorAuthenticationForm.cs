@@ -33,6 +33,7 @@ namespace Group_project
         private void showAuth(object sender, EventArgs e)
         {
             authenticator.Show();//Show the authenticator window
+            this.Select();
         }
 
         private void attemptLogin(object sender, EventArgs e)
@@ -42,6 +43,11 @@ namespace Group_project
                 loginResultLabel.Text = "Code correct, login succesful";
             else
                 loginResultLabel.Text = "Code incorrect, please try again";
+        }
+
+        private void closeAuth(object sender, FormClosedEventArgs e)
+        {
+            authenticator.Close();
         }
     }
 }
