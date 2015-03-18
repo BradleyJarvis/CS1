@@ -136,28 +136,28 @@
             // passwordStrengthToolStripMenuItem
             // 
             this.passwordStrengthToolStripMenuItem.Name = "passwordStrengthToolStripMenuItem";
-            this.passwordStrengthToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.passwordStrengthToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
             this.passwordStrengthToolStripMenuItem.Text = "Password Strength";
             this.passwordStrengthToolStripMenuItem.Click += new System.EventHandler(this.passwordStrengthToolStripMenuItem_Click);
             // 
             // passwordManagersToolStripMenuItem
             // 
             this.passwordManagersToolStripMenuItem.Name = "passwordManagersToolStripMenuItem";
-            this.passwordManagersToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.passwordManagersToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
             this.passwordManagersToolStripMenuItem.Text = "Password managers";
             this.passwordManagersToolStripMenuItem.Click += new System.EventHandler(this.passwordManagersToolStripMenuItem_Click);
             // 
             // digitalCertificatesToolStripMenuItem
             // 
             this.digitalCertificatesToolStripMenuItem.Name = "digitalCertificatesToolStripMenuItem";
-            this.digitalCertificatesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.digitalCertificatesToolStripMenuItem.Text = "Digital certificates";
+            this.digitalCertificatesToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.digitalCertificatesToolStripMenuItem.Text = "Digital certificates and HTTPS";
             this.digitalCertificatesToolStripMenuItem.Click += new System.EventHandler(this.digitalCertificatesToolStripMenuItem_Click);
             // 
             // factorAuthenticationToolStripMenuItem
             // 
             this.factorAuthenticationToolStripMenuItem.Name = "factorAuthenticationToolStripMenuItem";
-            this.factorAuthenticationToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.factorAuthenticationToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
             this.factorAuthenticationToolStripMenuItem.Text = "2 Factor Authentication";
             this.factorAuthenticationToolStripMenuItem.Click += new System.EventHandler(this.factorAuthenticationToolStripMenuItem_Click);
             // 

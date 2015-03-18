@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.timeTakenBar = new System.Windows.Forms.ProgressBar();
             this.timeTakenLabel = new System.Windows.Forms.Label();
             this.passInputBox = new System.Windows.Forms.TextBox();
             this.lowerCaseBox = new System.Windows.Forms.CheckBox();
@@ -39,17 +38,10 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // timeTakenBar
-            // 
-            this.timeTakenBar.Location = new System.Drawing.Point(40, 76);
-            this.timeTakenBar.Name = "timeTakenBar";
-            this.timeTakenBar.Size = new System.Drawing.Size(316, 23);
-            this.timeTakenBar.TabIndex = 8;
-            // 
             // timeTakenLabel
             // 
             this.timeTakenLabel.AutoSize = true;
-            this.timeTakenLabel.Location = new System.Drawing.Point(37, 107);
+            this.timeTakenLabel.Location = new System.Drawing.Point(8, 67);
             this.timeTakenLabel.Name = "timeTakenLabel";
             this.timeTakenLabel.Size = new System.Drawing.Size(188, 13);
             this.timeTakenLabel.TabIndex = 9;
@@ -57,7 +49,7 @@
             // 
             // passInputBox
             // 
-            this.passInputBox.Location = new System.Drawing.Point(40, 41);
+            this.passInputBox.Location = new System.Drawing.Point(11, 44);
             this.passInputBox.Name = "passInputBox";
             this.passInputBox.Size = new System.Drawing.Size(178, 20);
             this.passInputBox.TabIndex = 10;
@@ -117,7 +109,7 @@
             this.panel1.Controls.Add(this.specialBox);
             this.panel1.Controls.Add(this.numberBox);
             this.panel1.Controls.Add(this.lowerCaseBox);
-            this.panel1.Location = new System.Drawing.Point(40, 157);
+            this.panel1.Location = new System.Drawing.Point(40, 93);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(143, 105);
             this.panel1.TabIndex = 16;
@@ -125,13 +117,11 @@
             // PasswordStrengthForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(397, 324);
+            this.ClientSize = new System.Drawing.Size(287, 245);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.passInputBox);
             this.Controls.Add(this.timeTakenLabel);
-            this.Controls.Add(this.timeTakenBar);
             this.Name = "PasswordStrengthForm";
-            this.Controls.SetChildIndex(this.timeTakenBar, 0);
             this.Controls.SetChildIndex(this.timeTakenLabel, 0);
             this.Controls.SetChildIndex(this.passInputBox, 0);
             this.Controls.SetChildIndex(this.panel1, 0);
@@ -144,7 +134,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ProgressBar timeTakenBar;
         private System.Windows.Forms.Label timeTakenLabel;
         private System.Windows.Forms.TextBox passInputBox;
         private System.Windows.Forms.CheckBox lowerCaseBox;
