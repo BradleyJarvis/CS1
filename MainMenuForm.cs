@@ -68,7 +68,7 @@ namespace Group_project
             {
                 if ((CaesarShift.Visible == false) && (PasswordStrength.Visible == false) && (PhysicalHacking.Visible == false))
                 {
-                    this.Height = 366;
+                    this.Height = 351;
                 }
             }
 
@@ -119,7 +119,7 @@ namespace Group_project
             {
             if ((CaesarShift.Visible == false)&&(PasswordStrength.Visible == false)&&(PhysicalHacking.Visible == false))
             {
-                this.Height = 366;
+                this.Height = 351;
             }
             }
 
@@ -169,7 +169,7 @@ namespace Group_project
             {
             if ((CaesarShift.Visible == false)&&(PasswordStrength.Visible == false)&&(PhysicalHacking.Visible == false))
             {
-                this.Height = 366;
+                this.Height = 351;
             }
             }
 

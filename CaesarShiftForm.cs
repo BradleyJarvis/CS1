@@ -55,7 +55,7 @@ namespace Group_project
             }
             else //If there was no text or the shift value was out of bounds.
             {
-                MessageBox.Show("Please type some text into the left hand side and choose an amount to shift the text by. Using the field in the middle of the two boxes"); //Inform the user.
+                MessageBox.Show("Please type some text into the left hand side and choose an amount to shift the text by. Using the field in the middle of the two boxes","You need to fill in the fields", MessageBoxButtons.OK); //Inform the user.
             }
         }//End of shift
 

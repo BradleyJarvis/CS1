@@ -112,11 +112,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PublicAndPrivateKeysForm.cs">
+    <Compile Include="PublicKeysForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PublicAndPrivateKeysForm.Designer.cs">
-      <DependentUpon>PublicAndPrivateKeysForm.cs</DependentUpon>
+    <Compile Include="PublicKeysForm.Designer.cs">
+      <DependentUpon>PublicKeysForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PublicWifiForm.cs">
       <SubType>Form</SubType>
@@ -188,6 +188,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="PublicKeysForm.resx">
+      <DependentUpon>PublicKeysForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SymetricalKeysForm.resx">
       <DependentUpon>SymetricalKeysForm.cs</DependentUpon>
     </EmbeddedResource>
