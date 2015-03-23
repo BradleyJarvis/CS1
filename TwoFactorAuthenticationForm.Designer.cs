@@ -34,6 +34,7 @@
             this.LoginButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.loginResultLabel = new System.Windows.Forms.Label();
+            this.explainationText = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // GenCodeButton
@@ -55,7 +56,7 @@
             // 
             // OpenAuthButton
             // 
-            this.OpenAuthButton.Location = new System.Drawing.Point(157, 26);
+            this.OpenAuthButton.Location = new System.Drawing.Point(93, 27);
             this.OpenAuthButton.Name = "OpenAuthButton";
             this.OpenAuthButton.Size = new System.Drawing.Size(115, 23);
             this.OpenAuthButton.TabIndex = 2;
@@ -65,7 +66,7 @@
             // 
             // LoginButton
             // 
-            this.LoginButton.Location = new System.Drawing.Point(12, 83);
+            this.LoginButton.Location = new System.Drawing.Point(214, 27);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(75, 23);
             this.LoginButton.TabIndex = 4;
@@ -86,18 +87,28 @@
             // 
             this.loginResultLabel.AutoSize = true;
             this.loginResultLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginResultLabel.Location = new System.Drawing.Point(9, 129);
+            this.loginResultLabel.Location = new System.Drawing.Point(21, 80);
             this.loginResultLabel.Name = "loginResultLabel";
             this.loginResultLabel.Size = new System.Drawing.Size(45, 16);
             this.loginResultLabel.TabIndex = 13;
             this.loginResultLabel.Text = "label2";
             this.loginResultLabel.Visible = false;
             // 
+            // explainationText
+            // 
+            this.explainationText.Location = new System.Drawing.Point(12, 99);
+            this.explainationText.Multiline = true;
+            this.explainationText.Name = "explainationText";
+            this.explainationText.ReadOnly = true;
+            this.explainationText.Size = new System.Drawing.Size(476, 169);
+            this.explainationText.TabIndex = 18;
+            // 
             // TwoFactorAuthenticationForm
             // 
             this.AcceptButton = this.LoginButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(512, 326);
+            this.Controls.Add(this.explainationText);
             this.Controls.Add(this.loginResultLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LoginButton);
@@ -112,6 +123,7 @@
             this.Controls.SetChildIndex(this.LoginButton, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.loginResultLabel, 0);
+            this.Controls.SetChildIndex(this.explainationText, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,5 +137,6 @@
         private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label loginResultLabel;
+        private System.Windows.Forms.TextBox explainationText;
     }
 }

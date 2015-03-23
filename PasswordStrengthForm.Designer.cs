@@ -121,7 +121,7 @@
             this.explainationText.Multiline = true;
             this.explainationText.Name = "explainationText";
             this.explainationText.ReadOnly = true;
-            this.explainationText.Size = new System.Drawing.Size(364, 229);
+            this.explainationText.Size = new System.Drawing.Size(364, 166);
             this.explainationText.TabIndex = 17;
             // 
             // PasswordStrengthForm
