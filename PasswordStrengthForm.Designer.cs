@@ -35,13 +35,14 @@
             this.specialBox = new System.Windows.Forms.CheckBox();
             this.upperCaseBox = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.explainationText = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timeTakenLabel
             // 
             this.timeTakenLabel.AutoSize = true;
-            this.timeTakenLabel.Location = new System.Drawing.Point(8, 67);
+            this.timeTakenLabel.Location = new System.Drawing.Point(158, 60);
             this.timeTakenLabel.Name = "timeTakenLabel";
             this.timeTakenLabel.Size = new System.Drawing.Size(188, 13);
             this.timeTakenLabel.TabIndex = 9;
@@ -49,7 +50,7 @@
             // 
             // passInputBox
             // 
-            this.passInputBox.Location = new System.Drawing.Point(11, 44);
+            this.passInputBox.Location = new System.Drawing.Point(161, 37);
             this.passInputBox.Name = "passInputBox";
             this.passInputBox.Size = new System.Drawing.Size(178, 20);
             this.passInputBox.TabIndex = 10;
@@ -109,15 +110,25 @@
             this.panel1.Controls.Add(this.specialBox);
             this.panel1.Controls.Add(this.numberBox);
             this.panel1.Controls.Add(this.lowerCaseBox);
-            this.panel1.Location = new System.Drawing.Point(40, 93);
+            this.panel1.Location = new System.Drawing.Point(12, 37);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(143, 105);
             this.panel1.TabIndex = 16;
             // 
+            // explainationText
+            // 
+            this.explainationText.Location = new System.Drawing.Point(162, 77);
+            this.explainationText.Multiline = true;
+            this.explainationText.Name = "explainationText";
+            this.explainationText.ReadOnly = true;
+            this.explainationText.Size = new System.Drawing.Size(364, 229);
+            this.explainationText.TabIndex = 17;
+            // 
             // PasswordStrengthForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(287, 245);
+            this.ClientSize = new System.Drawing.Size(538, 318);
+            this.Controls.Add(this.explainationText);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.passInputBox);
             this.Controls.Add(this.timeTakenLabel);
@@ -125,6 +136,7 @@
             this.Controls.SetChildIndex(this.timeTakenLabel, 0);
             this.Controls.SetChildIndex(this.passInputBox, 0);
             this.Controls.SetChildIndex(this.panel1, 0);
+            this.Controls.SetChildIndex(this.explainationText, 0);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -141,5 +153,6 @@
         private System.Windows.Forms.CheckBox specialBox;
         private System.Windows.Forms.CheckBox upperCaseBox;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox explainationText;
     }
 }
