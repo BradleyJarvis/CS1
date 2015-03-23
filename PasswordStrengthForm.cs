@@ -15,11 +15,13 @@ namespace Group_project
         bool lowerCaseFlag, upperCaseFlag, numberFlag, specialFlag1, specialFlag2;
         string inputPassword;
         int passLength;
+        const uint guessRate = 4000000000; //  A constant used to hold the speed that guesses can be made, represented as guesses/second
         
         public PasswordStrengthForm()
         {
             InitializeComponent();
             resetFlags();
+            explainationText.Text = "A simple way of accessing an account is to use brute force guessing to try every possible combination of characters until the correct password is found. If a password is short and only has a few characters it will be guessed quickly by this method. A long password with a mixture of different character types however will take much longer to guess, effectively becoming immune to this type of hacking. Above is a tool to check to see approximately how long it would take to guess a password based on it's length and the types of characters used. This is only a rough guide, based on a computer able to make " + guessRate + " attempts per second. The checkboxes at the side indicate what type of characters you have included in the password that has been entered.";
         }
 
         void checkPassword()
@@ -98,7 +100,6 @@ namespace Group_project
         double calculateTime()
         {// This function is used to calculate and return the time taken to crack the password, represented as the number of seconds needed to guess it
             int chars = 0;// The sets of characters included in the password, lower and upper case letters as well as numbers and special characters are included
-            const uint guessRate = 4000000000; //  A constant used to hold the speed that guesses can be made, represented as guesses/second
 
             if (lowerCaseFlag == true)
                 chars += 26;
