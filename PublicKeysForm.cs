@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Group_project
 {
-    public partial class PublicAndPrivateKeysForm : Group_project.InteractionBase
+    public partial class PublicKeysForm : Group_project.InteractionBase
     {
-        public PublicAndPrivateKeysForm()
+        public PublicKeysForm()
         {
             InitializeComponent();
         }

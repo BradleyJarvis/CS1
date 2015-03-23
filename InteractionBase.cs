@@ -70,7 +70,7 @@ namespace Group_project
         private void publicAndPrivateKeysToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            PublicAndPrivateKeysForm PubPrivKeysF = new PublicAndPrivateKeysForm();
+            PublicKeysForm PubPrivKeysF = new PublicKeysForm();
             PubPrivKeysF.Show();
         }
 

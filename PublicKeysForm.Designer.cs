@@ -1,6 +1,6 @@
 ﻿namespace Group_project
 {
-    partial class PublicAndPrivateKeysForm
+    partial class PublicKeysForm
     {
         /// <summary>
         /// Required designer variable.

@@ -33,7 +33,7 @@
             this.CaesarShift = new System.Windows.Forms.Button();
             this.CaesarShiftContinued = new System.Windows.Forms.Button();
             this.SymetricalKeys = new System.Windows.Forms.Button();
-            this.PublicAndPrivateKeys = new System.Windows.Forms.Button();
+            this.PublicKeys = new System.Windows.Forms.Button();
             this.TwoFactorAuthentication = new System.Windows.Forms.Button();
             this.DigitalCertificatesAndHttps = new System.Windows.Forms.Button();
             this.PasswordManagers = new System.Windows.Forms.Button();
@@ -80,179 +80,188 @@
             this.textBoxIntro.Multiline = true;
             this.textBoxIntro.Name = "textBoxIntro";
             this.textBoxIntro.ReadOnly = true;
-            this.textBoxIntro.Size = new System.Drawing.Size(761, 200);
+            this.textBoxIntro.Size = new System.Drawing.Size(1217, 200);
             this.textBoxIntro.TabIndex = 100;
             this.textBoxIntro.Text = "Welcome to Edu Cyber Scelus , this program will help you understand the world of " +
     "cyber crime and cyber security so that you can lead a safer life online.";
             // 
             // Cryptography
             // 
-            this.Cryptography.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Cryptography.BackColor = System.Drawing.SystemColors.Control;
+            this.Cryptography.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.Cryptography.FlatAppearance.BorderSize = 0;
+            this.Cryptography.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.Cryptography.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.Cryptography.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cryptography.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cryptography.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Cryptography.Image = global::Group_project.Properties.Resources.btnMenuCryptography;
             this.Cryptography.Location = new System.Drawing.Point(12, 233);
             this.Cryptography.Name = "Cryptography";
-            this.Cryptography.Size = new System.Drawing.Size(238, 91);
+            this.Cryptography.Size = new System.Drawing.Size(382, 77);
             this.Cryptography.TabIndex = 1;
-            this.Cryptography.Text = "Cryptography";
             this.Cryptography.UseVisualStyleBackColor = false;
             this.Cryptography.Click += new System.EventHandler(this.buttonSection1Click);
             // 
             // CaesarShift
             // 
-            this.CaesarShift.Location = new System.Drawing.Point(28, 343);
+            this.CaesarShift.Image = global::Group_project.Properties.Resources.btnCryptCaesar;
+            this.CaesarShift.Location = new System.Drawing.Point(50, 314);
             this.CaesarShift.Name = "CaesarShift";
-            this.CaesarShift.Size = new System.Drawing.Size(184, 37);
+            this.CaesarShift.Size = new System.Drawing.Size(300, 59);
             this.CaesarShift.TabIndex = 7;
-            this.CaesarShift.Text = "Caesar Shift";
             this.CaesarShift.UseVisualStyleBackColor = true;
             this.CaesarShift.Visible = false;
             this.CaesarShift.Click += new System.EventHandler(this.CeasarShift_Click);
             // 
             // CaesarShiftContinued
             // 
-            this.CaesarShiftContinued.Location = new System.Drawing.Point(28, 386);
+            this.CaesarShiftContinued.Image = global::Group_project.Properties.Resources.btnCryptCaesarCont;
+            this.CaesarShiftContinued.Location = new System.Drawing.Point(50, 379);
             this.CaesarShiftContinued.Name = "CaesarShiftContinued";
-            this.CaesarShiftContinued.Size = new System.Drawing.Size(184, 39);
+            this.CaesarShiftContinued.Size = new System.Drawing.Size(300, 59);
             this.CaesarShiftContinued.TabIndex = 8;
-            this.CaesarShiftContinued.Text = "Caesar Shift Continued";
             this.CaesarShiftContinued.UseVisualStyleBackColor = true;
             this.CaesarShiftContinued.Visible = false;
             this.CaesarShiftContinued.Click += new System.EventHandler(this.CeasarShiftContinued_Click);
             // 
             // SymetricalKeys
             // 
-            this.SymetricalKeys.Location = new System.Drawing.Point(28, 431);
+            this.SymetricalKeys.Image = global::Group_project.Properties.Resources.btnCryptSymmetrical;
+            this.SymetricalKeys.Location = new System.Drawing.Point(50, 444);
             this.SymetricalKeys.Name = "SymetricalKeys";
-            this.SymetricalKeys.Size = new System.Drawing.Size(184, 39);
+            this.SymetricalKeys.Size = new System.Drawing.Size(300, 59);
             this.SymetricalKeys.TabIndex = 13;
-            this.SymetricalKeys.Text = "Symmetrical Keys";
             this.SymetricalKeys.UseVisualStyleBackColor = true;
             this.SymetricalKeys.Visible = false;
             this.SymetricalKeys.Click += new System.EventHandler(this.SymetricalKeys_Click);
             // 
-            // PublicAndPrivateKeys
+            // PublicKeys
             // 
-            this.PublicAndPrivateKeys.Location = new System.Drawing.Point(28, 476);
-            this.PublicAndPrivateKeys.Name = "PublicAndPrivateKeys";
-            this.PublicAndPrivateKeys.Size = new System.Drawing.Size(184, 39);
-            this.PublicAndPrivateKeys.TabIndex = 14;
-            this.PublicAndPrivateKeys.Text = "Public And Private Keys";
-            this.PublicAndPrivateKeys.UseVisualStyleBackColor = true;
-            this.PublicAndPrivateKeys.Visible = false;
-            this.PublicAndPrivateKeys.Click += new System.EventHandler(this.PublicAndPrivateKeys_Click);
+            this.PublicKeys.Location = new System.Drawing.Point(50, 509);
+            this.PublicKeys.Name = "PublicKeys";
+            this.PublicKeys.Size = new System.Drawing.Size(300, 59);
+            this.PublicKeys.TabIndex = 14;
+            this.PublicKeys.Text = "Public Keys";
+            this.PublicKeys.UseVisualStyleBackColor = true;
+            this.PublicKeys.Visible = false;
+            this.PublicKeys.Click += new System.EventHandler(this.PublicAndPrivateKeys_Click);
             // 
             // TwoFactorAuthentication
             // 
-            this.TwoFactorAuthentication.Location = new System.Drawing.Point(272, 476);
+            this.TwoFactorAuthentication.Image = global::Group_project.Properties.Resources.btnDigitalAuthentication;
+            this.TwoFactorAuthentication.Location = new System.Drawing.Point(443, 508);
             this.TwoFactorAuthentication.Name = "TwoFactorAuthentication";
-            this.TwoFactorAuthentication.Size = new System.Drawing.Size(184, 39);
+            this.TwoFactorAuthentication.Size = new System.Drawing.Size(300, 59);
             this.TwoFactorAuthentication.TabIndex = 19;
-            this.TwoFactorAuthentication.Text = "Two Factor Authentication";
             this.TwoFactorAuthentication.UseVisualStyleBackColor = true;
             this.TwoFactorAuthentication.Visible = false;
             this.TwoFactorAuthentication.Click += new System.EventHandler(this.TwoFactorAuthentication_Click);
             // 
             // DigitalCertificatesAndHttps
             // 
-            this.DigitalCertificatesAndHttps.Location = new System.Drawing.Point(272, 431);
+            this.DigitalCertificatesAndHttps.Image = global::Group_project.Properties.Resources.btnDigitalCertificates;
+            this.DigitalCertificatesAndHttps.Location = new System.Drawing.Point(443, 443);
             this.DigitalCertificatesAndHttps.Name = "DigitalCertificatesAndHttps";
-            this.DigitalCertificatesAndHttps.Size = new System.Drawing.Size(184, 39);
+            this.DigitalCertificatesAndHttps.Size = new System.Drawing.Size(300, 59);
             this.DigitalCertificatesAndHttps.TabIndex = 18;
-            this.DigitalCertificatesAndHttps.Text = "Digital Certificates And Https";
             this.DigitalCertificatesAndHttps.UseVisualStyleBackColor = true;
             this.DigitalCertificatesAndHttps.Visible = false;
             this.DigitalCertificatesAndHttps.Click += new System.EventHandler(this.DigitalCertificatesAndHttps_Click);
             // 
             // PasswordManagers
             // 
-            this.PasswordManagers.Location = new System.Drawing.Point(272, 386);
+            this.PasswordManagers.Image = global::Group_project.Properties.Resources.btnDigitalManager;
+            this.PasswordManagers.Location = new System.Drawing.Point(443, 379);
             this.PasswordManagers.Name = "PasswordManagers";
-            this.PasswordManagers.Size = new System.Drawing.Size(184, 39);
+            this.PasswordManagers.Size = new System.Drawing.Size(300, 59);
             this.PasswordManagers.TabIndex = 17;
-            this.PasswordManagers.Text = "Password Managers";
             this.PasswordManagers.UseVisualStyleBackColor = true;
             this.PasswordManagers.Visible = false;
             this.PasswordManagers.Click += new System.EventHandler(this.PasswordManagers_Click);
             // 
             // PasswordStrength
             // 
-            this.PasswordStrength.Location = new System.Drawing.Point(272, 343);
+            this.PasswordStrength.Image = global::Group_project.Properties.Resources.btnDigitalStrength;
+            this.PasswordStrength.Location = new System.Drawing.Point(443, 314);
             this.PasswordStrength.Name = "PasswordStrength";
-            this.PasswordStrength.Size = new System.Drawing.Size(184, 37);
+            this.PasswordStrength.Size = new System.Drawing.Size(300, 59);
             this.PasswordStrength.TabIndex = 16;
-            this.PasswordStrength.Text = "Password Strength";
             this.PasswordStrength.UseVisualStyleBackColor = true;
             this.PasswordStrength.Visible = false;
             this.PasswordStrength.Click += new System.EventHandler(this.PasswordStrength_Click);
             // 
             // PasswordsAndDigitalSecurity
             // 
-            this.PasswordsAndDigitalSecurity.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.PasswordsAndDigitalSecurity.BackColor = System.Drawing.SystemColors.Control;
+            this.PasswordsAndDigitalSecurity.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.PasswordsAndDigitalSecurity.FlatAppearance.BorderSize = 0;
+            this.PasswordsAndDigitalSecurity.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.PasswordsAndDigitalSecurity.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.PasswordsAndDigitalSecurity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PasswordsAndDigitalSecurity.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordsAndDigitalSecurity.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.PasswordsAndDigitalSecurity.Location = new System.Drawing.Point(256, 233);
+            this.PasswordsAndDigitalSecurity.Image = global::Group_project.Properties.Resources.btnMenuDigital;
+            this.PasswordsAndDigitalSecurity.Location = new System.Drawing.Point(400, 233);
             this.PasswordsAndDigitalSecurity.Name = "PasswordsAndDigitalSecurity";
-            this.PasswordsAndDigitalSecurity.Size = new System.Drawing.Size(238, 91);
+            this.PasswordsAndDigitalSecurity.Size = new System.Drawing.Size(382, 77);
             this.PasswordsAndDigitalSecurity.TabIndex = 15;
-            this.PasswordsAndDigitalSecurity.Text = "Passwords And Digital Security";
             this.PasswordsAndDigitalSecurity.UseVisualStyleBackColor = false;
             this.PasswordsAndDigitalSecurity.Click += new System.EventHandler(this.PasswordsAndDigitalSecurity_Click);
             // 
             // WhitelistsAndEncryption
             // 
-            this.WhitelistsAndEncryption.Location = new System.Drawing.Point(516, 476);
+            this.WhitelistsAndEncryption.Image = global::Group_project.Properties.Resources.btnNetworkEncyrpt;
+            this.WhitelistsAndEncryption.Location = new System.Drawing.Point(829, 509);
             this.WhitelistsAndEncryption.Name = "WhitelistsAndEncryption";
-            this.WhitelistsAndEncryption.Size = new System.Drawing.Size(184, 39);
+            this.WhitelistsAndEncryption.Size = new System.Drawing.Size(300, 59);
             this.WhitelistsAndEncryption.TabIndex = 24;
-            this.WhitelistsAndEncryption.Text = "Whitelists And Encryption";
             this.WhitelistsAndEncryption.UseVisualStyleBackColor = true;
             this.WhitelistsAndEncryption.Visible = false;
             this.WhitelistsAndEncryption.Click += new System.EventHandler(this.WhitelistsAndEncrption_Click);
             // 
             // NetworkFirewalls
             // 
-            this.NetworkFirewalls.Location = new System.Drawing.Point(516, 431);
+            this.NetworkFirewalls.Image = global::Group_project.Properties.Resources.btnNetworkFirewall;
+            this.NetworkFirewalls.Location = new System.Drawing.Point(829, 443);
             this.NetworkFirewalls.Name = "NetworkFirewalls";
-            this.NetworkFirewalls.Size = new System.Drawing.Size(184, 39);
+            this.NetworkFirewalls.Size = new System.Drawing.Size(300, 59);
             this.NetworkFirewalls.TabIndex = 23;
-            this.NetworkFirewalls.Text = "Network Firewalls";
             this.NetworkFirewalls.UseVisualStyleBackColor = true;
             this.NetworkFirewalls.Visible = false;
             this.NetworkFirewalls.Click += new System.EventHandler(this.NetworkFirewalls_Click);
             // 
             // PublicWifi
             // 
-            this.PublicWifi.Location = new System.Drawing.Point(516, 386);
+            this.PublicWifi.Image = global::Group_project.Properties.Resources.btnNetworkWiFi;
+            this.PublicWifi.Location = new System.Drawing.Point(829, 379);
             this.PublicWifi.Name = "PublicWifi";
-            this.PublicWifi.Size = new System.Drawing.Size(184, 39);
+            this.PublicWifi.Size = new System.Drawing.Size(300, 59);
             this.PublicWifi.TabIndex = 22;
-            this.PublicWifi.Text = "Public Wifi";
             this.PublicWifi.UseVisualStyleBackColor = true;
             this.PublicWifi.Visible = false;
             this.PublicWifi.Click += new System.EventHandler(this.PublicWifi_Click);
             // 
             // PhysicalHacking
             // 
-            this.PhysicalHacking.Location = new System.Drawing.Point(516, 343);
+            this.PhysicalHacking.Image = global::Group_project.Properties.Resources.btnNetworkHacking;
+            this.PhysicalHacking.Location = new System.Drawing.Point(829, 316);
             this.PhysicalHacking.Name = "PhysicalHacking";
-            this.PhysicalHacking.Size = new System.Drawing.Size(184, 37);
+            this.PhysicalHacking.Size = new System.Drawing.Size(300, 59);
             this.PhysicalHacking.TabIndex = 21;
-            this.PhysicalHacking.Text = "Physical Hacking";
             this.PhysicalHacking.UseVisualStyleBackColor = true;
             this.PhysicalHacking.Visible = false;
             this.PhysicalHacking.Click += new System.EventHandler(this.PhysicalHacking_Click);
             // 
             // NetworkSecurity
             // 
-            this.NetworkSecurity.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.NetworkSecurity.BackColor = System.Drawing.SystemColors.Control;
+            this.NetworkSecurity.FlatAppearance.BorderSize = 0;
+            this.NetworkSecurity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NetworkSecurity.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NetworkSecurity.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.NetworkSecurity.Location = new System.Drawing.Point(500, 233);
+            this.NetworkSecurity.Image = global::Group_project.Properties.Resources.btnMenuNetwork;
+            this.NetworkSecurity.Location = new System.Drawing.Point(788, 233);
             this.NetworkSecurity.Name = "NetworkSecurity";
-            this.NetworkSecurity.Size = new System.Drawing.Size(238, 91);
+            this.NetworkSecurity.Size = new System.Drawing.Size(382, 77);
             this.NetworkSecurity.TabIndex = 20;
-            this.NetworkSecurity.Text = "Network Security";
             this.NetworkSecurity.UseVisualStyleBackColor = false;
             this.NetworkSecurity.Click += new System.EventHandler(this.NetworkSecurity_Click);
             // 
@@ -261,9 +270,9 @@
             this.Quiz.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Quiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Quiz.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Quiz.Location = new System.Drawing.Point(741, 233);
+            this.Quiz.Location = new System.Drawing.Point(1176, 233);
             this.Quiz.Name = "Quiz";
-            this.Quiz.Size = new System.Drawing.Size(238, 91);
+            this.Quiz.Size = new System.Drawing.Size(259, 77);
             this.Quiz.TabIndex = 25;
             this.Quiz.Text = "Quiz";
             this.Quiz.UseVisualStyleBackColor = false;
@@ -277,7 +286,7 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(991, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1462, 24);
             this.menuStrip1.TabIndex = 26;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -458,7 +467,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(991, 329);
+            this.ClientSize = new System.Drawing.Size(1462, 572);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.Quiz);
             this.Controls.Add(this.WhitelistsAndEncryption);
@@ -471,7 +480,7 @@
             this.Controls.Add(this.PasswordManagers);
             this.Controls.Add(this.PasswordStrength);
             this.Controls.Add(this.PasswordsAndDigitalSecurity);
-            this.Controls.Add(this.PublicAndPrivateKeys);
+            this.Controls.Add(this.PublicKeys);
             this.Controls.Add(this.SymetricalKeys);
             this.Controls.Add(this.CaesarShiftContinued);
             this.Controls.Add(this.CaesarShift);
@@ -501,7 +510,7 @@
         private System.Windows.Forms.Button CaesarShift;
         private System.Windows.Forms.Button CaesarShiftContinued;
         private System.Windows.Forms.Button SymetricalKeys;
-        private System.Windows.Forms.Button PublicAndPrivateKeys;
+        private System.Windows.Forms.Button PublicKeys;
         private System.Windows.Forms.Button TwoFactorAuthentication;
         private System.Windows.Forms.Button DigitalCertificatesAndHttps;
         private System.Windows.Forms.Button PasswordManagers;

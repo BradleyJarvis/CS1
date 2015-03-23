@@ -52,17 +52,17 @@ namespace Group_project
                 SymetricalKeys.Visible = true;
             }
 
-            if (PublicAndPrivateKeys.Visible == true)
+            if (PublicKeys.Visible == true)
             {
-                PublicAndPrivateKeys.Visible = false;
+                PublicKeys.Visible = false;
             }
             else
             {
-                PublicAndPrivateKeys.Visible = true;
+                PublicKeys.Visible = true;
             }
             if (this.Height < 500)
             {
-                this.Height = 583;
+                this.Height = 610;
             }
             else
             {
@@ -113,7 +113,7 @@ namespace Group_project
             }
             if (this.Height < 500)
             {
-                this.Height = 583;
+                this.Height = 610;
             }
             else
             {
@@ -163,7 +163,7 @@ namespace Group_project
             }
             if (this.Height < 500)
             {
-                this.Height = 583;
+                this.Height = 610;
             }
             else
             {
@@ -200,7 +200,7 @@ namespace Group_project
 
         private void PublicAndPrivateKeys_Click(object sender, EventArgs e)
         {
-            PublicAndPrivateKeysForm PublicAndPrivateKeysF = new PublicAndPrivateKeysForm();
+            PublicKeysForm PublicAndPrivateKeysF = new PublicKeysForm();
             PublicAndPrivateKeysF.Show();
             this.Hide();
         }
@@ -317,7 +317,7 @@ namespace Group_project
         private void publicAndPrivateKeysToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            PublicAndPrivateKeysForm PubPrivKeysF = new PublicAndPrivateKeysForm();
+            PublicKeysForm PubPrivKeysF = new PublicKeysForm();
             PubPrivKeysF.Show();
         }
 
