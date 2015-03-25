@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PasswordManagersForm));
             this.passOutputBox = new System.Windows.Forms.TextBox();
             this.passLengthBox = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.GenPassButton = new System.Windows.Forms.Button();
             this.specalCheckBox = new System.Windows.Forms.CheckBox();
+            this.explainationText = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.passLengthBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,10 +97,21 @@
             this.specalCheckBox.Text = "Include special characters";
             this.specalCheckBox.UseVisualStyleBackColor = true;
             // 
+            // explainationText
+            // 
+            this.explainationText.Location = new System.Drawing.Point(12, 87);
+            this.explainationText.Multiline = true;
+            this.explainationText.Name = "explainationText";
+            this.explainationText.ReadOnly = true;
+            this.explainationText.Size = new System.Drawing.Size(441, 187);
+            this.explainationText.TabIndex = 19;
+            this.explainationText.Text = resources.GetString("explainationText.Text");
+            // 
             // PasswordManagersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(453, 314);
+            this.ClientSize = new System.Drawing.Size(453, 290);
+            this.Controls.Add(this.explainationText);
             this.Controls.Add(this.specalCheckBox);
             this.Controls.Add(this.GenPassButton);
             this.Controls.Add(this.label1);
@@ -110,6 +123,7 @@
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.GenPassButton, 0);
             this.Controls.SetChildIndex(this.specalCheckBox, 0);
+            this.Controls.SetChildIndex(this.explainationText, 0);
             ((System.ComponentModel.ISupportInitialize)(this.passLengthBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -123,5 +137,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button GenPassButton;
         private System.Windows.Forms.CheckBox specalCheckBox;
+        private System.Windows.Forms.TextBox explainationText;
     }
 }
