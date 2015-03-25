@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TwoFactorAuthenticationForm));
             this.GenCodeButton = new System.Windows.Forms.Button();
             this.codeInputBox = new System.Windows.Forms.TextBox();
             this.OpenAuthButton = new System.Windows.Forms.Button();
@@ -100,8 +101,9 @@
             this.explainationText.Multiline = true;
             this.explainationText.Name = "explainationText";
             this.explainationText.ReadOnly = true;
-            this.explainationText.Size = new System.Drawing.Size(476, 169);
+            this.explainationText.Size = new System.Drawing.Size(476, 188);
             this.explainationText.TabIndex = 18;
+            this.explainationText.Text = resources.GetString("explainationText.Text");
             // 
             // TwoFactorAuthenticationForm
             // 

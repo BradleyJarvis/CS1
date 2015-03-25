@@ -123,6 +123,7 @@
             this.explainationText.ReadOnly = true;
             this.explainationText.Size = new System.Drawing.Size(364, 166);
             this.explainationText.TabIndex = 17;
+            this.explainationText.Text = "Dexcription text should be shown here";
             // 
             // PasswordStrengthForm
             // 

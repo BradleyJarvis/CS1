@@ -32,12 +32,13 @@
             this.passLengthBox = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.GenPassButton = new System.Windows.Forms.Button();
+            this.specalCheckBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.passLengthBox)).BeginInit();
             this.SuspendLayout();
             // 
             // passOutputBox
             // 
-            this.passOutputBox.Location = new System.Drawing.Point(14, 97);
+            this.passOutputBox.Location = new System.Drawing.Point(167, 61);
             this.passOutputBox.Name = "passOutputBox";
             this.passOutputBox.ReadOnly = true;
             this.passOutputBox.Size = new System.Drawing.Size(120, 20);
@@ -60,7 +61,7 @@
             this.passLengthBox.Size = new System.Drawing.Size(44, 20);
             this.passLengthBox.TabIndex = 9;
             this.passLengthBox.Value = new decimal(new int[] {
-            10,
+            12,
             0,
             0,
             0});
@@ -84,10 +85,21 @@
             this.GenPassButton.UseVisualStyleBackColor = true;
             this.GenPassButton.Click += new System.EventHandler(this.genPassword);
             // 
+            // specalCheckBox
+            // 
+            this.specalCheckBox.AutoSize = true;
+            this.specalCheckBox.Location = new System.Drawing.Point(167, 34);
+            this.specalCheckBox.Name = "specalCheckBox";
+            this.specalCheckBox.Size = new System.Drawing.Size(150, 17);
+            this.specalCheckBox.TabIndex = 12;
+            this.specalCheckBox.Text = "Include special characters";
+            this.specalCheckBox.UseVisualStyleBackColor = true;
+            // 
             // PasswordManagersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(453, 314);
+            this.Controls.Add(this.specalCheckBox);
             this.Controls.Add(this.GenPassButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.passLengthBox);
@@ -97,6 +109,7 @@
             this.Controls.SetChildIndex(this.passLengthBox, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.GenPassButton, 0);
+            this.Controls.SetChildIndex(this.specalCheckBox, 0);
             ((System.ComponentModel.ISupportInitialize)(this.passLengthBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -109,5 +122,6 @@
         private System.Windows.Forms.NumericUpDown passLengthBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button GenPassButton;
+        private System.Windows.Forms.CheckBox specalCheckBox;
     }
 }
