@@ -12,12 +12,15 @@ namespace Group_project
     public partial class QuizForm : Group_project.InteractionBase
     {
         Random rnd = new Random();// Create an RNG for shuffling the order answers appear
-        int currentQuestion = 0;
+        int currentQuestion;
+        int score;
         List <question> allQuestions = new List <question>();
 
         public QuizForm()
         {
             InitializeComponent();
+            currentQuestion = 0;
+            score = 0;
 
             //This is the start of test code, it should all be removed once finished
             question Q1 = new question ("What is the answer to this question", "This is correct", "Answer 2", "Answer 3", "Answer 4");
@@ -61,11 +64,21 @@ namespace Group_project
 
         void updateResults(Button buttonPressed)
         {// Used to update quiz progress systems and move to next question
+
+            if (nextQuestionTimer.Enabled == true)
+                return;// Do nothing if answer already given
+
             // Update the correct label as needed
             if (checkAnswer(buttonPressed) == true)
+            {
                 correctLabel.Text = "True";
-            else
+                score++;
+            }
+            else 
+            {
                 correctLabel.Text = "False";
+            }
+            
             correctLabel.Show();
 
             nextQuestionTimer.Enabled = true;
@@ -101,7 +114,8 @@ namespace Group_project
 
             if (currentQuestion >= allQuestions.Count)
             {
-                MessageBox.Show("This is the end of the quiz");
+                MessageBox.Show("This is the end of the quiz, you got " + score + " out of " + allQuestions.Count + " questions correct");
+                buttonPanel.Enabled = false;
                 return;
             }
 

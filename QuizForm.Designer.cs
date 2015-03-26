@@ -36,6 +36,8 @@
             this.answerButton4 = new System.Windows.Forms.Button();
             this.correctLabel = new System.Windows.Forms.Label();
             this.nextQuestionTimer = new System.Windows.Forms.Timer(this.components);
+            this.buttonPanel = new System.Windows.Forms.Panel();
+            this.buttonPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // questionDisplayText
@@ -50,17 +52,17 @@
             // 
             // answerButton1
             // 
-            this.answerButton1.Location = new System.Drawing.Point(13, 132);
+            this.answerButton1.Location = new System.Drawing.Point(7, 8);
             this.answerButton1.Name = "answerButton1";
             this.answerButton1.Size = new System.Drawing.Size(127, 80);
-            this.answerButton1.TabIndex = 9;
+            this.answerButton1.TabIndex = 1;
             this.answerButton1.Text = "button1";
             this.answerButton1.UseVisualStyleBackColor = true;
             this.answerButton1.Click += new System.EventHandler(this.answerButton1_Click);
             // 
             // answerButton2
             // 
-            this.answerButton2.Location = new System.Drawing.Point(146, 132);
+            this.answerButton2.Location = new System.Drawing.Point(140, 8);
             this.answerButton2.Name = "answerButton2";
             this.answerButton2.Size = new System.Drawing.Size(127, 80);
             this.answerButton2.TabIndex = 10;
@@ -70,7 +72,7 @@
             // 
             // answerButton3
             // 
-            this.answerButton3.Location = new System.Drawing.Point(279, 132);
+            this.answerButton3.Location = new System.Drawing.Point(273, 8);
             this.answerButton3.Name = "answerButton3";
             this.answerButton3.Size = new System.Drawing.Size(127, 80);
             this.answerButton3.TabIndex = 11;
@@ -80,7 +82,7 @@
             // 
             // answerButton4
             // 
-            this.answerButton4.Location = new System.Drawing.Point(412, 131);
+            this.answerButton4.Location = new System.Drawing.Point(406, 7);
             this.answerButton4.Name = "answerButton4";
             this.answerButton4.Size = new System.Drawing.Size(127, 80);
             this.answerButton4.TabIndex = 12;
@@ -103,23 +105,29 @@
             this.nextQuestionTimer.Interval = 2000;
             this.nextQuestionTimer.Tick += new System.EventHandler(this.nextQuestionTimer_Tick);
             // 
+            // buttonPanel
+            // 
+            this.buttonPanel.Controls.Add(this.answerButton4);
+            this.buttonPanel.Controls.Add(this.answerButton3);
+            this.buttonPanel.Controls.Add(this.answerButton2);
+            this.buttonPanel.Controls.Add(this.answerButton1);
+            this.buttonPanel.Location = new System.Drawing.Point(7, 131);
+            this.buttonPanel.Name = "buttonPanel";
+            this.buttonPanel.Size = new System.Drawing.Size(545, 99);
+            this.buttonPanel.TabIndex = 14;
+            // 
             // QuizForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(552, 316);
+            this.Controls.Add(this.buttonPanel);
             this.Controls.Add(this.correctLabel);
-            this.Controls.Add(this.answerButton4);
-            this.Controls.Add(this.answerButton3);
-            this.Controls.Add(this.answerButton2);
-            this.Controls.Add(this.answerButton1);
             this.Controls.Add(this.questionDisplayText);
             this.Name = "QuizForm";
             this.Controls.SetChildIndex(this.questionDisplayText, 0);
-            this.Controls.SetChildIndex(this.answerButton1, 0);
-            this.Controls.SetChildIndex(this.answerButton2, 0);
-            this.Controls.SetChildIndex(this.answerButton3, 0);
-            this.Controls.SetChildIndex(this.answerButton4, 0);
             this.Controls.SetChildIndex(this.correctLabel, 0);
+            this.Controls.SetChildIndex(this.buttonPanel, 0);
+            this.buttonPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,5 +142,6 @@
         private System.Windows.Forms.Button answerButton4;
         private System.Windows.Forms.Label correctLabel;
         private System.Windows.Forms.Timer nextQuestionTimer;
+        private System.Windows.Forms.Panel buttonPanel;
     }
 }
