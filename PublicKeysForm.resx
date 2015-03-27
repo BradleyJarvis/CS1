@@ -127,6 +127,13 @@ This may sound impossible but the maths involved is quite simple.</value>
   <data name="PrivateKeyStepOneTextBox.Text" xml:space="preserve">
     <value>If you look below there is an example of the solution to this conundrum. The public key in this case are the numbers 3 and 17. It is very important that they are prime numbers. The reason is because of a mathematical operation called MOD. What  this operation does is find out what the remainder is when two numbers are divided. For example 20 divided by 6 would be 3 remainder 2 because 6 x 3 is 18 and 18 is 2 away from 20, therefore we can say that 20 MOD 6 = 2. The interesting thing about this function is that when you take a prime number raised to a power and MOD it with another prime number the result changes a lot depending on what the power was. For example :
 3^4 MOD 17 = 13		3^5 MOD 17 = 5		3^6 MOD 17 = 15
-These results are very different and the most important thing is that given the number 15 it is very hard to find out what the power of 3 was. </value>
+These results are very different and the most important thing is that given the number 15 it is very hard to find out what the power of 3 was. 
+Using the numbers 3 and 17 means that a number between 0 and 1 can be stored (because of the 17) and that the answer can probably be found relatively quickly due to the fact 3 is a small number. However in real applications prime numbers that are 80 to 256 bits, truly huge numbers. This way, even though it is possible to crack, the time required is extreme and more importantly there is no quick way to do it.</value>
+  </data>
+  <data name="ReplytextBox.Text" xml:space="preserve">
+    <value>The receiver then does the same by finding the 3^x MOD 17 where x is his secret number. and sends this as a response. Once again the hacker listens in on this communication. Press “Reply” to work out the answer to the MOD equation and send it.</value>
+  </data>
+  <data name="FindCommontextBox.Text" xml:space="preserve">
+    <value>Now comes the most important part. Both the sender and the receiver take the number that they received and raise it to the power of their secret number then find the remainder when divided by 17 , so that’s Received^Secret MOD 17. This will give the same result for both the sender and the receiver. Press “Find common number” to find the number that the sender and receiver now know. It is worth noting that the hacker has received the same information that was sent but without either secret number they cannot know the commonly found number without a very large amount of computing time.</value>
   </data>
 </root>
