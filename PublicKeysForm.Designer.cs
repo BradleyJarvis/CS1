@@ -64,6 +64,12 @@
             this.HackerReplyLabel = new System.Windows.Forms.Label();
             this.FindCommontextBox = new System.Windows.Forms.TextBox();
             this.FindCommonNumberButton = new System.Windows.Forms.Button();
+            this.Back4button = new System.Windows.Forms.Button();
+            this.SharedSecretNumberTextLabel = new System.Windows.Forms.Label();
+            this.SharedSecretNumberLabel = new System.Windows.Forms.Label();
+            this.FinnishedTextBox = new System.Windows.Forms.TextBox();
+            this.Back5button = new System.Windows.Forms.Button();
+            this.RestartButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PrivateKeyIntroductionTextBox
@@ -192,7 +198,7 @@
             // PublicKeyNumerLabel
             // 
             this.PublicKeyNumerLabel.AutoSize = true;
-            this.PublicKeyNumerLabel.Location = new System.Drawing.Point(807, 558);
+            this.PublicKeyNumerLabel.Location = new System.Drawing.Point(831, 558);
             this.PublicKeyNumerLabel.Name = "PublicKeyNumerLabel";
             this.PublicKeyNumerLabel.Size = new System.Drawing.Size(49, 13);
             this.PublicKeyNumerLabel.TabIndex = 52;
@@ -263,7 +269,7 @@
             // 
             this.FindModtextbox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.FindModtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FindModtextbox.Location = new System.Drawing.Point(12, 585);
+            this.FindModtextbox.Location = new System.Drawing.Point(12, 502);
             this.FindModtextbox.Multiline = true;
             this.FindModtextbox.Name = "FindModtextbox";
             this.FindModtextbox.ReadOnly = true;
@@ -276,17 +282,18 @@
             // 
             // Backbutton
             // 
-            this.Backbutton.Location = new System.Drawing.Point(12, 660);
+            this.Backbutton.Location = new System.Drawing.Point(12, 577);
             this.Backbutton.Name = "Backbutton";
             this.Backbutton.Size = new System.Drawing.Size(75, 23);
             this.Backbutton.TabIndex = 60;
             this.Backbutton.Text = "Back";
             this.Backbutton.UseVisualStyleBackColor = true;
             this.Backbutton.Visible = false;
+            this.Backbutton.Click += new System.EventHandler(this.Backbutton_Click);
             // 
             // FindAnswerbutton
             // 
-            this.FindAnswerbutton.Location = new System.Drawing.Point(178, 660);
+            this.FindAnswerbutton.Location = new System.Drawing.Point(210, 577);
             this.FindAnswerbutton.Name = "FindAnswerbutton";
             this.FindAnswerbutton.Size = new System.Drawing.Size(75, 23);
             this.FindAnswerbutton.TabIndex = 61;
@@ -299,7 +306,7 @@
             // 
             this.Send1textBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Send1textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Send1textBox.Location = new System.Drawing.Point(12, 692);
+            this.Send1textBox.Location = new System.Drawing.Point(12, 503);
             this.Send1textBox.Multiline = true;
             this.Send1textBox.Name = "Send1textBox";
             this.Send1textBox.ReadOnly = true;
@@ -312,7 +319,7 @@
             // 
             // Send1button
             // 
-            this.Send1button.Location = new System.Drawing.Point(178, 766);
+            this.Send1button.Location = new System.Drawing.Point(210, 577);
             this.Send1button.Name = "Send1button";
             this.Send1button.Size = new System.Drawing.Size(75, 23);
             this.Send1button.TabIndex = 63;
@@ -323,19 +330,20 @@
             // 
             // Back2button
             // 
-            this.Back2button.Location = new System.Drawing.Point(12, 766);
+            this.Back2button.Location = new System.Drawing.Point(12, 577);
             this.Back2button.Name = "Back2button";
             this.Back2button.Size = new System.Drawing.Size(75, 23);
             this.Back2button.TabIndex = 64;
             this.Back2button.Text = "Back";
             this.Back2button.UseVisualStyleBackColor = true;
             this.Back2button.Visible = false;
+            this.Back2button.Click += new System.EventHandler(this.Back2button_Click);
             // 
             // ReplytextBox
             // 
             this.ReplytextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ReplytextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReplytextBox.Location = new System.Drawing.Point(12, 795);
+            this.ReplytextBox.Location = new System.Drawing.Point(12, 503);
             this.ReplytextBox.Multiline = true;
             this.ReplytextBox.Name = "ReplytextBox";
             this.ReplytextBox.ReadOnly = true;
@@ -346,7 +354,7 @@
             // 
             // Replybutton
             // 
-            this.Replybutton.Location = new System.Drawing.Point(178, 893);
+            this.Replybutton.Location = new System.Drawing.Point(210, 597);
             this.Replybutton.Name = "Replybutton";
             this.Replybutton.Size = new System.Drawing.Size(75, 23);
             this.Replybutton.TabIndex = 66;
@@ -357,18 +365,19 @@
             // 
             // Back3button
             // 
-            this.Back3button.Location = new System.Drawing.Point(12, 890);
+            this.Back3button.Location = new System.Drawing.Point(12, 597);
             this.Back3button.Name = "Back3button";
             this.Back3button.Size = new System.Drawing.Size(75, 23);
             this.Back3button.TabIndex = 67;
             this.Back3button.Text = "Back";
             this.Back3button.UseVisualStyleBackColor = true;
             this.Back3button.Visible = false;
+            this.Back3button.Click += new System.EventHandler(this.Back3button_Click);
             // 
             // SenderReplyLabel
             // 
             this.SenderReplyLabel.AutoSize = true;
-            this.SenderReplyLabel.ForeColor = System.Drawing.Color.Red;
+            this.SenderReplyLabel.ForeColor = System.Drawing.Color.Black;
             this.SenderReplyLabel.Location = new System.Drawing.Point(619, 612);
             this.SenderReplyLabel.Name = "SenderReplyLabel";
             this.SenderReplyLabel.Size = new System.Drawing.Size(94, 13);
@@ -379,7 +388,7 @@
             // RecieverReplyLabel
             // 
             this.RecieverReplyLabel.AutoSize = true;
-            this.RecieverReplyLabel.ForeColor = System.Drawing.Color.Red;
+            this.RecieverReplyLabel.ForeColor = System.Drawing.Color.Black;
             this.RecieverReplyLabel.Location = new System.Drawing.Point(1022, 613);
             this.RecieverReplyLabel.Name = "RecieverReplyLabel";
             this.RecieverReplyLabel.Size = new System.Drawing.Size(103, 13);
@@ -390,7 +399,7 @@
             // MessageReplyLabel
             // 
             this.MessageReplyLabel.AutoSize = true;
-            this.MessageReplyLabel.ForeColor = System.Drawing.Color.Red;
+            this.MessageReplyLabel.ForeColor = System.Drawing.Color.Black;
             this.MessageReplyLabel.Location = new System.Drawing.Point(790, 633);
             this.MessageReplyLabel.Name = "MessageReplyLabel";
             this.MessageReplyLabel.Size = new System.Drawing.Size(103, 13);
@@ -401,7 +410,7 @@
             // HackerReplyLabel
             // 
             this.HackerReplyLabel.AutoSize = true;
-            this.HackerReplyLabel.ForeColor = System.Drawing.Color.Red;
+            this.HackerReplyLabel.ForeColor = System.Drawing.Color.Black;
             this.HackerReplyLabel.Location = new System.Drawing.Point(831, 678);
             this.HackerReplyLabel.Name = "HackerReplyLabel";
             this.HackerReplyLabel.Size = new System.Drawing.Size(95, 13);
@@ -413,18 +422,18 @@
             // 
             this.FindCommontextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.FindCommontextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FindCommontextBox.Location = new System.Drawing.Point(12, 922);
+            this.FindCommontextBox.Location = new System.Drawing.Point(12, 503);
             this.FindCommontextBox.Multiline = true;
             this.FindCommontextBox.Name = "FindCommontextBox";
             this.FindCommontextBox.ReadOnly = true;
-            this.FindCommontextBox.Size = new System.Drawing.Size(1172, 101);
+            this.FindCommontextBox.Size = new System.Drawing.Size(495, 214);
             this.FindCommontextBox.TabIndex = 72;
             this.FindCommontextBox.Text = resources.GetString("FindCommontextBox.Text");
             this.FindCommontextBox.Visible = false;
             // 
             // FindCommonNumberButton
             // 
-            this.FindCommonNumberButton.Location = new System.Drawing.Point(1047, 893);
+            this.FindCommonNumberButton.Location = new System.Drawing.Point(178, 723);
             this.FindCommonNumberButton.Name = "FindCommonNumberButton";
             this.FindCommonNumberButton.Size = new System.Drawing.Size(137, 23);
             this.FindCommonNumberButton.TabIndex = 73;
@@ -433,10 +442,83 @@
             this.FindCommonNumberButton.Visible = false;
             this.FindCommonNumberButton.Click += new System.EventHandler(this.FindCommonNumberButton_Click);
             // 
+            // Back4button
+            // 
+            this.Back4button.Location = new System.Drawing.Point(12, 723);
+            this.Back4button.Name = "Back4button";
+            this.Back4button.Size = new System.Drawing.Size(75, 23);
+            this.Back4button.TabIndex = 74;
+            this.Back4button.Text = "Back";
+            this.Back4button.UseVisualStyleBackColor = true;
+            this.Back4button.Visible = false;
+            this.Back4button.Click += new System.EventHandler(this.Back4button_Click);
+            // 
+            // SharedSecretNumberTextLabel
+            // 
+            this.SharedSecretNumberTextLabel.AutoSize = true;
+            this.SharedSecretNumberTextLabel.Location = new System.Drawing.Point(711, 571);
+            this.SharedSecretNumberTextLabel.Name = "SharedSecretNumberTextLabel";
+            this.SharedSecretNumberTextLabel.Size = new System.Drawing.Size(115, 13);
+            this.SharedSecretNumberTextLabel.TabIndex = 75;
+            this.SharedSecretNumberTextLabel.Text = "Shared Secret Number";
+            // 
+            // SharedSecretNumberLabel
+            // 
+            this.SharedSecretNumberLabel.AutoSize = true;
+            this.SharedSecretNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SharedSecretNumberLabel.Location = new System.Drawing.Point(831, 571);
+            this.SharedSecretNumberLabel.Name = "SharedSecretNumberLabel";
+            this.SharedSecretNumberLabel.Size = new System.Drawing.Size(14, 13);
+            this.SharedSecretNumberLabel.TabIndex = 76;
+            this.SharedSecretNumberLabel.Text = "_";
+            // 
+            // FinnishedTextBox
+            // 
+            this.FinnishedTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.FinnishedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FinnishedTextBox.Location = new System.Drawing.Point(12, 503);
+            this.FinnishedTextBox.Multiline = true;
+            this.FinnishedTextBox.Name = "FinnishedTextBox";
+            this.FinnishedTextBox.ReadOnly = true;
+            this.FinnishedTextBox.Size = new System.Drawing.Size(495, 69);
+            this.FinnishedTextBox.TabIndex = 77;
+            this.FinnishedTextBox.Text = "Now that the shared secret message has been sent it can be used with private key " +
+    "cryptography to protect data. If you would like to start again and try using dif" +
+    "ferent numbers press \"Restart\"";
+            this.FinnishedTextBox.Visible = false;
+            // 
+            // Back5button
+            // 
+            this.Back5button.Location = new System.Drawing.Point(12, 578);
+            this.Back5button.Name = "Back5button";
+            this.Back5button.Size = new System.Drawing.Size(75, 23);
+            this.Back5button.TabIndex = 78;
+            this.Back5button.Text = "Back";
+            this.Back5button.UseVisualStyleBackColor = true;
+            this.Back5button.Visible = false;
+            this.Back5button.Click += new System.EventHandler(this.Back5button_Click);
+            // 
+            // RestartButton
+            // 
+            this.RestartButton.Location = new System.Drawing.Point(178, 578);
+            this.RestartButton.Name = "RestartButton";
+            this.RestartButton.Size = new System.Drawing.Size(137, 23);
+            this.RestartButton.TabIndex = 79;
+            this.RestartButton.Text = "Restart";
+            this.RestartButton.UseVisualStyleBackColor = true;
+            this.RestartButton.Visible = false;
+            this.RestartButton.Click += new System.EventHandler(this.RestartButton_Click);
+            // 
             // PublicKeysForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(1204, 1062);
+            this.ClientSize = new System.Drawing.Size(1204, 752);
+            this.Controls.Add(this.RestartButton);
+            this.Controls.Add(this.Back5button);
+            this.Controls.Add(this.FinnishedTextBox);
+            this.Controls.Add(this.SharedSecretNumberLabel);
+            this.Controls.Add(this.SharedSecretNumberTextLabel);
+            this.Controls.Add(this.Back4button);
             this.Controls.Add(this.FindCommonNumberButton);
             this.Controls.Add(this.FindCommontextBox);
             this.Controls.Add(this.HackerReplyLabel);
@@ -508,6 +590,12 @@
             this.Controls.SetChildIndex(this.HackerReplyLabel, 0);
             this.Controls.SetChildIndex(this.FindCommontextBox, 0);
             this.Controls.SetChildIndex(this.FindCommonNumberButton, 0);
+            this.Controls.SetChildIndex(this.Back4button, 0);
+            this.Controls.SetChildIndex(this.SharedSecretNumberTextLabel, 0);
+            this.Controls.SetChildIndex(this.SharedSecretNumberLabel, 0);
+            this.Controls.SetChildIndex(this.FinnishedTextBox, 0);
+            this.Controls.SetChildIndex(this.Back5button, 0);
+            this.Controls.SetChildIndex(this.RestartButton, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -550,5 +638,11 @@
         private System.Windows.Forms.Label HackerReplyLabel;
         private System.Windows.Forms.TextBox FindCommontextBox;
         private System.Windows.Forms.Button FindCommonNumberButton;
+        private System.Windows.Forms.Button Back4button;
+        private System.Windows.Forms.Label SharedSecretNumberTextLabel;
+        private System.Windows.Forms.Label SharedSecretNumberLabel;
+        private System.Windows.Forms.TextBox FinnishedTextBox;
+        private System.Windows.Forms.Button Back5button;
+        private System.Windows.Forms.Button RestartButton;
     }
 }
