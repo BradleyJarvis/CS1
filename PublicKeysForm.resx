@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="PrivateKeyIntroductionTextBox.Text" xml:space="preserve">
-    <value>In the previous section we had two people who each had a access to a secret key that they both used, however the problem with this is both parties must secretly decide what the key will be and they must also ensure that no one else knows it. This is fine is you want to communicate to a friend but if you are a bank who wants to communicate with thousands of people at once it becomes very impractical to remember all those keys.
+    <value>In the previous section we have two people who each had a access to a secret key that they both used, however the problem with this is both parties must secretly decide what the key will be and they must also ensure that no one else knows it. This is fine is you want to communicate to a friend but if you are wanting to communicate with someone you cant physically exchange the key with, how will you be able tell it to ech other without the hacker also finding it.
 
 To solve this problem computer scientist came up with an algorithm that is easy to compute an answer for but that is difficult to undo unless you are the person who the message was intended for or sent. What's more the algorithm must still be hard to undo even when someone knows what the algorithm is.
 
@@ -135,5 +135,10 @@ Using the numbers 3 and 17 means that a number between 0 and 1 can be stored (be
   </data>
   <data name="FindCommontextBox.Text" xml:space="preserve">
     <value>Now comes the most important part. Both the sender and the receiver take the number that they received and raise it to the power of their secret number then find the remainder when divided by 17 , so that’s Received^Secret MOD 17. This will give the same result for both the sender and the receiver. Press “Find common number” to find the number that the sender and receiver now know. It is worth noting that the hacker has received the same information that was sent but without either secret number they cannot know the commonly found number without a very large amount of computing time.</value>
+  </data>
+  <data name="PrivateKeyExplanationTextBox.Text" xml:space="preserve">
+    <value>In the previous section we looked at how a simple substitution cipher can be used to protect information, they used symmetrical key algorithms. What this means is that both parties require a copy of the key in order to read the message. And person who intercepts a message between the two will not know what it says. While it is true that they can break through this encryption it will take time (the amount of time depends on the algorithm).
+
+The example above uses a Caesar shift enter the text, choose the amount to shift by and click send.</value>
   </data>
 </root>

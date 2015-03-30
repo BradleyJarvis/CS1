@@ -231,7 +231,7 @@
             // SymetricalKeysForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(746, 400);
+            this.ClientSize = new System.Drawing.Size(1056, 494);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
