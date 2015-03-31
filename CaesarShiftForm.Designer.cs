@@ -46,7 +46,7 @@
             this.UnshiftedTextBox.Multiline = true;
             this.UnshiftedTextBox.Name = "UnshiftedTextBox";
             this.UnshiftedTextBox.Size = new System.Drawing.Size(419, 102);
-            this.UnshiftedTextBox.TabIndex = 8;
+            this.UnshiftedTextBox.TabIndex = 1;
             // 
             // ShiftedTextBox
             // 
@@ -56,7 +56,7 @@
             this.ShiftedTextBox.Multiline = true;
             this.ShiftedTextBox.Name = "ShiftedTextBox";
             this.ShiftedTextBox.Size = new System.Drawing.Size(419, 102);
-            this.ShiftedTextBox.TabIndex = 9;
+            this.ShiftedTextBox.TabIndex = 4;
             // 
             // ShiftAmountNumericUpDown
             // 
@@ -68,14 +68,14 @@
             0});
             this.ShiftAmountNumericUpDown.Name = "ShiftAmountNumericUpDown";
             this.ShiftAmountNumericUpDown.Size = new System.Drawing.Size(120, 20);
-            this.ShiftAmountNumericUpDown.TabIndex = 10;
+            this.ShiftAmountNumericUpDown.TabIndex = 2;
             // 
             // ShiftButton
             // 
             this.ShiftButton.Location = new System.Drawing.Point(437, 131);
             this.ShiftButton.Name = "ShiftButton";
             this.ShiftButton.Size = new System.Drawing.Size(120, 23);
-            this.ShiftButton.TabIndex = 11;
+            this.ShiftButton.TabIndex = 3;
             this.ShiftButton.Text = "Shift";
             this.ShiftButton.UseVisualStyleBackColor = true;
             this.ShiftButton.Click += new System.EventHandler(this.ShiftButton_Click);
@@ -85,7 +85,7 @@
             this.Unshift.Location = new System.Drawing.Point(437, 160);
             this.Unshift.Name = "Unshift";
             this.Unshift.Size = new System.Drawing.Size(120, 23);
-            this.Unshift.TabIndex = 13;
+            this.Unshift.TabIndex = 5;
             this.Unshift.Text = "Unshift";
             this.Unshift.UseVisualStyleBackColor = true;
             this.Unshift.Click += new System.EventHandler(this.Unshift_Click);

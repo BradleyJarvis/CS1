@@ -34,6 +34,7 @@ namespace Group_project
             FindModtextbox.Visible = true;
             FindAnswerbutton.Visible = true;
             Backbutton.Visible = true;
+            FindAnswerbutton.Select();
         }
 
         private void FindAnswerbutton_Click(object sender, EventArgs e)
@@ -51,8 +52,7 @@ namespace Group_project
             Send1textBox.Visible = true;
             Send1button.Visible = true;
             Back2button.Visible = true;
-
-
+            Send1button.Select();
         }
 
         private void Send1button_Click(object sender, EventArgs e)
@@ -74,6 +74,7 @@ namespace Group_project
             Replybutton.Visible = true;
             Back3button.Visible = true;
             ReplytextBox.Visible = true;
+            Replybutton.Select();
         }
 
         private void Replybutton_Click(object sender, EventArgs e)
@@ -105,7 +106,7 @@ namespace Group_project
             Back4button.Visible = true;
             FindCommonNumberButton.Visible = true;
             FindCommontextBox.Visible = true;
-
+            FindCommonNumberButton.Select();
         }
 
         private void FindCommonNumberButton_Click(object sender, EventArgs e)
@@ -127,6 +128,7 @@ namespace Group_project
             Back5button.Visible = true;
             FinnishedTextBox.Visible = true;
             RestartButton.Visible = true;
+            RestartButton.Select();
         }
 
         private void Backbutton_Click(object sender, EventArgs e)
@@ -259,6 +261,7 @@ namespace Group_project
 
             GeneraterandomtextBox.Visible = true;
             GenerateSecretNumbersButton.Visible = true;
+            GenerateSecretNumbersButton.Select();
 
             Back5button.Visible = false;
             FinnishedTextBox.Visible = false;

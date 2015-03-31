@@ -151,7 +151,7 @@
             this.SendButton.Location = new System.Drawing.Point(703, 125);
             this.SendButton.Name = "SendButton";
             this.SendButton.Size = new System.Drawing.Size(137, 21);
-            this.SendButton.TabIndex = 152;
+            this.SendButton.TabIndex = 3;
             this.SendButton.Text = "Send";
             this.SendButton.UseVisualStyleBackColor = true;
             this.SendButton.Click += new System.EventHandler(this.SendButton_Click);
@@ -166,7 +166,7 @@
             0});
             this.ShiftAmountNumericUpDown.Name = "ShiftAmountNumericUpDown";
             this.ShiftAmountNumericUpDown.Size = new System.Drawing.Size(31, 20);
-            this.ShiftAmountNumericUpDown.TabIndex = 151;
+            this.ShiftAmountNumericUpDown.TabIndex = 2;
             // 
             // UnshiftedTextBox
             // 
@@ -174,7 +174,7 @@
             this.UnshiftedTextBox.MaxLength = 15;
             this.UnshiftedTextBox.Name = "UnshiftedTextBox";
             this.UnshiftedTextBox.Size = new System.Drawing.Size(100, 20);
-            this.UnshiftedTextBox.TabIndex = 150;
+            this.UnshiftedTextBox.TabIndex = 1;
             // 
             // EncryptedTextLabel
             // 
@@ -481,7 +481,7 @@
             this.FindAnswerbutton.Location = new System.Drawing.Point(293, 692);
             this.FindAnswerbutton.Name = "FindAnswerbutton";
             this.FindAnswerbutton.Size = new System.Drawing.Size(75, 23);
-            this.FindAnswerbutton.TabIndex = 121;
+            this.FindAnswerbutton.TabIndex = 2;
             this.FindAnswerbutton.Text = "Find Answer";
             this.FindAnswerbutton.UseVisualStyleBackColor = true;
             this.FindAnswerbutton.Visible = false;
@@ -634,7 +634,7 @@
             this.GenerateSecretNumbersButton.Location = new System.Drawing.Point(261, 692);
             this.GenerateSecretNumbersButton.Name = "GenerateSecretNumbersButton";
             this.GenerateSecretNumbersButton.Size = new System.Drawing.Size(137, 23);
-            this.GenerateSecretNumbersButton.TabIndex = 106;
+            this.GenerateSecretNumbersButton.TabIndex = 4;
             this.GenerateSecretNumbersButton.Text = "Generate secret numbers";
             this.GenerateSecretNumbersButton.UseVisualStyleBackColor = true;
             this.GenerateSecretNumbersButton.Click += new System.EventHandler(this.GenerateSecretNumbersButton_Click);

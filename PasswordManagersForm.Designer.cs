@@ -44,7 +44,7 @@
             this.passOutputBox.Name = "passOutputBox";
             this.passOutputBox.ReadOnly = true;
             this.passOutputBox.Size = new System.Drawing.Size(120, 20);
-            this.passOutputBox.TabIndex = 8;
+            this.passOutputBox.TabIndex = 4;
             // 
             // passLengthBox
             // 
@@ -61,7 +61,7 @@
             0});
             this.passLengthBox.Name = "passLengthBox";
             this.passLengthBox.Size = new System.Drawing.Size(44, 20);
-            this.passLengthBox.TabIndex = 9;
+            this.passLengthBox.TabIndex = 1;
             this.passLengthBox.Value = new decimal(new int[] {
             12,
             0,
@@ -82,7 +82,7 @@
             this.GenPassButton.Location = new System.Drawing.Point(14, 59);
             this.GenPassButton.Name = "GenPassButton";
             this.GenPassButton.Size = new System.Drawing.Size(120, 23);
-            this.GenPassButton.TabIndex = 11;
+            this.GenPassButton.TabIndex = 3;
             this.GenPassButton.Text = "Generate password";
             this.GenPassButton.UseVisualStyleBackColor = true;
             this.GenPassButton.Click += new System.EventHandler(this.genPassword);
@@ -93,7 +93,7 @@
             this.specalCheckBox.Location = new System.Drawing.Point(167, 34);
             this.specalCheckBox.Name = "specalCheckBox";
             this.specalCheckBox.Size = new System.Drawing.Size(150, 17);
-            this.specalCheckBox.TabIndex = 12;
+            this.specalCheckBox.TabIndex = 2;
             this.specalCheckBox.Text = "Include special characters";
             this.specalCheckBox.UseVisualStyleBackColor = true;
             // 
@@ -104,7 +104,7 @@
             this.explainationText.Name = "explainationText";
             this.explainationText.ReadOnly = true;
             this.explainationText.Size = new System.Drawing.Size(441, 187);
-            this.explainationText.TabIndex = 19;
+            this.explainationText.TabIndex = 5;
             this.explainationText.Text = resources.GetString("explainationText.Text");
             // 
             // PasswordManagersForm

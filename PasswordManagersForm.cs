@@ -34,6 +34,7 @@ namespace Group_project
                 password += characters[rnd.Next(0, charLimit)];
             }
             passOutputBox.Text = password;
+            passOutputBox.Select();
         }
     }
 }

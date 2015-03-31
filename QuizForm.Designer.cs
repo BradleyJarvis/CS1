@@ -47,7 +47,7 @@
             this.questionDisplayText.Name = "questionDisplayText";
             this.questionDisplayText.ReadOnly = true;
             this.questionDisplayText.Size = new System.Drawing.Size(526, 97);
-            this.questionDisplayText.TabIndex = 8;
+            this.questionDisplayText.TabIndex = 5;
             this.questionDisplayText.Text = "Questions are shown here";
             // 
             // answerButton1
@@ -65,7 +65,7 @@
             this.answerButton2.Location = new System.Drawing.Point(140, 8);
             this.answerButton2.Name = "answerButton2";
             this.answerButton2.Size = new System.Drawing.Size(127, 80);
-            this.answerButton2.TabIndex = 10;
+            this.answerButton2.TabIndex = 2;
             this.answerButton2.Text = "button2";
             this.answerButton2.UseVisualStyleBackColor = true;
             this.answerButton2.Click += new System.EventHandler(this.answerButton2_Click);
@@ -75,7 +75,7 @@
             this.answerButton3.Location = new System.Drawing.Point(273, 8);
             this.answerButton3.Name = "answerButton3";
             this.answerButton3.Size = new System.Drawing.Size(127, 80);
-            this.answerButton3.TabIndex = 11;
+            this.answerButton3.TabIndex = 3;
             this.answerButton3.Text = "button3";
             this.answerButton3.UseVisualStyleBackColor = true;
             this.answerButton3.Click += new System.EventHandler(this.answerButton3_Click);
@@ -85,7 +85,7 @@
             this.answerButton4.Location = new System.Drawing.Point(406, 7);
             this.answerButton4.Name = "answerButton4";
             this.answerButton4.Size = new System.Drawing.Size(127, 80);
-            this.answerButton4.TabIndex = 12;
+            this.answerButton4.TabIndex = 4;
             this.answerButton4.Text = "button4";
             this.answerButton4.UseVisualStyleBackColor = true;
             this.answerButton4.Click += new System.EventHandler(this.answerButton4_Click);
