@@ -13,24 +13,27 @@ namespace Group_project
     {
         Random rnd = new Random();// Create an RNG for shuffling the order answers appear
         int currentQuestion;
-        int score;
+        int cryptScore, digitalScore, netScore;
         List <question> allQuestions = new List <question>();
 
         public QuizForm()
         {
             InitializeComponent();
+            // All variables are reset, prevents issues if quiz re-opened 
             currentQuestion = 0;
-            score = 0;
+            cryptScore = 0;
+            digitalScore = 0;
+            netScore = 0;
 
-            //This is the start of test code, it should all be removed once finished
-            question Q1 = new question ("What is the answer to this question", "This is correct", "Answer 2", "Answer 3", "Answer 4");
+            // All questions go here
+            question Q1 = new question ("What is the answer to this question", "This is correct", "Answer 2", "Answer 3", "Answer 4", "crypt");
             allQuestions.Add(Q1);
-            question Q2 = new question ("This is the second question, used to check the functionality", "This is the correct answer", "This is wrong", "This is wrong too", "And this is wrong as well");
+            question Q2 = new question ("This is the second question, used to check the functionality", "This is the correct answer", "This is wrong", "This is wrong too", "And this is wrong as well", "digital");
             allQuestions.Add(Q2);
-            question Q3 = new question("This is the third and final test question", "This answer is correct", "This answer is not correct", "This is a wrong answer", "And this is wrong too");
+            question Q3 = new question("This is the third and final test question", "This answer is correct", "This answer is not correct", "This is a wrong answer", "And this is wrong too", "net");
             allQuestions.Add(Q3);
+            // End of questions
             showNewQuestion(allQuestions[0]);
-            //End of test code
         }
 
         void showNewQuestion(question Q)
@@ -55,7 +58,7 @@ namespace Group_project
         }
 
         bool checkAnswer(Button buttonPressed)
-        {// Checks the answer given, if it is core=rect it will return true, else it weill return false
+        {// Checks the answer given, if it correct it will return true, else it will return false
             if (buttonPressed.Text == allQuestions[currentQuestion].answer1)
                 return true;
             else
@@ -72,7 +75,7 @@ namespace Group_project
             if (checkAnswer(buttonPressed) == true)
             {
                 correctLabel.Text = "True";
-                score++;
+                addScore(allQuestions[currentQuestion].category);
             }
             else 
             {
@@ -114,26 +117,47 @@ namespace Group_project
 
             if (currentQuestion >= allQuestions.Count)
             {
-                MessageBox.Show("This is the end of the quiz, you got " + score + " out of " + allQuestions.Count + " questions correct");
+                MessageBox.Show("This is the end of the quiz. Your scores are as follows:\nCryptography: " + cryptScore + "\nDigital security: " + digitalScore + "\nNetwork security: " + netScore + "\nYour total score is " + (cryptScore + digitalScore + netScore));
                 buttonPanel.Enabled = false;
                 return;
             }
 
             showNewQuestion(allQuestions[currentQuestion]);
         }
+
+        private void addScore(string cat)
+        {// Adds a point to the score of the category that was answered
+            switch (cat)
+            {
+                case"crypt":
+                    cryptScore++;
+                    break;
+                case"digital":
+                    digitalScore++;
+                    break;
+                case"net":
+                    netScore++;
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 
     public class question
     {
-        public string questionText, answer1, answer2, answer3, answer4;// One string used to hold the text asking the question, 4 more used for each of the possible answers. answer1 should be used to hold the correct answer, all other should be incorrect
+        public string questionText, answer1, answer2, answer3, answer4, category;
+        // One string used to hold the text asking the question, 4 more used for each of the possible answers. answer1 should be used to hold the correct answer, all other should be incorrect.
+        // The category is used to determine what section the question relates to, valid entries are "crypt", "digital" and "net", relating to the 3 main sections
 
-        public question (string Q, string a1, string a2, string a3, string a4)
+        public question (string Q, string a1, string a2, string a3, string a4, string cat)
         {// Constructor used to assign strings to correct variables
             questionText = Q;
             answer1 = a1;
             answer2 = a2;
             answer3 = a3;
             answer4 = a4;
+            category = cat;
         }
     }
 }

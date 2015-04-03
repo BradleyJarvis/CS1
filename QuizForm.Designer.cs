@@ -54,7 +54,7 @@
             // 
             this.answerButton1.Location = new System.Drawing.Point(7, 8);
             this.answerButton1.Name = "answerButton1";
-            this.answerButton1.Size = new System.Drawing.Size(127, 80);
+            this.answerButton1.Size = new System.Drawing.Size(526, 69);
             this.answerButton1.TabIndex = 1;
             this.answerButton1.Text = "button1";
             this.answerButton1.UseVisualStyleBackColor = true;
@@ -62,9 +62,9 @@
             // 
             // answerButton2
             // 
-            this.answerButton2.Location = new System.Drawing.Point(140, 8);
+            this.answerButton2.Location = new System.Drawing.Point(8, 83);
             this.answerButton2.Name = "answerButton2";
-            this.answerButton2.Size = new System.Drawing.Size(127, 80);
+            this.answerButton2.Size = new System.Drawing.Size(526, 69);
             this.answerButton2.TabIndex = 2;
             this.answerButton2.Text = "button2";
             this.answerButton2.UseVisualStyleBackColor = true;
@@ -72,9 +72,9 @@
             // 
             // answerButton3
             // 
-            this.answerButton3.Location = new System.Drawing.Point(273, 8);
+            this.answerButton3.Location = new System.Drawing.Point(8, 159);
             this.answerButton3.Name = "answerButton3";
-            this.answerButton3.Size = new System.Drawing.Size(127, 80);
+            this.answerButton3.Size = new System.Drawing.Size(526, 69);
             this.answerButton3.TabIndex = 3;
             this.answerButton3.Text = "button3";
             this.answerButton3.UseVisualStyleBackColor = true;
@@ -82,9 +82,9 @@
             // 
             // answerButton4
             // 
-            this.answerButton4.Location = new System.Drawing.Point(406, 7);
+            this.answerButton4.Location = new System.Drawing.Point(8, 234);
             this.answerButton4.Name = "answerButton4";
-            this.answerButton4.Size = new System.Drawing.Size(127, 80);
+            this.answerButton4.Size = new System.Drawing.Size(526, 69);
             this.answerButton4.TabIndex = 4;
             this.answerButton4.Text = "button4";
             this.answerButton4.UseVisualStyleBackColor = true;
@@ -93,7 +93,7 @@
             // correctLabel
             // 
             this.correctLabel.AutoSize = true;
-            this.correctLabel.Location = new System.Drawing.Point(13, 232);
+            this.correctLabel.Location = new System.Drawing.Point(12, 133);
             this.correctLabel.Name = "correctLabel";
             this.correctLabel.Size = new System.Drawing.Size(35, 13);
             this.correctLabel.TabIndex = 13;
@@ -102,7 +102,7 @@
             // 
             // nextQuestionTimer
             // 
-            this.nextQuestionTimer.Interval = 2000;
+            this.nextQuestionTimer.Interval = 1500;
             this.nextQuestionTimer.Tick += new System.EventHandler(this.nextQuestionTimer_Tick);
             // 
             // buttonPanel
@@ -111,15 +111,15 @@
             this.buttonPanel.Controls.Add(this.answerButton3);
             this.buttonPanel.Controls.Add(this.answerButton2);
             this.buttonPanel.Controls.Add(this.answerButton1);
-            this.buttonPanel.Location = new System.Drawing.Point(7, 131);
+            this.buttonPanel.Location = new System.Drawing.Point(7, 144);
             this.buttonPanel.Name = "buttonPanel";
-            this.buttonPanel.Size = new System.Drawing.Size(545, 99);
+            this.buttonPanel.Size = new System.Drawing.Size(545, 311);
             this.buttonPanel.TabIndex = 14;
             // 
             // QuizForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(552, 316);
+            this.ClientSize = new System.Drawing.Size(552, 463);
             this.Controls.Add(this.buttonPanel);
             this.Controls.Add(this.correctLabel);
             this.Controls.Add(this.questionDisplayText);
