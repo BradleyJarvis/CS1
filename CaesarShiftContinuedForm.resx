@@ -120,7 +120,7 @@
   <data name="CaesarShiftContinuedExplanationTextBox.Text" xml:space="preserve">
     <value>A Caesar shift alone is weak to statistical analysis of the distribution of characters. This weakness can be overcome by using a different shift amount for each for each character.
 
-This method can be tried above, put a letter in the top box and choose the amount to shift it by using the number below and press shift, it will then be encrypted and filled in bellow.  Like before you can decrypt using the unshift button and filling in the bottom field.
+This method can be tried above, put a letter in the top box and choose the amount to shift it by using the number below and press shift, it will then be encrypted and filled in below.  Like before you can decrypt using the unshift button and filling in the bottom field.
 
 This method requires you to have a different number for each character you want to encrypt and for the code to be secure the sequence of the numbers must be absolutely random. If and only if both of these things are true then this encryption is unbreakable without the key. This however is a very inefficient way to send information and the key must be kept private at all times.
 
