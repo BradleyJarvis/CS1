@@ -117,4 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="IntroductionTextBox.Text" xml:space="preserve">
+    <value>Before we looked at how if both user had a secret shared number they could send information between each other safely and securely. However there are a number of problems with that system, mainly that the process must be used every time that a new person wants to communicate. Is the sender is a bank for example the idea of having a large unique set of keys for every customer every time they connect is impractical. It would be far easier if the was only one key that the bank had to remember. This is where RSA Encryption is useful.</value>
+  </data>
+  <data name="OutlineTextBox.Text" xml:space="preserve">
+    <value>Imagine encrypting and decrypting as separate functions. The customer would only need to know how to encrypt not how to decrypt. So is the bank where to give the customer a way to encrypt but not to decrypt they would only need one key that they could share with everyone.
+
+In the last section we saw how using  Received^Secret MOD RandomNumber= gave a result that is easy to compute in if you know all those values but given the answer and not the secret number was hard. We can call this equation m^e MOD N = c .
+
+What we need is a way to change the equation so that you can undo this equation without knowing m but without letting the customer or any other ne'er do wells  be able to do this.
+
+If this could be done by c^d MOD N = m where d if the key only the bank knows, and if this decryption key (d) could be used so that m^ed MOD N = m it would make a hard problem easy, but only if you have d. This however requires another one way function (a function that is easy to do but hard to undo).</value>
+  </data>
+  <data name="FacorisingIntroductionTextBox.Text" xml:space="preserve">
+    <value>For this problem we have to look at prime factorisation. Prime factorisation means finding how a number can be created by multiplying prime numbers (except 1). For example the prime factorisation of 30 = 5 x 3 x 2 . There exactly one combination of prime numbers for each number. Prime factorisation however is a fundamentally hard problem and the time required to compute the prime factors of numbers increases exponentially.  </value>
+  </data>
+  <data name="StartingTextBox.Text" xml:space="preserve">
+    <value>Lets work through an example using the prime numbers 71 and 59, these in reality would be thousands of bits long and randomly generated. The first step is to multiply them together. Press “Generate and Multiply” to fill in the prime numbers and multiply them together.
+
+Because we know the two prime numbers that multiplied to create this new number we know its prime factorisation but it would be hard to find that without knowing the 2 prime numbers we started with (especially when the numbers involved are thousands of digits long). </value>
+  </data>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>We can use something called the Phi (Փ) function. The Phi(Փ) of a number is the amount of integers that are less than or equal to it that do not share any factors with it. For example if we look at the number 12 we would list all the numbers from 1 to 12 then we would count how many integers do not share a factor with it. (this ignores 1 as a factor)
+1̲ 2 3 4 5̲ 6 7̲ 8 9 10 1̲1̲ 12
+The numbers that share no factor are underlined above. In this case there are 4 so the Phi(Փ) of 12 is 4.
+Finding the Փ of a number is hard to do unless the number is prime. If a number is prime then its Փ is itself - 1. So if we know that 21377 is prime we know Փ(21377) = 21376 easy to compute compared to non prime numbers. However the Փ function is also multiplicative so Փ(AxB) = Փ(A) x Փ(B) so knowing this we can find the Փ of our number we made before with ease compared to someone who did not know its prime factorisation. It’s just Փ(4189) = (71 - 1) x (59 -1). Press “Find Փ” to fill in this detail.</value>
+  </data>
 </root>
