@@ -133,14 +133,23 @@ If this could be done by c^d MOD N = m where d if the key only the bank knows, a
     <value>For this problem we have to look at prime factorisation. Prime factorisation means finding how a number can be created by multiplying prime numbers (except 1). For example the prime factorisation of 30 = 5 x 3 x 2 . There exactly one combination of prime numbers for each number. Prime factorisation however is a fundamentally hard problem and the time required to compute the prime factors of numbers increases exponentially.  </value>
   </data>
   <data name="StartingTextBox.Text" xml:space="preserve">
-    <value>Lets work through an example using the prime numbers 71 and 59, these in reality would be thousands of bits long and randomly generated. The first step is to multiply them together. Press “Generate and Multiply” to fill in the prime numbers and multiply them together.
+    <value>Lets work through an example using two prime numbers under 100, these in reality would be thousands of bits long and randomly generated. The first step is to multiply them together. Press “Generate and Multiply” to fill in the prime numbers and multiply them together.
 
 Because we know the two prime numbers that multiplied to create this new number we know its prime factorisation but it would be hard to find that without knowing the 2 prime numbers we started with (especially when the numbers involved are thousands of digits long). </value>
   </data>
-  <data name="textBox1.Text" xml:space="preserve">
+  <data name="PhiTextBox.Text" xml:space="preserve">
     <value>We can use something called the Phi (Փ) function. The Phi(Փ) of a number is the amount of integers that are less than or equal to it that do not share any factors with it. For example if we look at the number 12 we would list all the numbers from 1 to 12 then we would count how many integers do not share a factor with it. (this ignores 1 as a factor)
 1̲ 2 3 4 5̲ 6 7̲ 8 9 10 1̲1̲ 12
 The numbers that share no factor are underlined above. In this case there are 4 so the Phi(Փ) of 12 is 4.
-Finding the Փ of a number is hard to do unless the number is prime. If a number is prime then its Փ is itself - 1. So if we know that 21377 is prime we know Փ(21377) = 21376 easy to compute compared to non prime numbers. However the Փ function is also multiplicative so Փ(AxB) = Փ(A) x Փ(B) so knowing this we can find the Փ of our number we made before with ease compared to someone who did not know its prime factorisation. It’s just Փ(4189) = (71 - 1) x (59 -1). Press “Find Փ” to fill in this detail.</value>
+Finding the Փ of a number is hard to do unless the number is prime. If a number is prime then its Փ is itself - 1. So if we know that 21377 is prime we know Փ(21377) = 21376 easy to compute compared to non prime numbers. However the Փ function is also multiplicative so Փ(AxB) = Փ(A) x Փ(B) so knowing this we can find the Փ of our number we made before with ease compared to someone who did not know its prime factorisation. For example is we had the prime numbers 71 and 59 we could find the Փ easily. It’s just 
+Փ(4189) = (71 - 1) x (59 -1) = 4060. Press “Find Փ” to fill in this detail for the prime numbers we are using in the example.</value>
+  </data>
+  <data name="DTextBox.Text" xml:space="preserve">
+    <value>In order to use this in cryptography the Փ of a number was connected to the MOD function using Euler’s theorem. This theorem states that m^Փ(n) ≡ 1 MOD n. It is also known that 1 to the power of any number is 1, so 1 ^k = 1. Therefore m^k*Փ(n) ≡ 1 MOD n. It is also known that 1 * m = m where m is any number. So my multiplying both sides of the equation by m we arrive at m*m^k*Փ(n)≡ m MOD n or to simplify 
+m^k*Փ(n)+1≡ m MOD n
+This equation can be used so that in m^ed ≡ m MOD n it is only easy to find d if the factorisation of n is known. because it can be simplified to d = (k*Փ(n)+1)/e. Therefore d should be the private key.
+Lets fill out our example, say the exponent (e) is a random number between 3 and 20 that would mean that  would mean that 
+d= (2*(Phi Secret) +1 ) / Exponent
+Press "Find d" to do this equation</value>
   </data>
 </root>

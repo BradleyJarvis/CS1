@@ -41,10 +41,17 @@
             this.SecondPrimeNumberLabel = new System.Windows.Forms.Label();
             this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel = new System.Windows.Forms.Label();
             this.FirstPrimeNumberTimesSecondPrimeNumberLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PhiTextBox = new System.Windows.Forms.TextBox();
             this.FindPhiButton = new System.Windows.Forms.Button();
             this.Back2Button = new System.Windows.Forms.Button();
-            this.TextBox = new System.Windows.Forms.TextBox();
+            this.DTextBox = new System.Windows.Forms.TextBox();
+            this.PhiPrivateTextLabel = new System.Windows.Forms.Label();
+            this.PhiPublicLabel = new System.Windows.Forms.Label();
+            this.FindDButton = new System.Windows.Forms.Button();
+            this.DTextLabel = new System.Windows.Forms.Label();
+            this.DLabel = new System.Windows.Forms.Label();
+            this.ExponentTextLabel = new System.Windows.Forms.Label();
+            this.ExponentLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // IntroductionTextBox
@@ -56,7 +63,7 @@
             this.IntroductionTextBox.Name = "IntroductionTextBox";
             this.IntroductionTextBox.ReadOnly = true;
             this.IntroductionTextBox.Size = new System.Drawing.Size(1283, 72);
-            this.IntroductionTextBox.TabIndex = 143;
+            this.IntroductionTextBox.TabIndex = 161;
             this.IntroductionTextBox.Text = resources.GetString("IntroductionTextBox.Text");
             // 
             // OutlineTextBox
@@ -97,19 +104,21 @@
             // 
             // Back1Button
             // 
-            this.Back1Button.Location = new System.Drawing.Point(12, 872);
+            this.Back1Button.Location = new System.Drawing.Point(12, 718);
             this.Back1Button.Name = "Back1Button";
             this.Back1Button.Size = new System.Drawing.Size(75, 23);
             this.Back1Button.TabIndex = 147;
             this.Back1Button.Text = "Back";
             this.Back1Button.UseVisualStyleBackColor = true;
+            this.Back1Button.Visible = false;
+            this.Back1Button.Click += new System.EventHandler(this.Back1Button_Click);
             // 
             // GenerateAndMultiplyButton
             // 
             this.GenerateAndMultiplyButton.Location = new System.Drawing.Point(284, 601);
             this.GenerateAndMultiplyButton.Name = "GenerateAndMultiplyButton";
             this.GenerateAndMultiplyButton.Size = new System.Drawing.Size(123, 23);
-            this.GenerateAndMultiplyButton.TabIndex = 148;
+            this.GenerateAndMultiplyButton.TabIndex = 141;
             this.GenerateAndMultiplyButton.Text = "Generate And Multiply";
             this.GenerateAndMultiplyButton.UseVisualStyleBackColor = true;
             this.GenerateAndMultiplyButton.Click += new System.EventHandler(this.GenerateAndMultiplyButton_Click);
@@ -168,55 +177,140 @@
             this.FirstPrimeNumberTimesSecondPrimeNumberLabel.TabIndex = 154;
             this.FirstPrimeNumberTimesSecondPrimeNumberLabel.Text = "_";
             // 
-            // textBox1
+            // PhiTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 630);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(747, 236);
-            this.textBox1.TabIndex = 155;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
+            this.PhiTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.PhiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhiTextBox.Location = new System.Drawing.Point(12, 440);
+            this.PhiTextBox.Multiline = true;
+            this.PhiTextBox.Name = "PhiTextBox";
+            this.PhiTextBox.ReadOnly = true;
+            this.PhiTextBox.Size = new System.Drawing.Size(747, 272);
+            this.PhiTextBox.TabIndex = 155;
+            this.PhiTextBox.Text = resources.GetString("PhiTextBox.Text");
+            this.PhiTextBox.Visible = false;
             // 
             // FindPhiButton
             // 
-            this.FindPhiButton.Location = new System.Drawing.Point(284, 872);
+            this.FindPhiButton.Location = new System.Drawing.Point(311, 718);
             this.FindPhiButton.Name = "FindPhiButton";
             this.FindPhiButton.Size = new System.Drawing.Size(75, 23);
             this.FindPhiButton.TabIndex = 156;
             this.FindPhiButton.Text = "Find Փ";
             this.FindPhiButton.UseVisualStyleBackColor = true;
+            this.FindPhiButton.Visible = false;
+            this.FindPhiButton.Click += new System.EventHandler(this.FindPhiButton_Click);
             // 
             // Back2Button
             // 
-            this.Back2Button.Location = new System.Drawing.Point(854, 843);
+            this.Back2Button.Location = new System.Drawing.Point(12, 675);
             this.Back2Button.Name = "Back2Button";
             this.Back2Button.Size = new System.Drawing.Size(75, 23);
             this.Back2Button.TabIndex = 157;
             this.Back2Button.Text = "Back";
             this.Back2Button.UseVisualStyleBackColor = true;
+            this.Back2Button.Visible = false;
+            this.Back2Button.Click += new System.EventHandler(this.Back2Button_Click);
             // 
-            // TextBox
+            // DTextBox
             // 
-            this.TextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox.Location = new System.Drawing.Point(843, 687);
-            this.TextBox.Multiline = true;
-            this.TextBox.Name = "TextBox";
-            this.TextBox.ReadOnly = true;
-            this.TextBox.Size = new System.Drawing.Size(389, 150);
-            this.TextBox.TabIndex = 158;
+            this.DTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.DTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DTextBox.Location = new System.Drawing.Point(12, 440);
+            this.DTextBox.Multiline = true;
+            this.DTextBox.Name = "DTextBox";
+            this.DTextBox.ReadOnly = true;
+            this.DTextBox.Size = new System.Drawing.Size(747, 229);
+            this.DTextBox.TabIndex = 158;
+            this.DTextBox.Text = resources.GetString("DTextBox.Text");
+            this.DTextBox.Visible = false;
+            // 
+            // PhiPrivateTextLabel
+            // 
+            this.PhiPrivateTextLabel.AutoSize = true;
+            this.PhiPrivateTextLabel.Location = new System.Drawing.Point(797, 526);
+            this.PhiPrivateTextLabel.Name = "PhiPrivateTextLabel";
+            this.PhiPrivateTextLabel.Size = new System.Drawing.Size(56, 13);
+            this.PhiPrivateTextLabel.TabIndex = 159;
+            this.PhiPrivateTextLabel.Text = "Phi Secret";
+            this.PhiPrivateTextLabel.Visible = false;
+            // 
+            // PhiPublicLabel
+            // 
+            this.PhiPublicLabel.AutoSize = true;
+            this.PhiPublicLabel.Location = new System.Drawing.Point(797, 539);
+            this.PhiPublicLabel.Name = "PhiPublicLabel";
+            this.PhiPublicLabel.Size = new System.Drawing.Size(13, 13);
+            this.PhiPublicLabel.TabIndex = 160;
+            this.PhiPublicLabel.Text = "_";
+            this.PhiPublicLabel.Visible = false;
+            // 
+            // FindDButton
+            // 
+            this.FindDButton.Location = new System.Drawing.Point(311, 675);
+            this.FindDButton.Name = "FindDButton";
+            this.FindDButton.Size = new System.Drawing.Size(75, 23);
+            this.FindDButton.TabIndex = 161;
+            this.FindDButton.Text = "Find D";
+            this.FindDButton.UseVisualStyleBackColor = true;
+            this.FindDButton.Visible = false;
+            this.FindDButton.Click += new System.EventHandler(this.FindDButton_Click);
+            // 
+            // DTextLabel
+            // 
+            this.DTextLabel.AutoSize = true;
+            this.DTextLabel.Location = new System.Drawing.Point(797, 601);
+            this.DTextLabel.Name = "DTextLabel";
+            this.DTextLabel.Size = new System.Drawing.Size(15, 13);
+            this.DTextLabel.TabIndex = 162;
+            this.DTextLabel.Text = "D";
+            this.DTextLabel.Visible = false;
+            // 
+            // DLabel
+            // 
+            this.DLabel.AutoSize = true;
+            this.DLabel.Location = new System.Drawing.Point(797, 614);
+            this.DLabel.Name = "DLabel";
+            this.DLabel.Size = new System.Drawing.Size(13, 13);
+            this.DLabel.TabIndex = 163;
+            this.DLabel.Text = "_";
+            this.DLabel.Visible = false;
+            // 
+            // ExponentTextLabel
+            // 
+            this.ExponentTextLabel.AutoSize = true;
+            this.ExponentTextLabel.Location = new System.Drawing.Point(797, 562);
+            this.ExponentTextLabel.Name = "ExponentTextLabel";
+            this.ExponentTextLabel.Size = new System.Drawing.Size(52, 13);
+            this.ExponentTextLabel.TabIndex = 164;
+            this.ExponentTextLabel.Text = "Exponent";
+            this.ExponentTextLabel.Visible = false;
+            // 
+            // ExponentLabel
+            // 
+            this.ExponentLabel.AutoSize = true;
+            this.ExponentLabel.Location = new System.Drawing.Point(797, 575);
+            this.ExponentLabel.Name = "ExponentLabel";
+            this.ExponentLabel.Size = new System.Drawing.Size(13, 13);
+            this.ExponentLabel.TabIndex = 165;
+            this.ExponentLabel.Text = "_";
+            this.ExponentLabel.Visible = false;
             // 
             // PublicKeysForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(1311, 971);
-            this.Controls.Add(this.TextBox);
+            this.Controls.Add(this.ExponentLabel);
+            this.Controls.Add(this.ExponentTextLabel);
+            this.Controls.Add(this.DLabel);
+            this.Controls.Add(this.DTextLabel);
+            this.Controls.Add(this.FindDButton);
+            this.Controls.Add(this.PhiPublicLabel);
+            this.Controls.Add(this.PhiPrivateTextLabel);
+            this.Controls.Add(this.DTextBox);
             this.Controls.Add(this.Back2Button);
             this.Controls.Add(this.FindPhiButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PhiTextBox);
             this.Controls.Add(this.FirstPrimeNumberTimesSecondPrimeNumberLabel);
             this.Controls.Add(this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel);
             this.Controls.Add(this.SecondPrimeNumberLabel);
@@ -242,10 +336,17 @@
             this.Controls.SetChildIndex(this.SecondPrimeNumberLabel, 0);
             this.Controls.SetChildIndex(this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel, 0);
             this.Controls.SetChildIndex(this.FirstPrimeNumberTimesSecondPrimeNumberLabel, 0);
-            this.Controls.SetChildIndex(this.textBox1, 0);
+            this.Controls.SetChildIndex(this.PhiTextBox, 0);
             this.Controls.SetChildIndex(this.FindPhiButton, 0);
             this.Controls.SetChildIndex(this.Back2Button, 0);
-            this.Controls.SetChildIndex(this.TextBox, 0);
+            this.Controls.SetChildIndex(this.DTextBox, 0);
+            this.Controls.SetChildIndex(this.PhiPrivateTextLabel, 0);
+            this.Controls.SetChildIndex(this.PhiPublicLabel, 0);
+            this.Controls.SetChildIndex(this.FindDButton, 0);
+            this.Controls.SetChildIndex(this.DTextLabel, 0);
+            this.Controls.SetChildIndex(this.DLabel, 0);
+            this.Controls.SetChildIndex(this.ExponentTextLabel, 0);
+            this.Controls.SetChildIndex(this.ExponentLabel, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,10 +366,17 @@
         private System.Windows.Forms.Label SecondPrimeNumberLabel;
         private System.Windows.Forms.Label FirstPrimeNumberTimesSecondPrimeNumberTextLabel;
         private System.Windows.Forms.Label FirstPrimeNumberTimesSecondPrimeNumberLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox PhiTextBox;
         private System.Windows.Forms.Button FindPhiButton;
         private System.Windows.Forms.Button Back2Button;
-        private System.Windows.Forms.TextBox TextBox;
+        private System.Windows.Forms.TextBox DTextBox;
+        private System.Windows.Forms.Label PhiPrivateTextLabel;
+        private System.Windows.Forms.Label PhiPublicLabel;
+        private System.Windows.Forms.Button FindDButton;
+        private System.Windows.Forms.Label DTextLabel;
+        private System.Windows.Forms.Label DLabel;
+        private System.Windows.Forms.Label ExponentTextLabel;
+        private System.Windows.Forms.Label ExponentLabel;
 
     }
 }
