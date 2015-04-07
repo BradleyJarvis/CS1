@@ -103,6 +103,7 @@
             this.explainationText.ReadOnly = true;
             this.explainationText.Size = new System.Drawing.Size(476, 188);
             this.explainationText.TabIndex = 18;
+            this.explainationText.TabStop = false;
             this.explainationText.Text = resources.GetString("explainationText.Text");
             // 
             // TwoFactorAuthenticationForm

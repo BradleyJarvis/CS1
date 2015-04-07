@@ -213,6 +213,16 @@ namespace Group_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HTTPSCerts {
+            get {
+                object obj = ResourceManager.GetObject("HTTPSCerts", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo200 {
             get {
                 object obj = ResourceManager.GetObject("Logo200", resourceCulture);

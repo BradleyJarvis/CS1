@@ -65,6 +65,7 @@
             this.lowerCaseBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lowerCaseBox.Size = new System.Drawing.Size(107, 17);
             this.lowerCaseBox.TabIndex = 3;
+            this.lowerCaseBox.TabStop = false;
             this.lowerCaseBox.Text = "Lower case letter";
             this.lowerCaseBox.UseVisualStyleBackColor = true;
             // 
@@ -77,6 +78,7 @@
             this.numberBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.numberBox.Size = new System.Drawing.Size(63, 17);
             this.numberBox.TabIndex = 5;
+            this.numberBox.TabStop = false;
             this.numberBox.Text = "Number";
             this.numberBox.UseVisualStyleBackColor = true;
             // 
@@ -89,6 +91,7 @@
             this.specialBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.specialBox.Size = new System.Drawing.Size(110, 17);
             this.specialBox.TabIndex = 6;
+            this.specialBox.TabStop = false;
             this.specialBox.Text = "Special Character";
             this.specialBox.UseVisualStyleBackColor = true;
             // 
@@ -101,6 +104,7 @@
             this.upperCaseBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.upperCaseBox.Size = new System.Drawing.Size(107, 17);
             this.upperCaseBox.TabIndex = 4;
+            this.upperCaseBox.TabStop = false;
             this.upperCaseBox.Text = "Upper case letter";
             this.upperCaseBox.UseVisualStyleBackColor = true;
             // 
@@ -123,6 +127,7 @@
             this.explainationText.ReadOnly = true;
             this.explainationText.Size = new System.Drawing.Size(364, 166);
             this.explainationText.TabIndex = 2;
+            this.explainationText.TabStop = false;
             this.explainationText.Text = "Dexcription text should be shown here, generated when page is loaded";
             // 
             // PasswordStrengthForm

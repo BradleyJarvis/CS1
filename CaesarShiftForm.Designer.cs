@@ -100,6 +100,7 @@
             this.CaesarShiftExplanationTextBox.ReadOnly = true;
             this.CaesarShiftExplanationTextBox.Size = new System.Drawing.Size(970, 418);
             this.CaesarShiftExplanationTextBox.TabIndex = 14;
+            this.CaesarShiftExplanationTextBox.TabStop = false;
             this.CaesarShiftExplanationTextBox.Text = resources.GetString("CaesarShiftExplanationTextBox.Text");
             // 
             // CaesarShiftForm

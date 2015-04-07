@@ -105,6 +105,7 @@
             this.explainationText.ReadOnly = true;
             this.explainationText.Size = new System.Drawing.Size(441, 187);
             this.explainationText.TabIndex = 5;
+            this.explainationText.TabStop = false;
             this.explainationText.Text = resources.GetString("explainationText.Text");
             // 
             // PasswordManagersForm

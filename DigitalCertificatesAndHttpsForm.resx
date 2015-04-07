@@ -117,59 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnCryptCaesar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuButtons\btnCryptCaesar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnCryptCaesarCont" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuButtons\btnCryptCaesarCont.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnCryptKeys" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuButtons\btnCryptKeys.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnCryptSymmetrical" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuButtons\btnCryptSymmetrical.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnDigitalAuthentication" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuButtons\btnDigitalAuthentication.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnDigitalCertificates" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuButtons\btnDigitalCertificates.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnDigitalManager" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuButtons\btnDigitalManager.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnDigitalStrength" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuButtons\btnDigitalStrength.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnMenuCryptography" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuButtons\btnMenuCryptography.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnMenuDigital" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuButtons\btnMenuDigital.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnMenuNetwork" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuButtons\btnMenuNetwork.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnNetworkEncyrpt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuButtons\btnNetworkEncyrpt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnNetworkFirewall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuButtons\btnNetworkFirewall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnNetworkHacking" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuButtons\btnNetworkHacking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnNetworkWiFi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuButtons\btnNetworkWiFi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo200_transparentBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo200 transparentBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HTTPSCerts" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HTTPSCerts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>HTTPS is a protocol that can be used to securely transfer data over a network. It works by using the SSL encryption technique combined with the HTTP data transfer protocol to encrypt all data sent. It is commonly used as a way of securely transferring sensitive information over the internet, such as emails and financial information. There are also many websites that use it simply to improve privacy of people visiting the website. Because all information is encrypted, including the URL accessed, an eavesdropper wouldn't be able to tell what web page the user was visiting.
+
+Another benefit of using HTTPS is that it lets users be sure they are connecting to the service they are intending to, not an imposter. This is because of the use of authentication certificates. These are provided by an independent certification authority and these allow data transfers to be secured (using public key cryptography) as well as verifying the identity of the website. If the provided certificate doesn't match with the website being accessed most internet browsers will show a warning message. Users can also manually check the details of the certificates provided to get more information, as shown on the right (demonstrated using Internet Explorer, Firefox and Google Chrome visiting paypal.com)</value>
   </data>
 </root>

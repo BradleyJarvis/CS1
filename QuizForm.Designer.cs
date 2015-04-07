@@ -48,6 +48,7 @@
             this.questionDisplayText.ReadOnly = true;
             this.questionDisplayText.Size = new System.Drawing.Size(526, 97);
             this.questionDisplayText.TabIndex = 5;
+            this.questionDisplayText.TabStop = false;
             this.questionDisplayText.Text = "Questions are shown here";
             // 
             // answerButton1

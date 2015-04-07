@@ -82,6 +82,7 @@
             this.textBoxIntro.ReadOnly = true;
             this.textBoxIntro.Size = new System.Drawing.Size(1217, 200);
             this.textBoxIntro.TabIndex = 100;
+            this.textBoxIntro.TabStop = false;
             this.textBoxIntro.Text = "Welcome to Edu Cyber Scelus , this program will help you understand the world of " +
     "cyber crime and cyber security so that you can lead a safer life online.";
             // 

@@ -384,6 +384,7 @@
             this.CaesarShiftContinuedExplanationTextBox.ReadOnly = true;
             this.CaesarShiftContinuedExplanationTextBox.Size = new System.Drawing.Size(776, 415);
             this.CaesarShiftContinuedExplanationTextBox.TabIndex = 41;
+            this.CaesarShiftContinuedExplanationTextBox.TabStop = false;
             this.CaesarShiftContinuedExplanationTextBox.Text = resources.GetString("CaesarShiftContinuedExplanationTextBox.Text");
             // 
             // CaesarShiftContinuedForm

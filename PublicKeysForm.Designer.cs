@@ -58,53 +58,57 @@
             // 
             this.IntroductionTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.IntroductionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IntroductionTextBox.Location = new System.Drawing.Point(12, 65);
+            this.IntroductionTextBox.Location = new System.Drawing.Point(12, 27);
             this.IntroductionTextBox.Multiline = true;
             this.IntroductionTextBox.Name = "IntroductionTextBox";
             this.IntroductionTextBox.ReadOnly = true;
             this.IntroductionTextBox.Size = new System.Drawing.Size(1283, 72);
             this.IntroductionTextBox.TabIndex = 161;
+            this.IntroductionTextBox.TabStop = false;
             this.IntroductionTextBox.Text = resources.GetString("IntroductionTextBox.Text");
             // 
             // OutlineTextBox
             // 
             this.OutlineTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.OutlineTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OutlineTextBox.Location = new System.Drawing.Point(12, 143);
+            this.OutlineTextBox.Location = new System.Drawing.Point(12, 105);
             this.OutlineTextBox.Multiline = true;
             this.OutlineTextBox.Name = "OutlineTextBox";
             this.OutlineTextBox.ReadOnly = true;
             this.OutlineTextBox.Size = new System.Drawing.Size(1283, 213);
             this.OutlineTextBox.TabIndex = 144;
+            this.OutlineTextBox.TabStop = false;
             this.OutlineTextBox.Text = resources.GetString("OutlineTextBox.Text");
             // 
             // FacorisingIntroductionTextBox
             // 
             this.FacorisingIntroductionTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.FacorisingIntroductionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FacorisingIntroductionTextBox.Location = new System.Drawing.Point(12, 362);
+            this.FacorisingIntroductionTextBox.Location = new System.Drawing.Point(12, 324);
             this.FacorisingIntroductionTextBox.Multiline = true;
             this.FacorisingIntroductionTextBox.Name = "FacorisingIntroductionTextBox";
             this.FacorisingIntroductionTextBox.ReadOnly = true;
             this.FacorisingIntroductionTextBox.Size = new System.Drawing.Size(1283, 72);
             this.FacorisingIntroductionTextBox.TabIndex = 145;
+            this.FacorisingIntroductionTextBox.TabStop = false;
             this.FacorisingIntroductionTextBox.Text = resources.GetString("FacorisingIntroductionTextBox.Text");
             // 
             // StartingTextBox
             // 
             this.StartingTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.StartingTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StartingTextBox.Location = new System.Drawing.Point(12, 440);
+            this.StartingTextBox.Location = new System.Drawing.Point(12, 402);
             this.StartingTextBox.Multiline = true;
             this.StartingTextBox.Name = "StartingTextBox";
             this.StartingTextBox.ReadOnly = true;
             this.StartingTextBox.Size = new System.Drawing.Size(747, 155);
             this.StartingTextBox.TabIndex = 146;
+            this.StartingTextBox.TabStop = false;
             this.StartingTextBox.Text = resources.GetString("StartingTextBox.Text");
             // 
             // Back1Button
             // 
-            this.Back1Button.Location = new System.Drawing.Point(12, 718);
+            this.Back1Button.Location = new System.Drawing.Point(12, 680);
             this.Back1Button.Name = "Back1Button";
             this.Back1Button.Size = new System.Drawing.Size(75, 23);
             this.Back1Button.TabIndex = 147;
@@ -115,7 +119,7 @@
             // 
             // GenerateAndMultiplyButton
             // 
-            this.GenerateAndMultiplyButton.Location = new System.Drawing.Point(284, 601);
+            this.GenerateAndMultiplyButton.Location = new System.Drawing.Point(284, 563);
             this.GenerateAndMultiplyButton.Name = "GenerateAndMultiplyButton";
             this.GenerateAndMultiplyButton.Size = new System.Drawing.Size(123, 23);
             this.GenerateAndMultiplyButton.TabIndex = 141;
@@ -126,7 +130,7 @@
             // FirstPrimeNumberTextLabel
             // 
             this.FirstPrimeNumberTextLabel.AutoSize = true;
-            this.FirstPrimeNumberTextLabel.Location = new System.Drawing.Point(797, 440);
+            this.FirstPrimeNumberTextLabel.Location = new System.Drawing.Point(797, 402);
             this.FirstPrimeNumberTextLabel.Name = "FirstPrimeNumberTextLabel";
             this.FirstPrimeNumberTextLabel.Size = new System.Drawing.Size(95, 13);
             this.FirstPrimeNumberTextLabel.TabIndex = 149;
@@ -135,7 +139,7 @@
             // SecondPrimeNumberTextLabel
             // 
             this.SecondPrimeNumberTextLabel.AutoSize = true;
-            this.SecondPrimeNumberTextLabel.Location = new System.Drawing.Point(797, 453);
+            this.SecondPrimeNumberTextLabel.Location = new System.Drawing.Point(797, 415);
             this.SecondPrimeNumberTextLabel.Name = "SecondPrimeNumberTextLabel";
             this.SecondPrimeNumberTextLabel.Size = new System.Drawing.Size(113, 13);
             this.SecondPrimeNumberTextLabel.TabIndex = 150;
@@ -144,7 +148,7 @@
             // FirstPrimeNumberLabel
             // 
             this.FirstPrimeNumberLabel.AutoSize = true;
-            this.FirstPrimeNumberLabel.Location = new System.Drawing.Point(916, 440);
+            this.FirstPrimeNumberLabel.Location = new System.Drawing.Point(916, 402);
             this.FirstPrimeNumberLabel.Name = "FirstPrimeNumberLabel";
             this.FirstPrimeNumberLabel.Size = new System.Drawing.Size(13, 13);
             this.FirstPrimeNumberLabel.TabIndex = 151;
@@ -153,7 +157,7 @@
             // SecondPrimeNumberLabel
             // 
             this.SecondPrimeNumberLabel.AutoSize = true;
-            this.SecondPrimeNumberLabel.Location = new System.Drawing.Point(916, 453);
+            this.SecondPrimeNumberLabel.Location = new System.Drawing.Point(916, 415);
             this.SecondPrimeNumberLabel.Name = "SecondPrimeNumberLabel";
             this.SecondPrimeNumberLabel.Size = new System.Drawing.Size(13, 13);
             this.SecondPrimeNumberLabel.TabIndex = 152;
@@ -162,7 +166,7 @@
             // FirstPrimeNumberTimesSecondPrimeNumberTextLabel
             // 
             this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel.AutoSize = true;
-            this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel.Location = new System.Drawing.Point(797, 486);
+            this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel.Location = new System.Drawing.Point(797, 448);
             this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel.Name = "FirstPrimeNumberTimesSecondPrimeNumberTextLabel";
             this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel.Size = new System.Drawing.Size(232, 13);
             this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel.TabIndex = 153;
@@ -171,7 +175,7 @@
             // FirstPrimeNumberTimesSecondPrimeNumberLabel
             // 
             this.FirstPrimeNumberTimesSecondPrimeNumberLabel.AutoSize = true;
-            this.FirstPrimeNumberTimesSecondPrimeNumberLabel.Location = new System.Drawing.Point(797, 499);
+            this.FirstPrimeNumberTimesSecondPrimeNumberLabel.Location = new System.Drawing.Point(797, 461);
             this.FirstPrimeNumberTimesSecondPrimeNumberLabel.Name = "FirstPrimeNumberTimesSecondPrimeNumberLabel";
             this.FirstPrimeNumberTimesSecondPrimeNumberLabel.Size = new System.Drawing.Size(13, 13);
             this.FirstPrimeNumberTimesSecondPrimeNumberLabel.TabIndex = 154;
@@ -181,18 +185,19 @@
             // 
             this.PhiTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.PhiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhiTextBox.Location = new System.Drawing.Point(12, 440);
+            this.PhiTextBox.Location = new System.Drawing.Point(12, 402);
             this.PhiTextBox.Multiline = true;
             this.PhiTextBox.Name = "PhiTextBox";
             this.PhiTextBox.ReadOnly = true;
             this.PhiTextBox.Size = new System.Drawing.Size(747, 272);
             this.PhiTextBox.TabIndex = 155;
+            this.PhiTextBox.TabStop = false;
             this.PhiTextBox.Text = resources.GetString("PhiTextBox.Text");
             this.PhiTextBox.Visible = false;
             // 
             // FindPhiButton
             // 
-            this.FindPhiButton.Location = new System.Drawing.Point(311, 718);
+            this.FindPhiButton.Location = new System.Drawing.Point(311, 680);
             this.FindPhiButton.Name = "FindPhiButton";
             this.FindPhiButton.Size = new System.Drawing.Size(75, 23);
             this.FindPhiButton.TabIndex = 156;
@@ -203,7 +208,7 @@
             // 
             // Back2Button
             // 
-            this.Back2Button.Location = new System.Drawing.Point(12, 675);
+            this.Back2Button.Location = new System.Drawing.Point(12, 637);
             this.Back2Button.Name = "Back2Button";
             this.Back2Button.Size = new System.Drawing.Size(75, 23);
             this.Back2Button.TabIndex = 157;
@@ -216,19 +221,20 @@
             // 
             this.DTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.DTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DTextBox.Location = new System.Drawing.Point(12, 440);
+            this.DTextBox.Location = new System.Drawing.Point(12, 402);
             this.DTextBox.Multiline = true;
             this.DTextBox.Name = "DTextBox";
             this.DTextBox.ReadOnly = true;
             this.DTextBox.Size = new System.Drawing.Size(747, 229);
             this.DTextBox.TabIndex = 158;
+            this.DTextBox.TabStop = false;
             this.DTextBox.Text = resources.GetString("DTextBox.Text");
             this.DTextBox.Visible = false;
             // 
             // PhiPrivateTextLabel
             // 
             this.PhiPrivateTextLabel.AutoSize = true;
-            this.PhiPrivateTextLabel.Location = new System.Drawing.Point(797, 526);
+            this.PhiPrivateTextLabel.Location = new System.Drawing.Point(797, 488);
             this.PhiPrivateTextLabel.Name = "PhiPrivateTextLabel";
             this.PhiPrivateTextLabel.Size = new System.Drawing.Size(56, 13);
             this.PhiPrivateTextLabel.TabIndex = 159;
@@ -238,7 +244,7 @@
             // PhiPublicLabel
             // 
             this.PhiPublicLabel.AutoSize = true;
-            this.PhiPublicLabel.Location = new System.Drawing.Point(797, 539);
+            this.PhiPublicLabel.Location = new System.Drawing.Point(797, 501);
             this.PhiPublicLabel.Name = "PhiPublicLabel";
             this.PhiPublicLabel.Size = new System.Drawing.Size(13, 13);
             this.PhiPublicLabel.TabIndex = 160;
@@ -247,7 +253,7 @@
             // 
             // FindDButton
             // 
-            this.FindDButton.Location = new System.Drawing.Point(311, 675);
+            this.FindDButton.Location = new System.Drawing.Point(311, 637);
             this.FindDButton.Name = "FindDButton";
             this.FindDButton.Size = new System.Drawing.Size(75, 23);
             this.FindDButton.TabIndex = 161;
@@ -259,7 +265,7 @@
             // DTextLabel
             // 
             this.DTextLabel.AutoSize = true;
-            this.DTextLabel.Location = new System.Drawing.Point(797, 601);
+            this.DTextLabel.Location = new System.Drawing.Point(797, 563);
             this.DTextLabel.Name = "DTextLabel";
             this.DTextLabel.Size = new System.Drawing.Size(15, 13);
             this.DTextLabel.TabIndex = 162;
@@ -269,7 +275,7 @@
             // DLabel
             // 
             this.DLabel.AutoSize = true;
-            this.DLabel.Location = new System.Drawing.Point(797, 614);
+            this.DLabel.Location = new System.Drawing.Point(797, 576);
             this.DLabel.Name = "DLabel";
             this.DLabel.Size = new System.Drawing.Size(13, 13);
             this.DLabel.TabIndex = 163;
@@ -279,7 +285,7 @@
             // ExponentTextLabel
             // 
             this.ExponentTextLabel.AutoSize = true;
-            this.ExponentTextLabel.Location = new System.Drawing.Point(797, 562);
+            this.ExponentTextLabel.Location = new System.Drawing.Point(797, 524);
             this.ExponentTextLabel.Name = "ExponentTextLabel";
             this.ExponentTextLabel.Size = new System.Drawing.Size(52, 13);
             this.ExponentTextLabel.TabIndex = 164;
@@ -289,7 +295,7 @@
             // ExponentLabel
             // 
             this.ExponentLabel.AutoSize = true;
-            this.ExponentLabel.Location = new System.Drawing.Point(797, 575);
+            this.ExponentLabel.Location = new System.Drawing.Point(797, 537);
             this.ExponentLabel.Name = "ExponentLabel";
             this.ExponentLabel.Size = new System.Drawing.Size(13, 13);
             this.ExponentLabel.TabIndex = 165;

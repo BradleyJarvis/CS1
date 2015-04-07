@@ -249,6 +249,7 @@
             this.PrivateKeyExplanationTextBox.ReadOnly = true;
             this.PrivateKeyExplanationTextBox.Size = new System.Drawing.Size(672, 169);
             this.PrivateKeyExplanationTextBox.TabIndex = 142;
+            this.PrivateKeyExplanationTextBox.TabStop = false;
             this.PrivateKeyExplanationTextBox.Text = resources.GetString("PrivateKeyExplanationTextBox.Text");
             // 
             // label14
@@ -285,7 +286,7 @@
             this.Back5button.Location = new System.Drawing.Point(12, 705);
             this.Back5button.Name = "Back5button";
             this.Back5button.Size = new System.Drawing.Size(75, 23);
-            this.Back5button.TabIndex = 138;
+            this.Back5button.TabIndex = 140;
             this.Back5button.Text = "Back";
             this.Back5button.UseVisualStyleBackColor = true;
             this.Back5button.Visible = false;
@@ -301,6 +302,7 @@
             this.FinnishedTextBox.ReadOnly = true;
             this.FinnishedTextBox.Size = new System.Drawing.Size(672, 69);
             this.FinnishedTextBox.TabIndex = 137;
+            this.FinnishedTextBox.TabStop = false;
             this.FinnishedTextBox.Text = "Now that the shared secret message has been sent it can be used with private key " +
     "cryptography to protect data. If you would like to start again and try using dif" +
     "ferent numbers press \"Restart\"";
@@ -357,6 +359,7 @@
             this.FindCommontextBox.ReadOnly = true;
             this.FindCommontextBox.Size = new System.Drawing.Size(674, 152);
             this.FindCommontextBox.TabIndex = 132;
+            this.FindCommontextBox.TabStop = false;
             this.FindCommontextBox.Text = resources.GetString("FindCommontextBox.Text");
             this.FindCommontextBox.Visible = false;
             // 
@@ -436,6 +439,7 @@
             this.ReplytextBox.ReadOnly = true;
             this.ReplytextBox.Size = new System.Drawing.Size(672, 68);
             this.ReplytextBox.TabIndex = 125;
+            this.ReplytextBox.TabStop = false;
             this.ReplytextBox.Text = resources.GetString("ReplytextBox.Text");
             this.ReplytextBox.Visible = false;
             // 
@@ -471,6 +475,7 @@
             this.Send1textBox.ReadOnly = true;
             this.Send1textBox.Size = new System.Drawing.Size(672, 55);
             this.Send1textBox.TabIndex = 122;
+            this.Send1textBox.TabStop = false;
             this.Send1textBox.Text = "This number is then sent to the receiver, however a hacker is listening in on the" +
     "ir communications and they also receive the number. Press “Send” to send the num" +
     "ber.";
@@ -481,7 +486,7 @@
             this.FindAnswerbutton.Location = new System.Drawing.Point(293, 692);
             this.FindAnswerbutton.Name = "FindAnswerbutton";
             this.FindAnswerbutton.Size = new System.Drawing.Size(75, 23);
-            this.FindAnswerbutton.TabIndex = 2;
+            this.FindAnswerbutton.TabIndex = 4;
             this.FindAnswerbutton.Text = "Find Answer";
             this.FindAnswerbutton.UseVisualStyleBackColor = true;
             this.FindAnswerbutton.Visible = false;
@@ -508,6 +513,7 @@
             this.FindModtextbox.ReadOnly = true;
             this.FindModtextbox.Size = new System.Drawing.Size(672, 55);
             this.FindModtextbox.TabIndex = 119;
+            this.FindModtextbox.TabStop = false;
             this.FindModtextbox.Text = "Now that both sides have their secret numbers the sender uses it in the function " +
     "3^x MOD 17 where x is its secret number. Press “Find Answer” to generate the ans" +
     "wer to that sum.";
@@ -523,6 +529,7 @@
             this.GeneraterandomtextBox.ReadOnly = true;
             this.GeneraterandomtextBox.Size = new System.Drawing.Size(672, 55);
             this.GeneraterandomtextBox.TabIndex = 118;
+            this.GeneraterandomtextBox.TabStop = false;
             this.GeneraterandomtextBox.Text = "lets look at how this works with an example. 1st both parties randomly select a n" +
     "umber. Press “Generate secret numbers” to do this. ";
             // 
@@ -536,6 +543,7 @@
             this.PrivateKeyStepOneTextBox.ReadOnly = true;
             this.PrivateKeyStepOneTextBox.Size = new System.Drawing.Size(1281, 212);
             this.PrivateKeyStepOneTextBox.TabIndex = 117;
+            this.PrivateKeyStepOneTextBox.TabStop = false;
             this.PrivateKeyStepOneTextBox.Text = resources.GetString("PrivateKeyStepOneTextBox.Text");
             // 
             // SenderSecretKeyNumberLabel
@@ -704,6 +712,7 @@
             this.PrivateKeyIntroductionTextBox.ReadOnly = true;
             this.PrivateKeyIntroductionTextBox.Size = new System.Drawing.Size(1281, 170);
             this.PrivateKeyIntroductionTextBox.TabIndex = 99;
+            this.PrivateKeyIntroductionTextBox.TabStop = false;
             this.PrivateKeyIntroductionTextBox.Text = resources.GetString("PrivateKeyIntroductionTextBox.Text");
             // 
             // SymetricalKeysForm
