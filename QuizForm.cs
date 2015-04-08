@@ -26,12 +26,16 @@ namespace Group_project
             netScore = 0;
 
             // All questions go here
-            question Q1 = new question ("What is the answer to this question", "This is correct", "Answer 2", "Answer 3", "Answer 4", "crypt");
-            allQuestions.Add(Q1);
-            question Q2 = new question ("This is the second question, used to check the functionality", "This is the correct answer", "This is wrong", "This is wrong too", "And this is wrong as well", "digital");
-            allQuestions.Add(Q2);
-            question Q3 = new question("This is the third and final test question", "This answer is correct", "This answer is not correct", "This is a wrong answer", "And this is wrong too", "net");
-            allQuestions.Add(Q3);
+            // Questions should be added directly to the question list
+            // Variables to pass to new question are: question text, correct answer, incorrect answer 1, incorrect answer 2, incorrect answer 3, category
+            allQuestions.Add(new question("If the word \"Test\" is encrypted with a Caeser shift of 7, what is the result?", "Alza", "Docd", "Zlac", "Tset", "crypt"));
+            allQuestions.Add(new question("Which of the following is NOT a benefit of using HTTPS?", "Faster data transfer", "Prevents eavesdropping", "Identity confirmation", "All of these are benefits of HTTPS", "digital"));
+            allQuestions.Add(new question("If each the word \"LongTest\" was encrypted using a ceaser shift on each character with the key 8,15,19,1,1,7,20,14 what would be the encrypted result?", "TdghUlmh", "AdcvIthi", "PigmLtzt", "MqqkYkzb", "crypt"));
+            allQuestions.Add(new question("What does brute force hacking mean?", "Trying every possible password until the corrrect one is found", "Threatening the account holder to give up their password", "Using a keylogger to find the password", "None of these", "digital"));
+            allQuestions.Add(new question("You are given the word \"Zydkdy\" and are told that it has been Ceaser shifted by 10. What is the original word?", "Potato", "Buzzes", "Jackal", "Backup", "crypt"));
+            allQuestions.Add(new question("If you were knew someone was using a Ceaser shift to encrypt the word \"Cheese\" and the result is \"Gliiwi\", what value was it shifted by?", "4", "3", "8", "10", "crypt"));
+            allQuestions.Add(new question("What does two factor authentication require as well as normal login and password?", "A one use code sent to the user when they log in", "A second password", "Permission to be granted by another person", "Nothing, it is another name for username and password", "digital"));
+            allQuestions.Add(new question("Which of the following passwords would (in theory) take longest to crack?", "14 characters, upper and lowercase letters, numbers, special characters", "16 lowercase letters", "20 characters, all numbers", "18 characters, uppercase letters and numbers", "digital"));
             // End of questions
             showNewQuestion(allQuestions[0]);
         }
@@ -40,23 +44,22 @@ namespace Group_project
         {
             questionDisplayText.Text = Q.questionText;
 
-            int[] answersPlaced = new int[] {5,5,5,5};// Array used to track what answers have been placed on buttons already, starts containing 5s to prevent hang when 0 chosen
+            int[] buttonsPlaced = new int[] {5,5,5,5};// Array used to track what buttons have answers placed already, starts containing 5s to prevent hang when 0 chosen
             int number = 0;// Used to store the random number while it is check that it isn't already placed
             Button[] buttons = new Button[] {answerButton1, answerButton2, answerButton3, answerButton4};
             string[] answers = new string[] {Q.answer1, Q.answer2, Q.answer3, Q.answer4};// Aray used to hold strings with the possible answers
             for (int count = 0; count < 4; count++)
-            {// Place a random answer on button[count]
+            {// Place answer[count] on random button
                 number = rnd.Next(0, 4);
-                if (answersPlaced.Contains(number) == true)
+                if (buttonsPlaced.Contains(number) == true)
                     count--;
                 else
                 {
-                    answersPlaced[count] = number;
-                    buttons[count].Text = answers[number];
+                    buttonsPlaced[count] = number;
+                    buttons[number].Text = answers[count];
                 }
             }
         }
-
         bool checkAnswer(Button buttonPressed)
         {// Checks the answer given, if it correct it will return true, else it will return false
             if (buttonPressed.Text == allQuestions[currentQuestion].answer1)
@@ -64,7 +67,6 @@ namespace Group_project
             else
                 return false;
         }
-
         void updateResults(Button buttonPressed)
         {// Used to update quiz progress systems and move to next question
 
@@ -117,14 +119,13 @@ namespace Group_project
 
             if (currentQuestion >= allQuestions.Count)
             {
-                MessageBox.Show("This is the end of the quiz. Your scores are as follows:\nCryptography: " + cryptScore + "\nDigital security: " + digitalScore + "\nNetwork security: " + netScore + "\nYour total score is " + (cryptScore + digitalScore + netScore));
+                MessageBox.Show("This is the end of the quiz. Your scores are as follows:\nCryptography: " + cryptScore + "\nDigital security: " + digitalScore + "\nNetwork security: " + netScore + "\nYour total score is " + (cryptScore + digitalScore + netScore) + " / " + allQuestions.Count);
                 buttonPanel.Enabled = false;
                 return;
             }
 
             showNewQuestion(allQuestions[currentQuestion]);
         }
-
         private void addScore(string cat)
         {// Adds a point to the score of the category that was answered
             switch (cat)
@@ -143,7 +144,6 @@ namespace Group_project
             }
         }
     }
-
     public class question
     {
         public string questionText, answer1, answer2, answer3, answer4, category;

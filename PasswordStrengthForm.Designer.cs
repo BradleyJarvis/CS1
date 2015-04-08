@@ -133,7 +133,7 @@
             // PasswordStrengthForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(538, 318);
+            this.ClientSize = new System.Drawing.Size(538, 256);
             this.Controls.Add(this.explainationText);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.passInputBox);

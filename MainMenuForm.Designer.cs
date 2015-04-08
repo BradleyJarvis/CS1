@@ -457,7 +457,7 @@
             // 
             // imageLogo
             // 
-            this.imageLogo.Image = global::Group_project.Properties.Resources.Logo200;
+            this.imageLogo.Image = global::Group_project.Properties.Resources.Logo200_transparentBG;
             this.imageLogo.Location = new System.Drawing.Point(12, 27);
             this.imageLogo.Name = "imageLogo";
             this.imageLogo.Size = new System.Drawing.Size(200, 200);
