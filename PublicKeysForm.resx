@@ -152,4 +152,7 @@ Lets fill out our example, say the exponent (e) is a random number between 3 and
 d= (2*(Phi Secret) +1 ) / Exponent
 Press "Find d" to do this equation</value>
   </data>
+  <data name="ConverToNumberTextBox.Text" xml:space="preserve">
+    <value>We now have D, the private key. Now to send the data.Characters are stored in binary. the letter h for example would be 104. So if the sender wanted to send the message hello, it would convert into 104, 101, 108, 108, 111 the ASCII values. They could send this all as one number or as several messages. For this example we will send one letter with "A" being 1 and "Z" being 26. Select the letter you want to send and press "Convert to a number".</value>
+  </data>
 </root>

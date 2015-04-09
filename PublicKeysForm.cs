@@ -160,9 +160,81 @@ namespace Group_project
             ExponentTextLabel.Visible = true;
             ExponentLabel.Visible = true;
 
+            ConverToNumberTextBox.Visible = true;
+            ConvertToANumberButton.Visible = true;
+            MessageCharTextBox.Visible = true;
+            Back3Button.Visible = true;
+
             FindDButton.Visible = false;
             DTextBox.Visible = false;
             Back2Button.Visible = false;
+
+            ConvertToANumberButton.Select();
+        }
+
+        private void Back3Button_Click(object sender, EventArgs e)
+        {
+            PhiPublicLabel.ForeColor = Color.Red;
+
+            DLabel.ForeColor = Color.Black;
+            ExponentLabel.ForeColor = Color.Black;
+
+            ExponentLabel.Text = "_";
+            DLabel.Text = "_";
+
+            DTextLabel.Visible = false;
+            DLabel.Visible = false;
+            ExponentTextLabel.Visible = false;
+            ExponentLabel.Visible = false;
+
+            ConverToNumberTextBox.Visible = false;
+            ConvertToANumberButton.Visible = false;
+            MessageCharTextBox.Visible = false;
+            Back3Button.Visible = false;
+
+            FindDButton.Visible = true;
+            DTextBox.Visible = true;
+            Back2Button.Visible = true;
+
+            FindDButton.Select();
+        }
+
+
+        private void MessageCharTextBox_TextChanged_1(object sender, EventArgs e)
+        {
+            if (MessageCharTextBox.Text != "")
+            {
+                if (!(Char.IsLetter(MessageCharTextBox.Text[0])))
+                {
+                    MessageCharTextBox.Text = "a";
+                    MessageBox.Show("Please only use letters of the alphabet for this example.");
+
+                }
+            }
+        }
+
+        private void ConvertToANumberButton_Click(object sender, EventArgs e)
+        {
+            DLabel.ForeColor = Color.Black;
+            ExponentLabel.ForeColor = Color.Black;
+
+            MessageCharTextBox.ReadOnly = true;
+            MessageCharTextBox.BackColor = Color.LightGray;
+            MessageCharTextBox.ForeColor = Color.Red;
+
+            ConverToNumberTextBox.Visible = false;
+            ConvertToANumberButton.Visible = false;
+            Back3Button.Visible = false;
+
+            MessageNumberLabel.Visible = true;
+            MessageNumberTextLabel.Visible = true;
+
+            if (MessageCharTextBox.Text == "")
+            {
+                MessageCharTextBox.Text = "a";
+            }
+
+            //MessageNumberLabel.Text = Convert.ToString(Convert.ToInt16  (  ToUpper.MessageCharTextBox.Text[0]).   ) );    
         }
 
     }

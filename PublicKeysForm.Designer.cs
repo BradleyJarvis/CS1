@@ -52,6 +52,13 @@
             this.DLabel = new System.Windows.Forms.Label();
             this.ExponentTextLabel = new System.Windows.Forms.Label();
             this.ExponentLabel = new System.Windows.Forms.Label();
+            this.ConverToNumberTextBox = new System.Windows.Forms.TextBox();
+            this.Back3Button = new System.Windows.Forms.Button();
+            this.ConvertToANumberButton = new System.Windows.Forms.Button();
+            this.MessageCharTextBox = new System.Windows.Forms.TextBox();
+            this.MessageLetterLabel = new System.Windows.Forms.Label();
+            this.MessageNumberTextLabel = new System.Windows.Forms.Label();
+            this.MessageNumberLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // IntroductionTextBox
@@ -302,10 +309,92 @@
             this.ExponentLabel.Text = "_";
             this.ExponentLabel.Visible = false;
             // 
+            // ConverToNumberTextBox
+            // 
+            this.ConverToNumberTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ConverToNumberTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConverToNumberTextBox.Location = new System.Drawing.Point(12, 402);
+            this.ConverToNumberTextBox.Multiline = true;
+            this.ConverToNumberTextBox.Name = "ConverToNumberTextBox";
+            this.ConverToNumberTextBox.ReadOnly = true;
+            this.ConverToNumberTextBox.Size = new System.Drawing.Size(747, 112);
+            this.ConverToNumberTextBox.TabIndex = 166;
+            this.ConverToNumberTextBox.TabStop = false;
+            this.ConverToNumberTextBox.Text = resources.GetString("ConverToNumberTextBox.Text");
+            this.ConverToNumberTextBox.Visible = false;
+            // 
+            // Back3Button
+            // 
+            this.Back3Button.Location = new System.Drawing.Point(12, 520);
+            this.Back3Button.Name = "Back3Button";
+            this.Back3Button.Size = new System.Drawing.Size(75, 23);
+            this.Back3Button.TabIndex = 167;
+            this.Back3Button.Text = "Back";
+            this.Back3Button.UseVisualStyleBackColor = true;
+            this.Back3Button.Visible = false;
+            this.Back3Button.Click += new System.EventHandler(this.Back3Button_Click);
+            // 
+            // ConvertToANumberButton
+            // 
+            this.ConvertToANumberButton.Location = new System.Drawing.Point(284, 520);
+            this.ConvertToANumberButton.Name = "ConvertToANumberButton";
+            this.ConvertToANumberButton.Size = new System.Drawing.Size(123, 23);
+            this.ConvertToANumberButton.TabIndex = 168;
+            this.ConvertToANumberButton.Text = "Convert To A Number";
+            this.ConvertToANumberButton.UseVisualStyleBackColor = true;
+            this.ConvertToANumberButton.Visible = false;
+            this.ConvertToANumberButton.Click += new System.EventHandler(this.ConvertToANumberButton_Click);
+            // 
+            // MessageCharTextBox
+            // 
+            this.MessageCharTextBox.Location = new System.Drawing.Point(800, 614);
+            this.MessageCharTextBox.MaxLength = 1;
+            this.MessageCharTextBox.Name = "MessageCharTextBox";
+            this.MessageCharTextBox.Size = new System.Drawing.Size(20, 20);
+            this.MessageCharTextBox.TabIndex = 169;
+            this.MessageCharTextBox.Visible = false;
+            this.MessageCharTextBox.TextChanged += new System.EventHandler(this.MessageCharTextBox_TextChanged_1);
+            // 
+            // MessageLetterLabel
+            // 
+            this.MessageLetterLabel.AutoSize = true;
+            this.MessageLetterLabel.Location = new System.Drawing.Point(797, 598);
+            this.MessageLetterLabel.Name = "MessageLetterLabel";
+            this.MessageLetterLabel.Size = new System.Drawing.Size(80, 13);
+            this.MessageLetterLabel.TabIndex = 170;
+            this.MessageLetterLabel.Text = "Message Letter";
+            // 
+            // MessageNumberTextLabel
+            // 
+            this.MessageNumberTextLabel.AutoSize = true;
+            this.MessageNumberTextLabel.Location = new System.Drawing.Point(883, 598);
+            this.MessageNumberTextLabel.Name = "MessageNumberTextLabel";
+            this.MessageNumberTextLabel.Size = new System.Drawing.Size(90, 13);
+            this.MessageNumberTextLabel.TabIndex = 171;
+            this.MessageNumberTextLabel.Text = "Message Number";
+            this.MessageNumberTextLabel.Visible = false;
+            // 
+            // MessageNumberLabel
+            // 
+            this.MessageNumberLabel.AutoSize = true;
+            this.MessageNumberLabel.Location = new System.Drawing.Point(883, 617);
+            this.MessageNumberLabel.Name = "MessageNumberLabel";
+            this.MessageNumberLabel.Size = new System.Drawing.Size(13, 13);
+            this.MessageNumberLabel.TabIndex = 172;
+            this.MessageNumberLabel.Text = "_";
+            this.MessageNumberLabel.Visible = false;
+            // 
             // PublicKeysForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(1311, 971);
+            this.Controls.Add(this.MessageNumberLabel);
+            this.Controls.Add(this.MessageNumberTextLabel);
+            this.Controls.Add(this.MessageLetterLabel);
+            this.Controls.Add(this.MessageCharTextBox);
+            this.Controls.Add(this.ConvertToANumberButton);
+            this.Controls.Add(this.Back3Button);
+            this.Controls.Add(this.ConverToNumberTextBox);
             this.Controls.Add(this.ExponentLabel);
             this.Controls.Add(this.ExponentTextLabel);
             this.Controls.Add(this.DLabel);
@@ -353,6 +442,13 @@
             this.Controls.SetChildIndex(this.DLabel, 0);
             this.Controls.SetChildIndex(this.ExponentTextLabel, 0);
             this.Controls.SetChildIndex(this.ExponentLabel, 0);
+            this.Controls.SetChildIndex(this.ConverToNumberTextBox, 0);
+            this.Controls.SetChildIndex(this.Back3Button, 0);
+            this.Controls.SetChildIndex(this.ConvertToANumberButton, 0);
+            this.Controls.SetChildIndex(this.MessageCharTextBox, 0);
+            this.Controls.SetChildIndex(this.MessageLetterLabel, 0);
+            this.Controls.SetChildIndex(this.MessageNumberTextLabel, 0);
+            this.Controls.SetChildIndex(this.MessageNumberLabel, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -383,6 +479,13 @@
         private System.Windows.Forms.Label DLabel;
         private System.Windows.Forms.Label ExponentTextLabel;
         private System.Windows.Forms.Label ExponentLabel;
+        private System.Windows.Forms.TextBox ConverToNumberTextBox;
+        private System.Windows.Forms.Button Back3Button;
+        private System.Windows.Forms.Button ConvertToANumberButton;
+        private System.Windows.Forms.TextBox MessageCharTextBox;
+        private System.Windows.Forms.Label MessageLetterLabel;
+        private System.Windows.Forms.Label MessageNumberTextLabel;
+        private System.Windows.Forms.Label MessageNumberLabel;
 
     }
 }
