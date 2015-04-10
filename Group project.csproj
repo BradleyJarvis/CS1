@@ -175,6 +175,9 @@
     <EmbeddedResource Include="MainMenuForm.resx">
       <DependentUpon>MainMenuForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NetworkFirewallsForm.resx">
+      <DependentUpon>NetworkFirewallsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PasswordManagersForm.resx">
       <DependentUpon>PasswordManagersForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -275,6 +278,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\HTTPSCerts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Firewall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Firewall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

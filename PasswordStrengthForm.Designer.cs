@@ -121,6 +121,7 @@
             // 
             // explainationText
             // 
+            this.explainationText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.explainationText.Location = new System.Drawing.Point(162, 77);
             this.explainationText.Multiline = true;
             this.explainationText.Name = "explainationText";

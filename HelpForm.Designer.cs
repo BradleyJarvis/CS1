@@ -49,7 +49,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "HelpForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "HelpForm";
+            this.Text = "Edu-Cyber Scelus Help";
             this.ResumeLayout(false);
             this.PerformLayout();
 

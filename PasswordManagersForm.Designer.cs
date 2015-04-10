@@ -99,7 +99,8 @@
             // 
             // explainationText
             // 
-            this.explainationText.Location = new System.Drawing.Point(12, 87);
+            this.explainationText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.explainationText.Location = new System.Drawing.Point(8, 87);
             this.explainationText.Multiline = true;
             this.explainationText.Name = "explainationText";
             this.explainationText.ReadOnly = true;

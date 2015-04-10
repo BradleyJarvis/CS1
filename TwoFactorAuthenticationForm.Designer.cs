@@ -97,6 +97,7 @@
             // 
             // explainationText
             // 
+            this.explainationText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.explainationText.Location = new System.Drawing.Point(12, 99);
             this.explainationText.Multiline = true;
             this.explainationText.Name = "explainationText";
@@ -110,7 +111,7 @@
             // 
             this.AcceptButton = this.LoginButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(512, 326);
+            this.ClientSize = new System.Drawing.Size(496, 285);
             this.Controls.Add(this.explainationText);
             this.Controls.Add(this.loginResultLabel);
             this.Controls.Add(this.label1);
