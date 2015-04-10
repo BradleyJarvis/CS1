@@ -222,6 +222,13 @@ namespace Group_project
             MessageCharTextBox.BackColor = Color.LightGray;
             MessageCharTextBox.ForeColor = Color.Red;
 
+
+            if (MessageCharTextBox.Text == "")
+            {
+                MessageCharTextBox.Text = "a";
+            }
+            MessageNumberLabel.Text = Convert.ToString(((Convert.ToInt16(MessageCharTextBox.Text[0])) - 64) % 32);    
+
             ConverToNumberTextBox.Visible = false;
             ConvertToANumberButton.Visible = false;
             Back3Button.Visible = false;
@@ -229,12 +236,70 @@ namespace Group_project
             MessageNumberLabel.Visible = true;
             MessageNumberTextLabel.Visible = true;
 
-            if (MessageCharTextBox.Text == "")
-            {
-                MessageCharTextBox.Text = "a";
-            }
+            EncryptAndSendTextbox.Visible = true;
+            EncryptMessageAndSendButton.Visible = true;
+            Back4Button.Visible = true;
 
-            //MessageNumberLabel.Text = Convert.ToString(Convert.ToInt16  (  ToUpper.MessageCharTextBox.Text[0]).   ) );    
+            EncryptMessageAndSendButton.Select();
+        }
+
+        private void Back4Button_Click(object sender, EventArgs e)
+        {
+            DLabel.ForeColor = Color.Red;
+            ExponentLabel.ForeColor = Color.Red;
+
+            MessageCharTextBox.ReadOnly = false;
+            MessageCharTextBox.BackColor = Color.White;
+            MessageCharTextBox.ForeColor = Color.Black;
+
+
+            MessageCharTextBox.Text = "";
+            MessageNumberLabel.Text = "_";
+
+            ConverToNumberTextBox.Visible = true;
+            ConvertToANumberButton.Visible = true;
+            Back3Button.Visible = true;
+
+            MessageNumberLabel.Visible = false;
+            MessageNumberTextLabel.Visible = false;
+
+            EncryptAndSendTextbox.Visible = false;
+            EncryptMessageAndSendButton.Visible = false;
+            Back4Button.Visible = false;
+
+            ConvertToANumberButton.Select();
+        }
+
+        private void EncryptMessageAndSendButton_Click(object sender, EventArgs e)
+        {
+            EncryptedMessageLabel.ForeColor = Color.Red;
+            EavesdropperELabel.ForeColor = Color.Red;
+            EavesdropperMLabel.ForeColor = Color.Red;
+            EavesdropperNLabel.ForeColor = Color.Red;
+
+            MessageCharTextBox.ForeColor = Color.Black;
+
+            EncryptedMessageLabel.Text = Convert.ToString( (Convert.ToInt32(MessageNumberLabel.Text) ^ Convert.ToInt32(ExponentLabel.Text)) % Convert.ToInt32(FirstPrimeNumberTimesSecondPrimeNumberLabel.Text) );
+
+            EavesdropperELabel.Text = ExponentLabel.Text;
+            EavesdropperMLabel.Text = EncryptedMessageLabel.Text;
+            EavesdropperNLabel.Text = FirstPrimeNumberTimesSecondPrimeNumberLabel.Text;
+
+            EncryptedMessageLabel.Visible = true;
+            EncryptedMessageTextLabel.Visible = true;
+
+            EavesdropperETextLabel.Visible = true;
+            EavesdropperELabel.Visible = true;
+            EavesdropperMTextLabel.Visible = true;
+            EavesdropperMLabel.Visible = true;
+            EavesdropperNTextLabel.Visible = true;
+            EavesdropperNLabel.Visible = true;
+
+
+
+            EncryptAndSendTextbox.Visible = false;
+            EncryptMessageAndSendButton.Visible = false;
+            Back4Button.Visible = false;
         }
 
     }

@@ -153,6 +153,9 @@ d= (2*(Phi Secret) +1 ) / Exponent
 Press "Find d" to do this equation</value>
   </data>
   <data name="ConverToNumberTextBox.Text" xml:space="preserve">
-    <value>We now have D, the private key. Now to send the data.Characters are stored in binary. the letter h for example would be 104. So if the sender wanted to send the message hello, it would convert into 104, 101, 108, 108, 111 the ASCII values. They could send this all as one number or as several messages. For this example we will send one letter with "A" being 1 and "Z" being 26. Select the letter you want to send and press "Convert to a number".</value>
+    <value>We now have D, the private key. Now to send the data. First the bank or whoever created this key, sends the public portion of the key to anyone who wants to send them information, remember that the public key is the  two  prime numbers multiplied together and the exponent.Lets say that you are a person who wants to send a message to the bank without anyone knowing. Characters are stored in binary. the letter h for example would be 104. So if the sender wanted to send the message hello, it would convert into 104, 101, 108, 108, 111 the ASCII values. They could send this all as one number or as several messages. For this example we will send one letter with "A" being 1 and "Z" being 26. Select the letter you want to send and press "Convert to a number".</value>
+  </data>
+  <data name="EncryptAndSendTextbox.Text" xml:space="preserve">
+    <value>To encrypt there message the customer takes the message they want to send (m) raise it to the exponent in the public key (e) and then MOD by the two  prime numbers multiplied together (n) which is also part of the public key. So you have m^e MOD n = The encrypted message. this is then sent to the bank. However there is also an eavesdropper who has been listening in the whole time as so they know all the information that has been sent. Press “Encrypt Message and Send” to use the encryption formula on the letter you wanted to send and also fill in the information that the eavesdropper has access to.</value>
   </data>
 </root>
