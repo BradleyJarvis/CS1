@@ -73,6 +73,7 @@
             this.EavesdropperELabel = new System.Windows.Forms.Label();
             this.EavesdropperMTextLabel = new System.Windows.Forms.Label();
             this.EavesdropperMLabel = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // IntroductionTextBox
@@ -545,10 +546,25 @@
             this.EavesdropperMLabel.Text = "_";
             this.EavesdropperMLabel.Visible = false;
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(491, 718);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(747, 131);
+            this.textBox1.TabIndex = 187;
+            this.textBox1.TabStop = false;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
+            this.textBox1.Visible = false;
+            // 
             // PublicKeysForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(1311, 971);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.EavesdropperMLabel);
             this.Controls.Add(this.EavesdropperMTextLabel);
             this.Controls.Add(this.EavesdropperELabel);
@@ -638,6 +654,7 @@
             this.Controls.SetChildIndex(this.EavesdropperELabel, 0);
             this.Controls.SetChildIndex(this.EavesdropperMTextLabel, 0);
             this.Controls.SetChildIndex(this.EavesdropperMLabel, 0);
+            this.Controls.SetChildIndex(this.textBox1, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -689,6 +706,7 @@
         private System.Windows.Forms.Label EavesdropperELabel;
         private System.Windows.Forms.Label EavesdropperMTextLabel;
         private System.Windows.Forms.Label EavesdropperMLabel;
+        private System.Windows.Forms.TextBox textBox1;
 
     }
 }

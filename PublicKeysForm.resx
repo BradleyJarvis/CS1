@@ -158,4 +158,7 @@ Press "Find d" to do this equation</value>
   <data name="EncryptAndSendTextbox.Text" xml:space="preserve">
     <value>To encrypt there message the customer takes the message they want to send (m) raise it to the exponent in the public key (e) and then MOD by the two  prime numbers multiplied together (n) which is also part of the public key. So you have m^e MOD n = The encrypted message. this is then sent to the bank. However there is also an eavesdropper who has been listening in the whole time as so they know all the information that has been sent. Press “Encrypt Message and Send” to use the encryption formula on the letter you wanted to send and also fill in the information that the eavesdropper has access to.</value>
   </data>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Now for the decryption, alice uses her private key, the phi of the prime numbers timesed together. She uses it in the equation encrypted message ^ Phi of primes ≡ Decrypted Message MOD 3127. Since only the bank knows this private key the eavesdropper cannot decypher the message unless that can discover the prime factorisation of the two prime numbers a problem that takes an extremely long time for big numbers. Press “Decrypt” to find the decrypted message.</value>
+  </data>
 </root>

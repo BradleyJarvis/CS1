@@ -274,6 +274,9 @@ namespace Group_project
         {
             EncryptedMessageLabel.ForeColor = Color.Red;
             EavesdropperELabel.ForeColor = Color.Red;
+            EavesdropperELabel.ForeColor = Color.Red;
+            EavesdropperELabel.ForeColor = Color.Red;
+            EavesdropperELabel.ForeColor = Color.Red;
             EavesdropperMLabel.ForeColor = Color.Red;
             EavesdropperNLabel.ForeColor = Color.Red;
 
