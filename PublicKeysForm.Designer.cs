@@ -164,6 +164,7 @@
             this.FirstPrimeNumberTextLabel.Size = new System.Drawing.Size(95, 13);
             this.FirstPrimeNumberTextLabel.TabIndex = 149;
             this.FirstPrimeNumberTextLabel.Text = "First Prime Number";
+            this.FirstPrimeNumberTextLabel.Visible = false;
             // 
             // SecondPrimeNumberTextLabel
             // 
@@ -173,6 +174,7 @@
             this.SecondPrimeNumberTextLabel.Size = new System.Drawing.Size(113, 13);
             this.SecondPrimeNumberTextLabel.TabIndex = 150;
             this.SecondPrimeNumberTextLabel.Text = "Second Prime Number";
+            this.SecondPrimeNumberTextLabel.Visible = false;
             // 
             // FirstPrimeNumberLabel
             // 
@@ -182,6 +184,7 @@
             this.FirstPrimeNumberLabel.Size = new System.Drawing.Size(13, 13);
             this.FirstPrimeNumberLabel.TabIndex = 151;
             this.FirstPrimeNumberLabel.Text = "_";
+            this.FirstPrimeNumberLabel.Visible = false;
             // 
             // SecondPrimeNumberLabel
             // 
@@ -191,6 +194,7 @@
             this.SecondPrimeNumberLabel.Size = new System.Drawing.Size(13, 13);
             this.SecondPrimeNumberLabel.TabIndex = 152;
             this.SecondPrimeNumberLabel.Text = "_";
+            this.SecondPrimeNumberLabel.Visible = false;
             // 
             // FirstPrimeNumberTimesSecondPrimeNumberTextLabel
             // 
@@ -200,6 +204,7 @@
             this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel.Size = new System.Drawing.Size(232, 13);
             this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel.TabIndex = 153;
             this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel.Text = "FirstPrime Number Times Second Prime Number";
+            this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel.Visible = false;
             // 
             // FirstPrimeNumberTimesSecondPrimeNumberLabel
             // 
@@ -209,6 +214,7 @@
             this.FirstPrimeNumberTimesSecondPrimeNumberLabel.Size = new System.Drawing.Size(13, 13);
             this.FirstPrimeNumberTimesSecondPrimeNumberLabel.TabIndex = 154;
             this.FirstPrimeNumberTimesSecondPrimeNumberLabel.Text = "_";
+            this.FirstPrimeNumberTimesSecondPrimeNumberLabel.Visible = false;
             // 
             // PhiTextBox
             // 
