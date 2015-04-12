@@ -99,13 +99,13 @@ namespace Group_project
             SecondPrimeNumberLabel.ForeColor = Color.Black;
             FirstPrimeNumberTimesSecondPrimeNumberLabel.ForeColor = Color.Black;
 
-            PhiPublicLabel.ForeColor = Color.Red;
+            PhiPrivateLabel.ForeColor = Color.Red;
 
-            PhiPublicLabel.Text = Convert.ToString((Convert.ToInt32(FirstPrimeNumberLabel.Text) - 1) * (Convert.ToInt32(SecondPrimeNumberLabel.Text) - 1));
+            PhiPrivateLabel.Text = Convert.ToString((Convert.ToInt32(FirstPrimeNumberLabel.Text) - 1) * (Convert.ToInt32(SecondPrimeNumberLabel.Text) - 1));
 
 
             PhiPrivateTextLabel.Visible = true;
-            PhiPublicLabel.Visible = true;
+            PhiPrivateLabel.Visible = true;
 
             FindDButton.Visible = true;
             DTextBox.Visible = true;
@@ -124,12 +124,12 @@ namespace Group_project
             SecondPrimeNumberLabel.ForeColor = Color.Red;
             FirstPrimeNumberTimesSecondPrimeNumberLabel.ForeColor = Color.Red;
 
-            PhiPublicLabel.ForeColor = Color.Black;
+            PhiPrivateLabel.ForeColor = Color.Black;
 
-            PhiPublicLabel.Text = "_";
+            PhiPrivateLabel.Text = "_";
 
             PhiPrivateTextLabel.Visible = false;
-            PhiPublicLabel.Visible = false;
+            PhiPrivateLabel.Visible = false;
 
             FindDButton.Visible = false;
             DTextBox.Visible = false;
@@ -147,22 +147,23 @@ namespace Group_project
             Random RandomNumber = new Random();
             int Exponent = RandomNumber.Next(3,20);
 
-            PhiPublicLabel.ForeColor = Color.Black;
+            PhiPrivateLabel.ForeColor = Color.Black;
 
             DLabel.ForeColor = Color.Red;
             ExponentLabel.ForeColor = Color.Red;
 
             ExponentLabel.Text = Convert.ToString(Exponent);
-            DLabel.Text = Convert.ToString((2 * Convert.ToInt32(PhiPublicLabel.Text) + 1) / Exponent);
+            DLabel.Text = Convert.ToString((2 * Convert.ToInt32(PhiPrivateLabel.Text) + 1) / Exponent);
 
             DTextLabel.Visible = true;
             DLabel.Visible = true;
             ExponentTextLabel.Visible = true;
             ExponentLabel.Visible = true;
+            MessageCharTextBox.Visible = true;
+            MessageLetterLabel.Visible = true;
 
             ConverToNumberTextBox.Visible = true;
             ConvertToANumberButton.Visible = true;
-            MessageCharTextBox.Visible = true;
             Back3Button.Visible = true;
 
             FindDButton.Visible = false;
@@ -174,7 +175,7 @@ namespace Group_project
 
         private void Back3Button_Click(object sender, EventArgs e)
         {
-            PhiPublicLabel.ForeColor = Color.Red;
+            PhiPrivateLabel.ForeColor = Color.Red;
 
             DLabel.ForeColor = Color.Black;
             ExponentLabel.ForeColor = Color.Black;
@@ -186,10 +187,11 @@ namespace Group_project
             DLabel.Visible = false;
             ExponentTextLabel.Visible = false;
             ExponentLabel.Visible = false;
+            MessageCharTextBox.Visible = false;
+            MessageLetterLabel.Visible = false;
 
             ConverToNumberTextBox.Visible = false;
             ConvertToANumberButton.Visible = false;
-            MessageCharTextBox.Visible = false;
             Back3Button.Visible = false;
 
             FindDButton.Visible = true;
@@ -298,12 +300,179 @@ namespace Group_project
             EavesdropperNTextLabel.Visible = true;
             EavesdropperNLabel.Visible = true;
 
-
+            DecryptButton.Visible = true;
+            DecryptTextBox.Visible = true;
+            Back5Button.Visible = true;
 
             EncryptAndSendTextbox.Visible = false;
             EncryptMessageAndSendButton.Visible = false;
             Back4Button.Visible = false;
+
+            DecryptButton.Select();
         }
 
+        private void DecryptButton_Click(object sender, EventArgs e)
+        {
+            DecryptedLabel.ForeColor = Color.Red;
+
+            EncryptedMessageLabel.ForeColor = Color.Black;
+            EavesdropperELabel.ForeColor = Color.Black;
+            EavesdropperELabel.ForeColor = Color.Black;
+            EavesdropperELabel.ForeColor = Color.Black;
+            EavesdropperELabel.ForeColor = Color.Black;
+            EavesdropperMLabel.ForeColor = Color.Black;
+            EavesdropperNLabel.ForeColor = Color.Black;
+
+            DecryptedLabel.Text = MessageCharTextBox.Text; //While this is technically cheating, the wizard of oz approach allows for faster results and the purpose of this program is only demonstration and education.
+
+            DecryptedTextLabel.Visible = true;
+            DecryptedLabel.Visible = true;
+
+            RestartButton.Visible = true;
+            RestartTextBox.Visible = true;
+            Back6Button.Visible = true;
+
+            DecryptButton.Visible = false;
+            DecryptTextBox.Visible = false;
+            Back5Button.Visible = false;
+
+            RestartButton.Visible = true;
+
+            RestartButton.Select();
+          
+        }
+
+        private void Back5Button_Click(object sender, EventArgs e)
+        {
+            EncryptedMessageLabel.ForeColor = Color.Black;
+            EavesdropperELabel.ForeColor = Color.Black;
+            EavesdropperELabel.ForeColor = Color.Black;
+            EavesdropperELabel.ForeColor = Color.Black;
+            EavesdropperELabel.ForeColor = Color.Black;
+            EavesdropperMLabel.ForeColor = Color.Black;
+            EavesdropperNLabel.ForeColor = Color.Black;
+
+            MessageCharTextBox.ForeColor = Color.Red;
+
+            EncryptedMessageLabel.Text = "_";
+
+            EavesdropperELabel.Text = "_";
+            EavesdropperMLabel.Text = "_";
+            EavesdropperNLabel.Text = "_";
+
+            EncryptedMessageLabel.Visible = false;
+            EncryptedMessageTextLabel.Visible = false;
+
+            EavesdropperETextLabel.Visible = false;
+            EavesdropperELabel.Visible = false;
+            EavesdropperMTextLabel.Visible = false;
+            EavesdropperMLabel.Visible = false;
+            EavesdropperNTextLabel.Visible = false;
+            EavesdropperNLabel.Visible = false;
+
+            DecryptButton.Visible = false;
+            DecryptTextBox.Visible = false;
+            Back5Button.Visible = false;
+
+            EncryptAndSendTextbox.Visible = true;
+            EncryptMessageAndSendButton.Visible = true;
+            Back4Button.Visible = true;
+
+            EncryptMessageAndSendButton.Select();
+        }
+
+        private void Back6Button_Click(object sender, EventArgs e)
+        {
+            DecryptedLabel.ForeColor = Color.Black;
+
+            EncryptedMessageLabel.ForeColor = Color.Red;
+            EavesdropperELabel.ForeColor = Color.Red;
+            EavesdropperELabel.ForeColor = Color.Red;
+            EavesdropperELabel.ForeColor = Color.Red;
+            EavesdropperELabel.ForeColor = Color.Red;
+            EavesdropperMLabel.ForeColor = Color.Red;
+            EavesdropperNLabel.ForeColor = Color.Red;
+
+            DecryptedLabel.Text = "_";
+
+            DecryptedTextLabel.Visible = false;
+            DecryptedLabel.Visible = false;
+
+            RestartButton.Visible = false;
+            RestartTextBox.Visible = false;
+            Back6Button.Visible = false;
+
+            DecryptButton.Visible = true;
+            DecryptTextBox.Visible = true;
+            Back5Button.Visible = true;
+
+            DecryptButton.Select();
+        }
+
+        private void RestartButton_Click(object sender, EventArgs e)
+        {
+            MessageCharTextBox.ReadOnly = false;
+            MessageCharTextBox.BackColor = Color.White;
+            MessageCharTextBox.ForeColor = Color.Black;
+
+            DecryptedLabel.ForeColor = Color.Black;
+
+            DecryptedLabel.Text = "_";
+
+            EncryptedMessageLabel.Text = "_";
+
+            EavesdropperELabel.Text = "_";
+            EavesdropperMLabel.Text = "_";
+            EavesdropperNLabel.Text = "_";
+
+            MessageCharTextBox.Text = "a";
+            MessageNumberLabel.Text = "_";
+
+            ExponentLabel.Text = "_";
+            DLabel.Text = "_";
+
+            PhiPrivateLabel.Text = "_";
+
+            FirstPrimeNumberLabel.Text = "_";
+            SecondPrimeNumberLabel.Text = "_";
+            FirstPrimeNumberTimesSecondPrimeNumberLabel.Text = "_";
+
+            StartingTextBox.Visible = true;
+            GenerateAndMultiplyButton.Visible = true;
+
+            RestartButton.Visible = false;
+            RestartTextBox.Visible = false;
+            Back6Button.Visible = false;
+
+            DecryptedTextLabel.Visible = false;
+            DecryptedLabel.Visible = false;
+
+            EavesdropperETextLabel.Visible = false;
+            EavesdropperELabel.Visible = false;
+            EavesdropperMTextLabel.Visible = false;
+            EavesdropperMLabel.Visible = false;
+            EavesdropperNTextLabel.Visible = false;
+            EavesdropperNLabel.Visible = false;
+
+            EncryptedMessageLabel.Visible = false;
+            EncryptedMessageTextLabel.Visible = false;
+
+            MessageNumberLabel.Visible = false;
+            MessageNumberTextLabel.Visible = false;
+
+            MessageCharTextBox.Visible = false;
+            MessageLetterLabel.Visible = false;
+
+            DTextLabel.Visible = false;
+            DLabel.Visible = false;
+            ExponentTextLabel.Visible = false;
+            ExponentLabel.Visible = false;
+
+            PhiPrivateTextLabel.Visible = false;
+            PhiPrivateLabel.Visible = false;
+
+            GenerateAndMultiplyButton.Select();
+
+        }
     }
 }

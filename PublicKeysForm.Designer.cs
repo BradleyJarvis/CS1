@@ -46,7 +46,7 @@
             this.Back2Button = new System.Windows.Forms.Button();
             this.DTextBox = new System.Windows.Forms.TextBox();
             this.PhiPrivateTextLabel = new System.Windows.Forms.Label();
-            this.PhiPublicLabel = new System.Windows.Forms.Label();
+            this.PhiPrivateLabel = new System.Windows.Forms.Label();
             this.FindDButton = new System.Windows.Forms.Button();
             this.DTextLabel = new System.Windows.Forms.Label();
             this.DLabel = new System.Windows.Forms.Label();
@@ -73,14 +73,21 @@
             this.EavesdropperELabel = new System.Windows.Forms.Label();
             this.EavesdropperMTextLabel = new System.Windows.Forms.Label();
             this.EavesdropperMLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DecryptTextBox = new System.Windows.Forms.TextBox();
+            this.DecryptButton = new System.Windows.Forms.Button();
+            this.Back5Button = new System.Windows.Forms.Button();
+            this.DecryptedTextLabel = new System.Windows.Forms.Label();
+            this.DecryptedLabel = new System.Windows.Forms.Label();
+            this.RestartTextBox = new System.Windows.Forms.TextBox();
+            this.Back6Button = new System.Windows.Forms.Button();
+            this.RestartButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // IntroductionTextBox
             // 
             this.IntroductionTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.IntroductionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IntroductionTextBox.Location = new System.Drawing.Point(12, 27);
+            this.IntroductionTextBox.Location = new System.Drawing.Point(12, 71);
             this.IntroductionTextBox.Multiline = true;
             this.IntroductionTextBox.Name = "IntroductionTextBox";
             this.IntroductionTextBox.ReadOnly = true;
@@ -93,7 +100,7 @@
             // 
             this.OutlineTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.OutlineTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OutlineTextBox.Location = new System.Drawing.Point(12, 105);
+            this.OutlineTextBox.Location = new System.Drawing.Point(12, 149);
             this.OutlineTextBox.Multiline = true;
             this.OutlineTextBox.Name = "OutlineTextBox";
             this.OutlineTextBox.ReadOnly = true;
@@ -106,7 +113,7 @@
             // 
             this.FacorisingIntroductionTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.FacorisingIntroductionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FacorisingIntroductionTextBox.Location = new System.Drawing.Point(12, 324);
+            this.FacorisingIntroductionTextBox.Location = new System.Drawing.Point(12, 368);
             this.FacorisingIntroductionTextBox.Multiline = true;
             this.FacorisingIntroductionTextBox.Name = "FacorisingIntroductionTextBox";
             this.FacorisingIntroductionTextBox.ReadOnly = true;
@@ -119,7 +126,7 @@
             // 
             this.StartingTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.StartingTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StartingTextBox.Location = new System.Drawing.Point(12, 402);
+            this.StartingTextBox.Location = new System.Drawing.Point(12, 446);
             this.StartingTextBox.Multiline = true;
             this.StartingTextBox.Name = "StartingTextBox";
             this.StartingTextBox.ReadOnly = true;
@@ -130,7 +137,7 @@
             // 
             // Back1Button
             // 
-            this.Back1Button.Location = new System.Drawing.Point(12, 680);
+            this.Back1Button.Location = new System.Drawing.Point(12, 724);
             this.Back1Button.Name = "Back1Button";
             this.Back1Button.Size = new System.Drawing.Size(75, 23);
             this.Back1Button.TabIndex = 147;
@@ -141,7 +148,7 @@
             // 
             // GenerateAndMultiplyButton
             // 
-            this.GenerateAndMultiplyButton.Location = new System.Drawing.Point(284, 563);
+            this.GenerateAndMultiplyButton.Location = new System.Drawing.Point(284, 607);
             this.GenerateAndMultiplyButton.Name = "GenerateAndMultiplyButton";
             this.GenerateAndMultiplyButton.Size = new System.Drawing.Size(123, 23);
             this.GenerateAndMultiplyButton.TabIndex = 141;
@@ -152,7 +159,7 @@
             // FirstPrimeNumberTextLabel
             // 
             this.FirstPrimeNumberTextLabel.AutoSize = true;
-            this.FirstPrimeNumberTextLabel.Location = new System.Drawing.Point(765, 437);
+            this.FirstPrimeNumberTextLabel.Location = new System.Drawing.Point(765, 481);
             this.FirstPrimeNumberTextLabel.Name = "FirstPrimeNumberTextLabel";
             this.FirstPrimeNumberTextLabel.Size = new System.Drawing.Size(95, 13);
             this.FirstPrimeNumberTextLabel.TabIndex = 149;
@@ -161,7 +168,7 @@
             // SecondPrimeNumberTextLabel
             // 
             this.SecondPrimeNumberTextLabel.AutoSize = true;
-            this.SecondPrimeNumberTextLabel.Location = new System.Drawing.Point(765, 450);
+            this.SecondPrimeNumberTextLabel.Location = new System.Drawing.Point(765, 494);
             this.SecondPrimeNumberTextLabel.Name = "SecondPrimeNumberTextLabel";
             this.SecondPrimeNumberTextLabel.Size = new System.Drawing.Size(113, 13);
             this.SecondPrimeNumberTextLabel.TabIndex = 150;
@@ -170,7 +177,7 @@
             // FirstPrimeNumberLabel
             // 
             this.FirstPrimeNumberLabel.AutoSize = true;
-            this.FirstPrimeNumberLabel.Location = new System.Drawing.Point(884, 437);
+            this.FirstPrimeNumberLabel.Location = new System.Drawing.Point(884, 481);
             this.FirstPrimeNumberLabel.Name = "FirstPrimeNumberLabel";
             this.FirstPrimeNumberLabel.Size = new System.Drawing.Size(13, 13);
             this.FirstPrimeNumberLabel.TabIndex = 151;
@@ -179,7 +186,7 @@
             // SecondPrimeNumberLabel
             // 
             this.SecondPrimeNumberLabel.AutoSize = true;
-            this.SecondPrimeNumberLabel.Location = new System.Drawing.Point(884, 450);
+            this.SecondPrimeNumberLabel.Location = new System.Drawing.Point(884, 494);
             this.SecondPrimeNumberLabel.Name = "SecondPrimeNumberLabel";
             this.SecondPrimeNumberLabel.Size = new System.Drawing.Size(13, 13);
             this.SecondPrimeNumberLabel.TabIndex = 152;
@@ -188,7 +195,7 @@
             // FirstPrimeNumberTimesSecondPrimeNumberTextLabel
             // 
             this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel.AutoSize = true;
-            this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel.Location = new System.Drawing.Point(765, 477);
+            this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel.Location = new System.Drawing.Point(765, 521);
             this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel.Name = "FirstPrimeNumberTimesSecondPrimeNumberTextLabel";
             this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel.Size = new System.Drawing.Size(232, 13);
             this.FirstPrimeNumberTimesSecondPrimeNumberTextLabel.TabIndex = 153;
@@ -197,7 +204,7 @@
             // FirstPrimeNumberTimesSecondPrimeNumberLabel
             // 
             this.FirstPrimeNumberTimesSecondPrimeNumberLabel.AutoSize = true;
-            this.FirstPrimeNumberTimesSecondPrimeNumberLabel.Location = new System.Drawing.Point(765, 490);
+            this.FirstPrimeNumberTimesSecondPrimeNumberLabel.Location = new System.Drawing.Point(765, 534);
             this.FirstPrimeNumberTimesSecondPrimeNumberLabel.Name = "FirstPrimeNumberTimesSecondPrimeNumberLabel";
             this.FirstPrimeNumberTimesSecondPrimeNumberLabel.Size = new System.Drawing.Size(13, 13);
             this.FirstPrimeNumberTimesSecondPrimeNumberLabel.TabIndex = 154;
@@ -207,7 +214,7 @@
             // 
             this.PhiTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.PhiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhiTextBox.Location = new System.Drawing.Point(12, 402);
+            this.PhiTextBox.Location = new System.Drawing.Point(13, 446);
             this.PhiTextBox.Multiline = true;
             this.PhiTextBox.Name = "PhiTextBox";
             this.PhiTextBox.ReadOnly = true;
@@ -219,7 +226,7 @@
             // 
             // FindPhiButton
             // 
-            this.FindPhiButton.Location = new System.Drawing.Point(311, 680);
+            this.FindPhiButton.Location = new System.Drawing.Point(311, 724);
             this.FindPhiButton.Name = "FindPhiButton";
             this.FindPhiButton.Size = new System.Drawing.Size(75, 23);
             this.FindPhiButton.TabIndex = 156;
@@ -230,7 +237,7 @@
             // 
             // Back2Button
             // 
-            this.Back2Button.Location = new System.Drawing.Point(12, 637);
+            this.Back2Button.Location = new System.Drawing.Point(12, 681);
             this.Back2Button.Name = "Back2Button";
             this.Back2Button.Size = new System.Drawing.Size(75, 23);
             this.Back2Button.TabIndex = 157;
@@ -243,7 +250,7 @@
             // 
             this.DTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.DTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DTextBox.Location = new System.Drawing.Point(12, 402);
+            this.DTextBox.Location = new System.Drawing.Point(12, 446);
             this.DTextBox.Multiline = true;
             this.DTextBox.Name = "DTextBox";
             this.DTextBox.ReadOnly = true;
@@ -256,26 +263,26 @@
             // PhiPrivateTextLabel
             // 
             this.PhiPrivateTextLabel.AutoSize = true;
-            this.PhiPrivateTextLabel.Location = new System.Drawing.Point(765, 523);
+            this.PhiPrivateTextLabel.Location = new System.Drawing.Point(765, 567);
             this.PhiPrivateTextLabel.Name = "PhiPrivateTextLabel";
             this.PhiPrivateTextLabel.Size = new System.Drawing.Size(56, 13);
             this.PhiPrivateTextLabel.TabIndex = 159;
             this.PhiPrivateTextLabel.Text = "Phi Secret";
             this.PhiPrivateTextLabel.Visible = false;
             // 
-            // PhiPublicLabel
+            // PhiPrivateLabel
             // 
-            this.PhiPublicLabel.AutoSize = true;
-            this.PhiPublicLabel.Location = new System.Drawing.Point(765, 536);
-            this.PhiPublicLabel.Name = "PhiPublicLabel";
-            this.PhiPublicLabel.Size = new System.Drawing.Size(13, 13);
-            this.PhiPublicLabel.TabIndex = 160;
-            this.PhiPublicLabel.Text = "_";
-            this.PhiPublicLabel.Visible = false;
+            this.PhiPrivateLabel.AutoSize = true;
+            this.PhiPrivateLabel.Location = new System.Drawing.Point(765, 580);
+            this.PhiPrivateLabel.Name = "PhiPrivateLabel";
+            this.PhiPrivateLabel.Size = new System.Drawing.Size(13, 13);
+            this.PhiPrivateLabel.TabIndex = 160;
+            this.PhiPrivateLabel.Text = "_";
+            this.PhiPrivateLabel.Visible = false;
             // 
             // FindDButton
             // 
-            this.FindDButton.Location = new System.Drawing.Point(311, 637);
+            this.FindDButton.Location = new System.Drawing.Point(311, 681);
             this.FindDButton.Name = "FindDButton";
             this.FindDButton.Size = new System.Drawing.Size(75, 23);
             this.FindDButton.TabIndex = 161;
@@ -287,7 +294,7 @@
             // DTextLabel
             // 
             this.DTextLabel.AutoSize = true;
-            this.DTextLabel.Location = new System.Drawing.Point(765, 598);
+            this.DTextLabel.Location = new System.Drawing.Point(765, 642);
             this.DTextLabel.Name = "DTextLabel";
             this.DTextLabel.Size = new System.Drawing.Size(15, 13);
             this.DTextLabel.TabIndex = 162;
@@ -297,7 +304,7 @@
             // DLabel
             // 
             this.DLabel.AutoSize = true;
-            this.DLabel.Location = new System.Drawing.Point(765, 611);
+            this.DLabel.Location = new System.Drawing.Point(765, 655);
             this.DLabel.Name = "DLabel";
             this.DLabel.Size = new System.Drawing.Size(13, 13);
             this.DLabel.TabIndex = 163;
@@ -307,7 +314,7 @@
             // ExponentTextLabel
             // 
             this.ExponentTextLabel.AutoSize = true;
-            this.ExponentTextLabel.Location = new System.Drawing.Point(765, 559);
+            this.ExponentTextLabel.Location = new System.Drawing.Point(765, 603);
             this.ExponentTextLabel.Name = "ExponentTextLabel";
             this.ExponentTextLabel.Size = new System.Drawing.Size(52, 13);
             this.ExponentTextLabel.TabIndex = 164;
@@ -317,7 +324,7 @@
             // ExponentLabel
             // 
             this.ExponentLabel.AutoSize = true;
-            this.ExponentLabel.Location = new System.Drawing.Point(765, 572);
+            this.ExponentLabel.Location = new System.Drawing.Point(765, 616);
             this.ExponentLabel.Name = "ExponentLabel";
             this.ExponentLabel.Size = new System.Drawing.Size(13, 13);
             this.ExponentLabel.TabIndex = 165;
@@ -328,7 +335,7 @@
             // 
             this.ConverToNumberTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ConverToNumberTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConverToNumberTextBox.Location = new System.Drawing.Point(12, 402);
+            this.ConverToNumberTextBox.Location = new System.Drawing.Point(13, 446);
             this.ConverToNumberTextBox.Multiline = true;
             this.ConverToNumberTextBox.Name = "ConverToNumberTextBox";
             this.ConverToNumberTextBox.ReadOnly = true;
@@ -340,7 +347,7 @@
             // 
             // Back3Button
             // 
-            this.Back3Button.Location = new System.Drawing.Point(12, 582);
+            this.Back3Button.Location = new System.Drawing.Point(12, 626);
             this.Back3Button.Name = "Back3Button";
             this.Back3Button.Size = new System.Drawing.Size(75, 23);
             this.Back3Button.TabIndex = 167;
@@ -351,7 +358,7 @@
             // 
             // ConvertToANumberButton
             // 
-            this.ConvertToANumberButton.Location = new System.Drawing.Point(284, 582);
+            this.ConvertToANumberButton.Location = new System.Drawing.Point(284, 626);
             this.ConvertToANumberButton.Name = "ConvertToANumberButton";
             this.ConvertToANumberButton.Size = new System.Drawing.Size(123, 23);
             this.ConvertToANumberButton.TabIndex = 168;
@@ -363,7 +370,7 @@
             // MessageCharTextBox
             // 
             this.MessageCharTextBox.BackColor = System.Drawing.Color.White;
-            this.MessageCharTextBox.Location = new System.Drawing.Point(1081, 447);
+            this.MessageCharTextBox.Location = new System.Drawing.Point(1081, 491);
             this.MessageCharTextBox.MaxLength = 1;
             this.MessageCharTextBox.Name = "MessageCharTextBox";
             this.MessageCharTextBox.Size = new System.Drawing.Size(20, 20);
@@ -374,16 +381,17 @@
             // MessageLetterLabel
             // 
             this.MessageLetterLabel.AutoSize = true;
-            this.MessageLetterLabel.Location = new System.Drawing.Point(1078, 431);
+            this.MessageLetterLabel.Location = new System.Drawing.Point(1078, 475);
             this.MessageLetterLabel.Name = "MessageLetterLabel";
             this.MessageLetterLabel.Size = new System.Drawing.Size(80, 13);
             this.MessageLetterLabel.TabIndex = 170;
             this.MessageLetterLabel.Text = "Message Letter";
+            this.MessageLetterLabel.Visible = false;
             // 
             // MessageNumberTextLabel
             // 
             this.MessageNumberTextLabel.AutoSize = true;
-            this.MessageNumberTextLabel.Location = new System.Drawing.Point(1176, 431);
+            this.MessageNumberTextLabel.Location = new System.Drawing.Point(1176, 475);
             this.MessageNumberTextLabel.Name = "MessageNumberTextLabel";
             this.MessageNumberTextLabel.Size = new System.Drawing.Size(90, 13);
             this.MessageNumberTextLabel.TabIndex = 171;
@@ -393,7 +401,7 @@
             // MessageNumberLabel
             // 
             this.MessageNumberLabel.AutoSize = true;
-            this.MessageNumberLabel.Location = new System.Drawing.Point(1176, 450);
+            this.MessageNumberLabel.Location = new System.Drawing.Point(1176, 494);
             this.MessageNumberLabel.Name = "MessageNumberLabel";
             this.MessageNumberLabel.Size = new System.Drawing.Size(13, 13);
             this.MessageNumberLabel.TabIndex = 172;
@@ -404,7 +412,7 @@
             // 
             this.EncryptAndSendTextbox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.EncryptAndSendTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EncryptAndSendTextbox.Location = new System.Drawing.Point(12, 750);
+            this.EncryptAndSendTextbox.Location = new System.Drawing.Point(13, 446);
             this.EncryptAndSendTextbox.Multiline = true;
             this.EncryptAndSendTextbox.Name = "EncryptAndSendTextbox";
             this.EncryptAndSendTextbox.ReadOnly = true;
@@ -418,7 +426,7 @@
             // 
             this.BankLabel.AutoSize = true;
             this.BankLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BankLabel.Location = new System.Drawing.Point(765, 410);
+            this.BankLabel.Location = new System.Drawing.Point(765, 454);
             this.BankLabel.Name = "BankLabel";
             this.BankLabel.Size = new System.Drawing.Size(36, 13);
             this.BankLabel.TabIndex = 174;
@@ -428,7 +436,7 @@
             // 
             this.CustomerLabel.AutoSize = true;
             this.CustomerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerLabel.Location = new System.Drawing.Point(1078, 402);
+            this.CustomerLabel.Location = new System.Drawing.Point(1078, 446);
             this.CustomerLabel.Name = "CustomerLabel";
             this.CustomerLabel.Size = new System.Drawing.Size(59, 13);
             this.CustomerLabel.TabIndex = 175;
@@ -438,7 +446,7 @@
             // 
             this.EavesdropperLabel.AutoSize = true;
             this.EavesdropperLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EavesdropperLabel.Location = new System.Drawing.Point(1078, 563);
+            this.EavesdropperLabel.Location = new System.Drawing.Point(1078, 607);
             this.EavesdropperLabel.Name = "EavesdropperLabel";
             this.EavesdropperLabel.Size = new System.Drawing.Size(85, 13);
             this.EavesdropperLabel.TabIndex = 176;
@@ -446,7 +454,7 @@
             // 
             // Back4Button
             // 
-            this.Back4Button.Location = new System.Drawing.Point(12, 887);
+            this.Back4Button.Location = new System.Drawing.Point(12, 583);
             this.Back4Button.Name = "Back4Button";
             this.Back4Button.Size = new System.Drawing.Size(75, 23);
             this.Back4Button.TabIndex = 177;
@@ -457,7 +465,7 @@
             // 
             // EncryptMessageAndSendButton
             // 
-            this.EncryptMessageAndSendButton.Location = new System.Drawing.Point(271, 887);
+            this.EncryptMessageAndSendButton.Location = new System.Drawing.Point(269, 578);
             this.EncryptMessageAndSendButton.Name = "EncryptMessageAndSendButton";
             this.EncryptMessageAndSendButton.Size = new System.Drawing.Size(149, 23);
             this.EncryptMessageAndSendButton.TabIndex = 178;
@@ -469,7 +477,7 @@
             // EncryptedMessageTextLabel
             // 
             this.EncryptedMessageTextLabel.AutoSize = true;
-            this.EncryptedMessageTextLabel.Location = new System.Drawing.Point(1078, 477);
+            this.EncryptedMessageTextLabel.Location = new System.Drawing.Point(1078, 521);
             this.EncryptedMessageTextLabel.Name = "EncryptedMessageTextLabel";
             this.EncryptedMessageTextLabel.Size = new System.Drawing.Size(101, 13);
             this.EncryptedMessageTextLabel.TabIndex = 179;
@@ -479,7 +487,7 @@
             // EncryptedMessageLabel
             // 
             this.EncryptedMessageLabel.AutoSize = true;
-            this.EncryptedMessageLabel.Location = new System.Drawing.Point(1078, 490);
+            this.EncryptedMessageLabel.Location = new System.Drawing.Point(1078, 534);
             this.EncryptedMessageLabel.Name = "EncryptedMessageLabel";
             this.EncryptedMessageLabel.Size = new System.Drawing.Size(13, 13);
             this.EncryptedMessageLabel.TabIndex = 180;
@@ -489,7 +497,7 @@
             // EavesdropperNTextLabel
             // 
             this.EavesdropperNTextLabel.AutoSize = true;
-            this.EavesdropperNTextLabel.Location = new System.Drawing.Point(1079, 582);
+            this.EavesdropperNTextLabel.Location = new System.Drawing.Point(1079, 626);
             this.EavesdropperNTextLabel.Name = "EavesdropperNTextLabel";
             this.EavesdropperNTextLabel.Size = new System.Drawing.Size(232, 13);
             this.EavesdropperNTextLabel.TabIndex = 181;
@@ -499,7 +507,7 @@
             // EavesdropperNLabel
             // 
             this.EavesdropperNLabel.AutoSize = true;
-            this.EavesdropperNLabel.Location = new System.Drawing.Point(1079, 598);
+            this.EavesdropperNLabel.Location = new System.Drawing.Point(1079, 642);
             this.EavesdropperNLabel.Name = "EavesdropperNLabel";
             this.EavesdropperNLabel.Size = new System.Drawing.Size(13, 13);
             this.EavesdropperNLabel.TabIndex = 182;
@@ -509,7 +517,7 @@
             // EavesdropperETextLabel
             // 
             this.EavesdropperETextLabel.AutoSize = true;
-            this.EavesdropperETextLabel.Location = new System.Drawing.Point(1078, 618);
+            this.EavesdropperETextLabel.Location = new System.Drawing.Point(1078, 662);
             this.EavesdropperETextLabel.Name = "EavesdropperETextLabel";
             this.EavesdropperETextLabel.Size = new System.Drawing.Size(52, 13);
             this.EavesdropperETextLabel.TabIndex = 183;
@@ -519,7 +527,7 @@
             // EavesdropperELabel
             // 
             this.EavesdropperELabel.AutoSize = true;
-            this.EavesdropperELabel.Location = new System.Drawing.Point(1079, 637);
+            this.EavesdropperELabel.Location = new System.Drawing.Point(1079, 681);
             this.EavesdropperELabel.Name = "EavesdropperELabel";
             this.EavesdropperELabel.Size = new System.Drawing.Size(13, 13);
             this.EavesdropperELabel.TabIndex = 184;
@@ -529,7 +537,7 @@
             // EavesdropperMTextLabel
             // 
             this.EavesdropperMTextLabel.AutoSize = true;
-            this.EavesdropperMTextLabel.Location = new System.Drawing.Point(1078, 661);
+            this.EavesdropperMTextLabel.Location = new System.Drawing.Point(1078, 705);
             this.EavesdropperMTextLabel.Name = "EavesdropperMTextLabel";
             this.EavesdropperMTextLabel.Size = new System.Drawing.Size(101, 13);
             this.EavesdropperMTextLabel.TabIndex = 185;
@@ -539,32 +547,117 @@
             // EavesdropperMLabel
             // 
             this.EavesdropperMLabel.AutoSize = true;
-            this.EavesdropperMLabel.Location = new System.Drawing.Point(1079, 680);
+            this.EavesdropperMLabel.Location = new System.Drawing.Point(1079, 724);
             this.EavesdropperMLabel.Name = "EavesdropperMLabel";
             this.EavesdropperMLabel.Size = new System.Drawing.Size(13, 13);
             this.EavesdropperMLabel.TabIndex = 186;
             this.EavesdropperMLabel.Text = "_";
             this.EavesdropperMLabel.Visible = false;
             // 
-            // textBox1
+            // DecryptTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(491, 718);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(747, 131);
-            this.textBox1.TabIndex = 187;
-            this.textBox1.TabStop = false;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
-            this.textBox1.Visible = false;
+            this.DecryptTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.DecryptTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DecryptTextBox.Location = new System.Drawing.Point(13, 446);
+            this.DecryptTextBox.Multiline = true;
+            this.DecryptTextBox.Name = "DecryptTextBox";
+            this.DecryptTextBox.ReadOnly = true;
+            this.DecryptTextBox.Size = new System.Drawing.Size(747, 147);
+            this.DecryptTextBox.TabIndex = 187;
+            this.DecryptTextBox.TabStop = false;
+            this.DecryptTextBox.Text = resources.GetString("DecryptTextBox.Text");
+            this.DecryptTextBox.Visible = false;
+            // 
+            // DecryptButton
+            // 
+            this.DecryptButton.Location = new System.Drawing.Point(311, 597);
+            this.DecryptButton.Name = "DecryptButton";
+            this.DecryptButton.Size = new System.Drawing.Size(65, 23);
+            this.DecryptButton.TabIndex = 188;
+            this.DecryptButton.Text = "Decrypt";
+            this.DecryptButton.UseVisualStyleBackColor = true;
+            this.DecryptButton.Visible = false;
+            this.DecryptButton.Click += new System.EventHandler(this.DecryptButton_Click);
+            // 
+            // Back5Button
+            // 
+            this.Back5Button.Location = new System.Drawing.Point(12, 597);
+            this.Back5Button.Name = "Back5Button";
+            this.Back5Button.Size = new System.Drawing.Size(75, 23);
+            this.Back5Button.TabIndex = 189;
+            this.Back5Button.Text = "Back";
+            this.Back5Button.UseVisualStyleBackColor = true;
+            this.Back5Button.Visible = false;
+            this.Back5Button.Click += new System.EventHandler(this.Back5Button_Click);
+            // 
+            // DecryptedTextLabel
+            // 
+            this.DecryptedTextLabel.AutoSize = true;
+            this.DecryptedTextLabel.Location = new System.Drawing.Point(766, 681);
+            this.DecryptedTextLabel.Name = "DecryptedTextLabel";
+            this.DecryptedTextLabel.Size = new System.Drawing.Size(80, 13);
+            this.DecryptedTextLabel.TabIndex = 190;
+            this.DecryptedTextLabel.Text = "Decrypted Text";
+            this.DecryptedTextLabel.Visible = false;
+            // 
+            // DecryptedLabel
+            // 
+            this.DecryptedLabel.AutoSize = true;
+            this.DecryptedLabel.Location = new System.Drawing.Point(765, 694);
+            this.DecryptedLabel.Name = "DecryptedLabel";
+            this.DecryptedLabel.Size = new System.Drawing.Size(13, 13);
+            this.DecryptedLabel.TabIndex = 191;
+            this.DecryptedLabel.Text = "_";
+            this.DecryptedLabel.Visible = false;
+            // 
+            // RestartTextBox
+            // 
+            this.RestartTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.RestartTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RestartTextBox.Location = new System.Drawing.Point(12, 446);
+            this.RestartTextBox.Multiline = true;
+            this.RestartTextBox.Name = "RestartTextBox";
+            this.RestartTextBox.ReadOnly = true;
+            this.RestartTextBox.Size = new System.Drawing.Size(747, 112);
+            this.RestartTextBox.TabIndex = 192;
+            this.RestartTextBox.TabStop = false;
+            this.RestartTextBox.Text = resources.GetString("RestartTextBox.Text");
+            this.RestartTextBox.Visible = false;
+            // 
+            // Back6Button
+            // 
+            this.Back6Button.Location = new System.Drawing.Point(12, 564);
+            this.Back6Button.Name = "Back6Button";
+            this.Back6Button.Size = new System.Drawing.Size(75, 23);
+            this.Back6Button.TabIndex = 193;
+            this.Back6Button.Text = "Back";
+            this.Back6Button.UseVisualStyleBackColor = true;
+            this.Back6Button.Visible = false;
+            this.Back6Button.Click += new System.EventHandler(this.Back6Button_Click);
+            // 
+            // RestartButton
+            // 
+            this.RestartButton.Location = new System.Drawing.Point(311, 564);
+            this.RestartButton.Name = "RestartButton";
+            this.RestartButton.Size = new System.Drawing.Size(65, 23);
+            this.RestartButton.TabIndex = 194;
+            this.RestartButton.Text = "Restart";
+            this.RestartButton.UseVisualStyleBackColor = true;
+            this.RestartButton.Visible = false;
+            this.RestartButton.Click += new System.EventHandler(this.RestartButton_Click);
             // 
             // PublicKeysForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(1311, 971);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1311, 768);
+            this.Controls.Add(this.RestartButton);
+            this.Controls.Add(this.Back6Button);
+            this.Controls.Add(this.RestartTextBox);
+            this.Controls.Add(this.DecryptedLabel);
+            this.Controls.Add(this.DecryptedTextLabel);
+            this.Controls.Add(this.Back5Button);
+            this.Controls.Add(this.DecryptButton);
+            this.Controls.Add(this.DecryptTextBox);
             this.Controls.Add(this.EavesdropperMLabel);
             this.Controls.Add(this.EavesdropperMTextLabel);
             this.Controls.Add(this.EavesdropperELabel);
@@ -591,7 +684,7 @@
             this.Controls.Add(this.DLabel);
             this.Controls.Add(this.DTextLabel);
             this.Controls.Add(this.FindDButton);
-            this.Controls.Add(this.PhiPublicLabel);
+            this.Controls.Add(this.PhiPrivateLabel);
             this.Controls.Add(this.PhiPrivateTextLabel);
             this.Controls.Add(this.DTextBox);
             this.Controls.Add(this.Back2Button);
@@ -627,7 +720,7 @@
             this.Controls.SetChildIndex(this.Back2Button, 0);
             this.Controls.SetChildIndex(this.DTextBox, 0);
             this.Controls.SetChildIndex(this.PhiPrivateTextLabel, 0);
-            this.Controls.SetChildIndex(this.PhiPublicLabel, 0);
+            this.Controls.SetChildIndex(this.PhiPrivateLabel, 0);
             this.Controls.SetChildIndex(this.FindDButton, 0);
             this.Controls.SetChildIndex(this.DTextLabel, 0);
             this.Controls.SetChildIndex(this.DLabel, 0);
@@ -654,7 +747,14 @@
             this.Controls.SetChildIndex(this.EavesdropperELabel, 0);
             this.Controls.SetChildIndex(this.EavesdropperMTextLabel, 0);
             this.Controls.SetChildIndex(this.EavesdropperMLabel, 0);
-            this.Controls.SetChildIndex(this.textBox1, 0);
+            this.Controls.SetChildIndex(this.DecryptTextBox, 0);
+            this.Controls.SetChildIndex(this.DecryptButton, 0);
+            this.Controls.SetChildIndex(this.Back5Button, 0);
+            this.Controls.SetChildIndex(this.DecryptedTextLabel, 0);
+            this.Controls.SetChildIndex(this.DecryptedLabel, 0);
+            this.Controls.SetChildIndex(this.RestartTextBox, 0);
+            this.Controls.SetChildIndex(this.Back6Button, 0);
+            this.Controls.SetChildIndex(this.RestartButton, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -679,7 +779,7 @@
         private System.Windows.Forms.Button Back2Button;
         private System.Windows.Forms.TextBox DTextBox;
         private System.Windows.Forms.Label PhiPrivateTextLabel;
-        private System.Windows.Forms.Label PhiPublicLabel;
+        private System.Windows.Forms.Label PhiPrivateLabel;
         private System.Windows.Forms.Button FindDButton;
         private System.Windows.Forms.Label DTextLabel;
         private System.Windows.Forms.Label DLabel;
@@ -706,7 +806,14 @@
         private System.Windows.Forms.Label EavesdropperELabel;
         private System.Windows.Forms.Label EavesdropperMTextLabel;
         private System.Windows.Forms.Label EavesdropperMLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox DecryptTextBox;
+        private System.Windows.Forms.Button DecryptButton;
+        private System.Windows.Forms.Button Back5Button;
+        private System.Windows.Forms.Label DecryptedTextLabel;
+        private System.Windows.Forms.Label DecryptedLabel;
+        private System.Windows.Forms.TextBox RestartTextBox;
+        private System.Windows.Forms.Button Back6Button;
+        private System.Windows.Forms.Button RestartButton;
 
     }
 }
