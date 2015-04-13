@@ -200,6 +200,9 @@
     <EmbeddedResource Include="PublicKeysForm.resx">
       <DependentUpon>PublicKeysForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PublicWifiForm.resx">
+      <DependentUpon>PublicWifiForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuizForm.resx">
       <DependentUpon>QuizForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TwoFactorAuthenticationForm.resx">
       <DependentUpon>TwoFactorAuthenticationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WhitelistsAndEncryptionForm.resx">
+      <DependentUpon>WhitelistsAndEncryptionForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
