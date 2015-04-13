@@ -36,13 +36,14 @@
             this.upperCaseBox = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.explainationText = new System.Windows.Forms.TextBox();
+            this.TitleLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timeTakenLabel
             // 
             this.timeTakenLabel.AutoSize = true;
-            this.timeTakenLabel.Location = new System.Drawing.Point(158, 60);
+            this.timeTakenLabel.Location = new System.Drawing.Point(158, 76);
             this.timeTakenLabel.Name = "timeTakenLabel";
             this.timeTakenLabel.Size = new System.Drawing.Size(188, 13);
             this.timeTakenLabel.TabIndex = 9;
@@ -50,7 +51,7 @@
             // 
             // passInputBox
             // 
-            this.passInputBox.Location = new System.Drawing.Point(161, 37);
+            this.passInputBox.Location = new System.Drawing.Point(161, 53);
             this.passInputBox.Name = "passInputBox";
             this.passInputBox.Size = new System.Drawing.Size(178, 20);
             this.passInputBox.TabIndex = 1;
@@ -114,27 +115,40 @@
             this.panel1.Controls.Add(this.specialBox);
             this.panel1.Controls.Add(this.numberBox);
             this.panel1.Controls.Add(this.lowerCaseBox);
-            this.panel1.Location = new System.Drawing.Point(12, 37);
+            this.panel1.Location = new System.Drawing.Point(12, 53);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(143, 105);
             this.panel1.TabIndex = 16;
             // 
             // explainationText
             // 
-            this.explainationText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.explainationText.Location = new System.Drawing.Point(162, 77);
+            this.explainationText.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.explainationText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.explainationText.Location = new System.Drawing.Point(162, 93);
             this.explainationText.Multiline = true;
             this.explainationText.Name = "explainationText";
             this.explainationText.ReadOnly = true;
-            this.explainationText.Size = new System.Drawing.Size(364, 166);
+            this.explainationText.Size = new System.Drawing.Size(585, 221);
             this.explainationText.TabIndex = 2;
             this.explainationText.TabStop = false;
             this.explainationText.Text = "Dexcription text should be shown here, generated when page is loaded";
             // 
+            // TitleLabel
+            // 
+            this.TitleLabel.AutoSize = true;
+            this.TitleLabel.Font = new System.Drawing.Font("Tahoma", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TitleLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.TitleLabel.Location = new System.Drawing.Point(7, 25);
+            this.TitleLabel.Name = "TitleLabel";
+            this.TitleLabel.Size = new System.Drawing.Size(212, 25);
+            this.TitleLabel.TabIndex = 44;
+            this.TitleLabel.Text = "Password Strength";
+            // 
             // PasswordStrengthForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(538, 256);
+            this.ClientSize = new System.Drawing.Size(759, 326);
+            this.Controls.Add(this.TitleLabel);
             this.Controls.Add(this.explainationText);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.passInputBox);
@@ -144,6 +158,7 @@
             this.Controls.SetChildIndex(this.passInputBox, 0);
             this.Controls.SetChildIndex(this.panel1, 0);
             this.Controls.SetChildIndex(this.explainationText, 0);
+            this.Controls.SetChildIndex(this.TitleLabel, 0);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -161,5 +176,6 @@
         private System.Windows.Forms.CheckBox upperCaseBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox explainationText;
+        private System.Windows.Forms.Label TitleLabel;
     }
 }

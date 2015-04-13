@@ -88,11 +88,11 @@
             // 
             // PublicKeys
             // 
+            this.PublicKeys.Image = global::Group_project.Properties.Resources.btnCryptKeys;
             this.PublicKeys.Location = new System.Drawing.Point(50, 509);
             this.PublicKeys.Name = "PublicKeys";
             this.PublicKeys.Size = new System.Drawing.Size(300, 59);
             this.PublicKeys.TabIndex = 14;
-            this.PublicKeys.Text = "Public Keys";
             this.PublicKeys.UseVisualStyleBackColor = true;
             this.PublicKeys.Visible = false;
             this.PublicKeys.Click += new System.EventHandler(this.PublicAndPrivateKeys_Click);
@@ -468,7 +468,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1446, 313);
+            this.ClientSize = new System.Drawing.Size(1446, 315);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.Quiz);
             this.Controls.Add(this.WhitelistsAndEncryption);
