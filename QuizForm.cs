@@ -25,6 +25,7 @@ namespace Group_project
             digitalScore = 0;
             netScore = 0;
 
+            #region questions
             // All questions go here
             // Questions should be added directly to the question list
             // Variables to pass to new question are: question text, correct answer, incorrect answer 1, incorrect answer 2, incorrect answer 3, category
@@ -36,7 +37,7 @@ namespace Group_project
             allQuestions.Add(new question("If you were knew someone was using a Ceaser shift to encrypt the word \"Cheese\" and the result is \"Gliiwi\", what value was it shifted by?", "4", "3", "8", "10", "crypt"));
             allQuestions.Add(new question("What does two factor authentication require as well as normal login and password?", "A one use code sent to the user when they log in", "A second password", "Permission to be granted by another person", "Nothing, it is another name for username and password", "digital"));
             allQuestions.Add(new question("Which of the following passwords would (in theory) take longest to crack?", "14 characters, upper and lowercase letters, numbers, special characters", "16 lowercase letters", "20 characters, all numbers", "18 characters, uppercase letters and numbers", "digital"));
-            // End of questions
+            #endregion
             showNewQuestion(allQuestions[0]);
         }
 
