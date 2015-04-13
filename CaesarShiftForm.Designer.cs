@@ -41,7 +41,7 @@
             // UnshiftedTextBox
             // 
             this.UnshiftedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UnshiftedTextBox.Location = new System.Drawing.Point(12, 81);
+            this.UnshiftedTextBox.Location = new System.Drawing.Point(12, 27);
             this.UnshiftedTextBox.MaxLength = 200;
             this.UnshiftedTextBox.Multiline = true;
             this.UnshiftedTextBox.Name = "UnshiftedTextBox";
@@ -51,7 +51,7 @@
             // ShiftedTextBox
             // 
             this.ShiftedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShiftedTextBox.Location = new System.Drawing.Point(563, 81);
+            this.ShiftedTextBox.Location = new System.Drawing.Point(563, 27);
             this.ShiftedTextBox.MaxLength = 150;
             this.ShiftedTextBox.Multiline = true;
             this.ShiftedTextBox.Name = "ShiftedTextBox";
@@ -60,7 +60,7 @@
             // 
             // ShiftAmountNumericUpDown
             // 
-            this.ShiftAmountNumericUpDown.Location = new System.Drawing.Point(437, 87);
+            this.ShiftAmountNumericUpDown.Location = new System.Drawing.Point(437, 33);
             this.ShiftAmountNumericUpDown.Maximum = new decimal(new int[] {
             26,
             0,
@@ -72,7 +72,7 @@
             // 
             // ShiftButton
             // 
-            this.ShiftButton.Location = new System.Drawing.Point(437, 131);
+            this.ShiftButton.Location = new System.Drawing.Point(437, 77);
             this.ShiftButton.Name = "ShiftButton";
             this.ShiftButton.Size = new System.Drawing.Size(120, 23);
             this.ShiftButton.TabIndex = 3;
@@ -82,7 +82,7 @@
             // 
             // Unshift
             // 
-            this.Unshift.Location = new System.Drawing.Point(437, 160);
+            this.Unshift.Location = new System.Drawing.Point(437, 106);
             this.Unshift.Name = "Unshift";
             this.Unshift.Size = new System.Drawing.Size(120, 23);
             this.Unshift.TabIndex = 5;
@@ -94,7 +94,7 @@
             // 
             this.CaesarShiftExplanationTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.CaesarShiftExplanationTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CaesarShiftExplanationTextBox.Location = new System.Drawing.Point(12, 189);
+            this.CaesarShiftExplanationTextBox.Location = new System.Drawing.Point(12, 135);
             this.CaesarShiftExplanationTextBox.Multiline = true;
             this.CaesarShiftExplanationTextBox.Name = "CaesarShiftExplanationTextBox";
             this.CaesarShiftExplanationTextBox.ReadOnly = true;
@@ -106,7 +106,7 @@
             // CaesarShiftForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(998, 619);
+            this.ClientSize = new System.Drawing.Size(998, 559);
             this.Controls.Add(this.CaesarShiftExplanationTextBox);
             this.Controls.Add(this.Unshift);
             this.Controls.Add(this.ShiftButton);
