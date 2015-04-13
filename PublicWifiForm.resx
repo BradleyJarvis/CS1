@@ -117,8 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-<<<<<<< HEAD
-=======
   <data name="textBox1.Text" xml:space="preserve">
     <value>Public Wi-fi is available everywhere now day. You could easily find or connect to public wifi in the coffee shops, restaurants, even convenience shops. Although public wi-fi is extremely convenient when you want to access Internet outside of your property, but the security could be an issue. The open nature of public wi-fi network allows for snooping, the network could be full of compromised machines, or most worrying, the public wi-fi hotspot itself could be malicious. Sometime, it could be tricky to tell whether if it is a legitimate Wi-Fi network or it is a set-up by an attacker in an attempt to trick people into connecting.
 
@@ -128,5 +126,4 @@ Make sure that the websites you visiting start with HTTPS.
 Make sure your antivirus and firewall are turned on before connect to public Wi-Fi.
 Try to avoid to use unsecured or suspicious public Wi-Fi</value>
   </data>
->>>>>>> origin/master
 </root>
