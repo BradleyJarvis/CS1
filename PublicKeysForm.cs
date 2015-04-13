@@ -15,17 +15,6 @@ namespace Group_project
             InitializeComponent();
         }
 
-        /*  
-        * For the following buttons upto restart button the methods are layed out in the following order:
-        *      any random numbers that must be determined
-        *      change font that was red to black and font that was black to red such that only areas that have changed in the currrent step are red 
-        *      (order is reverced for back buttons)
-        *      make any changes to the labels that are needed
-        *      hide the current textbox and show the next one. (also show/hide the relevent buttons and any labels that are new)
-        *      (order is reverced for back buttons)
-        *      change selection to a more logical one.
-        */
-
         private void GenerateAndMultiplyButton_Click(object sender, EventArgs e)
         {
 
@@ -311,7 +300,7 @@ namespace Group_project
 
             MessageCharTextBox.ForeColor = Color.Black;
 
-            EncryptedMessageLabel.Text = Convert.ToString( Math.Pow(Convert.ToInt32(MessageNumberLabel.Text), Convert.ToInt32(ExponentLabel.Text)) % Convert.ToInt32(FirstPrimeNumberTimesSecondPrimeNumberLabel.Text) ); 
+            EncryptedMessageLabel.Text = Convert.ToString( (Convert.ToInt32(MessageNumberLabel.Text) ^ Convert.ToInt32(ExponentLabel.Text)) % Convert.ToInt32(FirstPrimeNumberTimesSecondPrimeNumberLabel.Text) ); 
             //use the encryption algorithm to discover the encrypted message
 
             EavesdropperELabel.Text = ExponentLabel.Text;

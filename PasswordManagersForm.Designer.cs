@@ -35,13 +35,12 @@
             this.GenPassButton = new System.Windows.Forms.Button();
             this.specalCheckBox = new System.Windows.Forms.CheckBox();
             this.explainationText = new System.Windows.Forms.TextBox();
-            this.TitleLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.passLengthBox)).BeginInit();
             this.SuspendLayout();
             // 
             // passOutputBox
             // 
-            this.passOutputBox.Location = new System.Drawing.Point(167, 97);
+            this.passOutputBox.Location = new System.Drawing.Point(167, 61);
             this.passOutputBox.Name = "passOutputBox";
             this.passOutputBox.ReadOnly = true;
             this.passOutputBox.Size = new System.Drawing.Size(120, 20);
@@ -49,7 +48,7 @@
             // 
             // passLengthBox
             // 
-            this.passLengthBox.Location = new System.Drawing.Point(14, 69);
+            this.passLengthBox.Location = new System.Drawing.Point(14, 33);
             this.passLengthBox.Maximum = new decimal(new int[] {
             20,
             0,
@@ -72,7 +71,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(64, 71);
+            this.label1.Location = new System.Drawing.Point(64, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 13);
             this.label1.TabIndex = 10;
@@ -80,7 +79,7 @@
             // 
             // GenPassButton
             // 
-            this.GenPassButton.Location = new System.Drawing.Point(14, 95);
+            this.GenPassButton.Location = new System.Drawing.Point(14, 59);
             this.GenPassButton.Name = "GenPassButton";
             this.GenPassButton.Size = new System.Drawing.Size(120, 23);
             this.GenPassButton.TabIndex = 3;
@@ -91,7 +90,7 @@
             // specalCheckBox
             // 
             this.specalCheckBox.AutoSize = true;
-            this.specalCheckBox.Location = new System.Drawing.Point(167, 70);
+            this.specalCheckBox.Location = new System.Drawing.Point(167, 34);
             this.specalCheckBox.Name = "specalCheckBox";
             this.specalCheckBox.Size = new System.Drawing.Size(150, 17);
             this.specalCheckBox.TabIndex = 2;
@@ -100,33 +99,20 @@
             // 
             // explainationText
             // 
-            this.explainationText.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.explainationText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.explainationText.Location = new System.Drawing.Point(14, 124);
+            this.explainationText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.explainationText.Location = new System.Drawing.Point(8, 87);
             this.explainationText.Multiline = true;
             this.explainationText.Name = "explainationText";
             this.explainationText.ReadOnly = true;
-            this.explainationText.Size = new System.Drawing.Size(521, 311);
+            this.explainationText.Size = new System.Drawing.Size(441, 187);
             this.explainationText.TabIndex = 5;
             this.explainationText.TabStop = false;
             this.explainationText.Text = resources.GetString("explainationText.Text");
             // 
-            // TitleLabel
-            // 
-            this.TitleLabel.AutoSize = true;
-            this.TitleLabel.Font = new System.Drawing.Font("Tahoma", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitleLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.TitleLabel.Location = new System.Drawing.Point(9, 24);
-            this.TitleLabel.Name = "TitleLabel";
-            this.TitleLabel.Size = new System.Drawing.Size(224, 25);
-            this.TitleLabel.TabIndex = 44;
-            this.TitleLabel.Text = "Password Managers";
-            // 
             // PasswordManagersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(547, 447);
-            this.Controls.Add(this.TitleLabel);
+            this.ClientSize = new System.Drawing.Size(453, 290);
             this.Controls.Add(this.explainationText);
             this.Controls.Add(this.specalCheckBox);
             this.Controls.Add(this.GenPassButton);
@@ -140,7 +126,6 @@
             this.Controls.SetChildIndex(this.GenPassButton, 0);
             this.Controls.SetChildIndex(this.specalCheckBox, 0);
             this.Controls.SetChildIndex(this.explainationText, 0);
-            this.Controls.SetChildIndex(this.TitleLabel, 0);
             ((System.ComponentModel.ISupportInitialize)(this.passLengthBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -155,6 +140,5 @@
         private System.Windows.Forms.Button GenPassButton;
         private System.Windows.Forms.CheckBox specalCheckBox;
         private System.Windows.Forms.TextBox explainationText;
-        private System.Windows.Forms.Label TitleLabel;
     }
 }

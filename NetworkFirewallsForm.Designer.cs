@@ -31,15 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NetworkFirewallsForm));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.TitleLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 54);
+            this.textBox1.Location = new System.Drawing.Point(9, 28);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -51,35 +49,21 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(83, 212);
+            this.pictureBox1.Location = new System.Drawing.Point(80, 186);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(429, 212);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
-            // 
-            // TitleLabel
-            // 
-            this.TitleLabel.AutoSize = true;
-            this.TitleLabel.Font = new System.Drawing.Font("Tahoma", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitleLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.TitleLabel.Location = new System.Drawing.Point(12, 26);
-            this.TitleLabel.Name = "TitleLabel";
-            this.TitleLabel.Size = new System.Drawing.Size(203, 25);
-            this.TitleLabel.TabIndex = 43;
-            this.TitleLabel.Text = "Network Firewalls";
             // 
             // NetworkFirewallsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(622, 460);
-            this.Controls.Add(this.TitleLabel);
+            this.ClientSize = new System.Drawing.Size(622, 415);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
             this.Name = "NetworkFirewallsForm";
             this.Controls.SetChildIndex(this.textBox1, 0);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
-            this.Controls.SetChildIndex(this.TitleLabel, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -90,6 +74,5 @@
 
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label TitleLabel;
     }
 }
