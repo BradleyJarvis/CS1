@@ -36,7 +36,9 @@
             this.PreviousButton = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
             this.explainationText = new System.Windows.Forms.TextBox();
+            this.imgTitle = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.passLengthBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgTitle)).BeginInit();
             this.SuspendLayout();
             // 
             // passOutputBox
@@ -153,11 +155,22 @@
     "s to simply randomly generate one.";
             this.explainationText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // imgTitle
+            // 
+            this.imgTitle.BackColor = System.Drawing.Color.Transparent;
+            this.imgTitle.Image = global::Group_project.Properties.Resources.titlePassManager;
+            this.imgTitle.Location = new System.Drawing.Point(144, 47);
+            this.imgTitle.Name = "imgTitle";
+            this.imgTitle.Size = new System.Drawing.Size(492, 51);
+            this.imgTitle.TabIndex = 62;
+            this.imgTitle.TabStop = false;
+            // 
             // PasswordManagersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.BackgroundImage = global::Group_project.Properties.Resources.DigitalSecurityFormBackground_jpg;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.imgTitle);
             this.Controls.Add(this.PreviousButton);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.explainationText);
@@ -176,7 +189,9 @@
             this.Controls.SetChildIndex(this.explainationText, 0);
             this.Controls.SetChildIndex(this.NextButton, 0);
             this.Controls.SetChildIndex(this.PreviousButton, 0);
+            this.Controls.SetChildIndex(this.imgTitle, 0);
             ((System.ComponentModel.ISupportInitialize)(this.passLengthBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgTitle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +207,6 @@
         private System.Windows.Forms.Button PreviousButton;
         private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.TextBox explainationText;
+        private System.Windows.Forms.PictureBox imgTitle;
     }
 }

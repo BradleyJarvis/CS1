@@ -63,6 +63,7 @@
             this.PreviousButton = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
             this.explainationText = new System.Windows.Forms.TextBox();
+            this.imgTitle = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.FirstNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FifthNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForthNumericUpDown)).BeginInit();
@@ -73,6 +74,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.EigthNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NinethNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TenthNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgTitle)).BeginInit();
             this.SuspendLayout();
             // 
             // FirstCharracterUnshiftedTextBox
@@ -474,11 +476,22 @@
     "for each character.";
             this.explainationText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // imgTitle
+            // 
+            this.imgTitle.BackColor = System.Drawing.Color.Transparent;
+            this.imgTitle.Image = global::Group_project.Properties.Resources.titleCaesarCont;
+            this.imgTitle.Location = new System.Drawing.Point(91, 48);
+            this.imgTitle.Name = "imgTitle";
+            this.imgTitle.Size = new System.Drawing.Size(588, 48);
+            this.imgTitle.TabIndex = 61;
+            this.imgTitle.TabStop = false;
+            // 
             // CaesarShiftContinuedForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.BackgroundImage = global::Group_project.Properties.Resources.CryptographyFormBackground;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.imgTitle);
             this.Controls.Add(this.PreviousButton);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.explainationText);
@@ -551,6 +564,7 @@
             this.Controls.SetChildIndex(this.explainationText, 0);
             this.Controls.SetChildIndex(this.NextButton, 0);
             this.Controls.SetChildIndex(this.PreviousButton, 0);
+            this.Controls.SetChildIndex(this.imgTitle, 0);
             ((System.ComponentModel.ISupportInitialize)(this.FirstNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FifthNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForthNumericUpDown)).EndInit();
@@ -561,6 +575,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.EigthNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NinethNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TenthNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgTitle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -603,5 +618,6 @@
         private System.Windows.Forms.Button PreviousButton;
         private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.TextBox explainationText;
+        private System.Windows.Forms.PictureBox imgTitle;
     }
 }

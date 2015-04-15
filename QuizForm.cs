@@ -146,6 +146,11 @@ namespace Group_project
                     break;
             }
         }
+
+        private void questionDisplayText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     public class question
     {

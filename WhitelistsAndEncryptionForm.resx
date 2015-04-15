@@ -117,11 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>A whitelist is usually handled by the router and is a list of all the MAC addresses (A MAC address is a unique series of twelve hexadecimal characters that identify a device) that are allowed to use a router. So if a laptop for example wanted to connect to a router, the router would look at the laptops MAC address and see if it was on the list. If it was not, the router would simply refuse to let that device connect.
-Using a whitelist is a good idea because it is extra security that is cheap and does not slow down the network like other security options. However, if you for instance buy a new laptop you will have to add a new MAC address to the whitelist. this is fine on a small scale but for a universities student wi-fi for example it would be impractical due to the need to update so often.
-Adding a whitelist is different for different routers so if you want to set up a whitelist of your own you should be able to find it in the user manual. 
-
-Encryption is a very important part of network security and it is an area which can easily be improved. There are 3 main protocols used to protect and encrypt data sent over a network. WEP, WPA and WPA2. WEP is a rather old system of protection that uses a small number of bits to encrypt data, often only 128 bits or even as low as 64 in some instances. If possible you want to avoid WEP encryption as it has been shown to be easily hackable. WPA is a vast improvement over WEP as it has more security features and a 256 bit encryption, far larger that most WEP networks, that being said vulnerabilities were still found and WPA is no longer considered secure. There are also 2 types of WPA, TKIP and AES. AES is a more secure encryption protocol and it should be used when possible. WPA2 is an improvement over WPA that fixed several security flaws. It is the best security encryption of the 3 and should always be used over them if possible. It however is not flawless and a sustained attack by someone on the network could compromise the encryption, however this is not something that you should worry about.</value>
+  <data name="explainationText.Text" xml:space="preserve">
+    <value>A whitelist is usually handled by the router and is a list of all the MAC addresses (A MAC address is a unique series of twelve hexadecimal characters that identify a device) that are allowed to use a router. </value>
   </data>
 </root>

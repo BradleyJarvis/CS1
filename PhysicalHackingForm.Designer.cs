@@ -33,7 +33,9 @@
             this.PreviousButton = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
             this.explainationText = new System.Windows.Forms.TextBox();
+            this.imgTitle = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgTitle)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -83,11 +85,22 @@
     "ysically gain access to a computer system. \r\n";
             this.explainationText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // imgTitle
+            // 
+            this.imgTitle.BackColor = System.Drawing.Color.Transparent;
+            this.imgTitle.Image = global::Group_project.Properties.Resources.titlePhysicalHacking;
+            this.imgTitle.Location = new System.Drawing.Point(141, 66);
+            this.imgTitle.Name = "imgTitle";
+            this.imgTitle.Size = new System.Drawing.Size(492, 51);
+            this.imgTitle.TabIndex = 64;
+            this.imgTitle.TabStop = false;
+            // 
             // PhysicalHackingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.BackgroundImage = global::Group_project.Properties.Resources.NetworkSecurityFormBackground;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.imgTitle);
             this.Controls.Add(this.PreviousButton);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.explainationText);
@@ -98,7 +111,9 @@
             this.Controls.SetChildIndex(this.explainationText, 0);
             this.Controls.SetChildIndex(this.NextButton, 0);
             this.Controls.SetChildIndex(this.PreviousButton, 0);
+            this.Controls.SetChildIndex(this.imgTitle, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgTitle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,6 +124,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button PreviousButton;
         private System.Windows.Forms.Button NextButton;
-        private System.Windows.Forms.TextBox explainationText;//http://itsecurity.vermont.gov/Securing_Devices/Laptop an image that is public domain
+        private System.Windows.Forms.TextBox explainationText;
+        private System.Windows.Forms.PictureBox imgTitle;//http://itsecurity.vermont.gov/Securing_Devices/Laptop an image that is public domain
     }
 }

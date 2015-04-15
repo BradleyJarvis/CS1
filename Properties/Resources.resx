@@ -295,4 +295,46 @@
   <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="quizButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quizButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titleCaesarCont" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\titleCaesarCont.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titleCaesarShift" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\titleCaesarShift.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titleCertificates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\titleCertificates.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titleNetworkFirewalls" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\titleNetworkFirewalls.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titlePassManager" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\titlePassManager.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titlePasswordStrength" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\titlePasswordStrength.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titlePhysicalHacking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\titlePhysicalHacking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titlePublicKeys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\titlePublicKeys.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titlePublicWiFi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\titlePublicWiFi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titleQuiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\titleQuiz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titleSymmetricalKeys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\titleSymmetricalKeys.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titleTwoFactor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\titleTwoFactor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titleWhitelists" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\titleWhitelists.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

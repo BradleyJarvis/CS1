@@ -167,6 +167,11 @@ namespace Group_project
                 this.Refresh();
             }
         }
+
+        private void imgTitle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

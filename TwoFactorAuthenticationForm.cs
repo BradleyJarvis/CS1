@@ -28,6 +28,7 @@ namespace Group_project
             }
             authCode = newCode;
             authenticator.AuthCodeLabel.Text = authCode;
+            lblCodeSent.Visible = true;
         }
 
         private void showAuth(object sender, EventArgs e)
@@ -49,5 +50,11 @@ namespace Group_project
         {
             authenticator.Close();
         }
+
+        private void lblCodeSent_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
