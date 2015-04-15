@@ -303,6 +303,126 @@
   <ItemGroup>
     <None Include="Resources\PubWifi.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnDigitalPrevious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\authenticationDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn2FactorAuthenticator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn2FactorLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn2FactorSendCode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCryptPublic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnDigitalNext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NetworkSecurityFormBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CryptographyFormBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DigitalSecurityFormBackground.jpg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redCross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenTick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnGeneratePassword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnGeneratePass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\httpsImgTwo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\httpsImgOne.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\httpsImgThree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnShift.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnUnshift.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnGenerateMultiply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBegin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnFIndD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnFindՓ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnConvert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEncrypt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnRestart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnDecrypt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCryptNext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCryptPrevious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNetworkNext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNetworkPrevious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnFind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnReply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnGenerate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnMenuQuiz.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

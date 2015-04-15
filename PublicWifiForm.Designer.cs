@@ -28,57 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PublicWifiForm));
-            this.TitleLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PreviousButton = new System.Windows.Forms.Button();
+            this.NextButton = new System.Windows.Forms.Button();
+            this.explainationText = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // TitleLabel
-            // 
-            this.TitleLabel.AutoSize = true;
-            this.TitleLabel.Font = new System.Drawing.Font("Tahoma", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitleLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.TitleLabel.Location = new System.Drawing.Point(4, 24);
-            this.TitleLabel.Name = "TitleLabel";
-            this.TitleLabel.Size = new System.Drawing.Size(123, 25);
-            this.TitleLabel.TabIndex = 44;
-            this.TitleLabel.Text = "Public Wifi";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 51);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(819, 273);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.TabStop = false;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
-            // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::Group_project.Properties.Resources.PubWifi;
-            this.pictureBox1.Location = new System.Drawing.Point(425, 291);
+            this.pictureBox1.Location = new System.Drawing.Point(176, 336);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(405, 213);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
+            // PreviousButton
+            // 
+            this.PreviousButton.Image = global::Group_project.Properties.Resources.btnNetworkPrevious;
+            this.PreviousButton.Location = new System.Drawing.Point(16, 209);
+            this.PreviousButton.Name = "PreviousButton";
+            this.PreviousButton.Size = new System.Drawing.Size(55, 45);
+            this.PreviousButton.TabIndex = 66;
+            this.PreviousButton.UseVisualStyleBackColor = true;
+            this.PreviousButton.Click += new System.EventHandler(this.PreviousButton_Click);
+            // 
+            // NextButton
+            // 
+            this.NextButton.Image = global::Group_project.Properties.Resources.btnNetworkNext;
+            this.NextButton.Location = new System.Drawing.Point(709, 219);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(55, 45);
+            this.NextButton.TabIndex = 65;
+            this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            // 
+            // explainationText
+            // 
+            this.explainationText.BackColor = System.Drawing.Color.LavenderBlush;
+            this.explainationText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.explainationText.Cursor = System.Windows.Forms.Cursors.Default;
+            this.explainationText.Font = new System.Drawing.Font("Segoe WP SemiLight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.explainationText.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.explainationText.Location = new System.Drawing.Point(71, 175);
+            this.explainationText.Multiline = true;
+            this.explainationText.Name = "explainationText";
+            this.explainationText.ReadOnly = true;
+            this.explainationText.Size = new System.Drawing.Size(632, 123);
+            this.explainationText.TabIndex = 64;
+            this.explainationText.TabStop = false;
+            this.explainationText.Text = "Public Wi-fi is available everywhere now day. You could easily find or connect to" +
+    " public wifi in the coffee shops, restaurants, even convenience shops. \r\n";
+            this.explainationText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // PublicWifiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(843, 510);
+            this.BackgroundImage = global::Group_project.Properties.Resources.NetworkSecurityFormBackground;
+            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.PreviousButton);
+            this.Controls.Add(this.NextButton);
+            this.Controls.Add(this.explainationText);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.TitleLabel);
             this.Name = "PublicWifiForm";
-            this.Controls.SetChildIndex(this.TitleLabel, 0);
-            this.Controls.SetChildIndex(this.textBox1, 0);
+            this.Text = "Public WiFi";
             this.Controls.SetChildIndex(this.pictureBox1, 0);
+            this.Controls.SetChildIndex(this.explainationText, 0);
+            this.Controls.SetChildIndex(this.NextButton, 0);
+            this.Controls.SetChildIndex(this.PreviousButton, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -87,8 +106,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label TitleLabel;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button PreviousButton;
+        private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.TextBox explainationText;
     }
 }

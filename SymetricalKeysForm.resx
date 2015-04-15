@@ -142,6 +142,6 @@ To solve this problem computer scientists came up with an algorithm that is easy
 This may sound impossible but the maths involved is quite simple. It is called the Diffie–Hellman key exchange.</value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>68</value>
+    <value>39</value>
   </metadata>
 </root>

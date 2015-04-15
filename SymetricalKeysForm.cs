@@ -353,6 +353,11 @@ namespace Group_project
 
         }
 
+        private void SymetricalKeysForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
 
 
 

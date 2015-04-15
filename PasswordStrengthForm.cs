@@ -14,14 +14,13 @@ namespace Group_project
         double timeToGuess;
         bool lowerCaseFlag, upperCaseFlag, numberFlag, specialFlag1, specialFlag2;
         string inputPassword;
-        int passLength;
+        int passLength, textNumber = 0;
         const uint guessRate = 4000000000; //  A constant used to hold the speed that guesses can be made, represented as guesses/second
         
         public PasswordStrengthForm()
         {
             InitializeComponent();
             resetFlags();
-            explainationText.Text = "A simple way of accessing an account is to use brute force guessing to try every possible combination of characters until the correct password is found. If a password is short and only has a few characters it will be guessed quickly by this method. A long password with a mixture of different character types however will take much longer to guess, effectively becoming immune to this type of hacking. Above is a tool to check to see approximately how long it would take to guess a password based on it's length and the types of characters used. This is only a rough guide, based on a computer able to make " + guessRate + " attempts per second. The checkboxes at the side indicate what type of characters you have included in the password that has been entered.";
         }
 
         void checkPassword()
@@ -35,7 +34,8 @@ namespace Group_project
             }
             setBoxes();
             timeToGuess = calculateTime();
-            timeTakenLabel.Text = "Your password would take " + findTime(timeToGuess) + " to guess";
+            timeTakenLabel.Text = "YOUR PASSWORD WOULD TAKE " + findTime(timeToGuess) + " TO GUESS";
+            this.Refresh();
         }
         void resetFlags()
         {// Function used to reset all flags to false and variables to a default value
@@ -82,20 +82,26 @@ namespace Group_project
         void setBoxes()
         {// Checks all flags and checks boxes on UI as needed
             if (upperCaseFlag == true)
-                upperCaseBox.Checked = true;
-            else upperCaseBox.Checked = false;
+                imgUpperCase.Image = Properties.Resources.greenTick;
+            else imgUpperCase.Image = Properties.Resources.redCross;
 
             if (lowerCaseFlag == true)
-                lowerCaseBox.Checked = true;
-            else lowerCaseBox.Checked = false;
+                imgLowerCase.Image = Properties.Resources.greenTick;
+            else imgLowerCase.Image = Properties.Resources.redCross;
 
             if (numberFlag == true)
-                numberBox.Checked = true;
-            else numberBox.Checked = false;
+                imgNumberPresent.Image = Properties.Resources.greenTick;
+            else imgNumberPresent.Image = Properties.Resources.redCross;
 
             if (specialFlag1 == true || specialFlag2 == true)
-                specialBox.Checked = true;
-            else specialBox.Checked = false;
+                imgSpecialChar.Image = Properties.Resources.greenTick;
+            else imgSpecialChar.Image = Properties.Resources.redCross;
+
+            if (upperCaseFlag == true && lowerCaseFlag == true && numberFlag == true && (specialFlag1 == true || specialFlag2 == true))
+                imgPadlock.Visible = true;
+            else imgPadlock.Visible = false;
+
+            this.Refresh();
         }
         double calculateTime()
         {// This function is used to calculate and return the time taken to crack the password, represented as the number of seconds needed to guess it
@@ -118,19 +124,19 @@ namespace Group_project
         string findTime(double secs)
         {// This function takes a number of seconds and returns a string converting the time into the largest unit e.g. 150 seconds would be returned as 2 minutes
             if (secs < 1)
-                return "less than one second";
+                return "LESS THAN ONE SECOND";
             if (secs > 31536000000000000)
-                return "over one billion years";
+                return "OVER ONE BILLION YEARS";
 
             long time = Convert.ToInt64(Math.Floor(secs)); ;// A variable used to hold the time required, here set in seconds rounded to a whole number. long used to ensure number can be stored, smaller types can't hold maximum possible value
             //time = seconds
             if (time < 60)
             {
                 if (time == 1)
-                    return "1 second";
+                    return "1 SECOND";
                 else
                 {
-                    return time + " seconds";
+                    return time + " SECONDS";
                 }
             }
             time /= 60;
@@ -138,18 +144,18 @@ namespace Group_project
             if (time < 60)
             {
                 if (time == 1)
-                    return "1 minute";
+                    return "1 MINUTE";
                 else
-                    return time + " minutes";
+                    return time + " MINUTES";
             }
             time /= 60;
             //time = hours
             if (time < 24)
             {
                 if (time == 1)
-                    return "1 hour";
+                    return "1 HOUR";
                 else
-                    return time + " hours";
+                    return time + " HOUR";
             }
 
             time /= 24;
@@ -157,9 +163,9 @@ namespace Group_project
             if (time < 365)
             {
                 if (time == 1)
-                    return "1 day";
+                    return "1 DAY";
                 else
-                    return time + " days";
+                    return time + " DAYS";
             }
 
             time /= 365;
@@ -167,23 +173,75 @@ namespace Group_project
             if (time < 1000)
             {
                 if (time == 1)
-                    return "1 year";
+                    return "1 YEAR";
                 else
-                    return time + " years";
+                    return time + " YEARS";
             }
 
             time /= 1000;
             //time = 1000 years
             if (time < 1000)
-                return time + " thousand years";
+                return time + " THOUSAND YEARS";
 
             time /= 1000;
             //time = million years
-            return time + " million years";
+            return time + " MILLION YEARS";
         }
+        
+
+        private void checkInfoText()
+        {
+            switch (textNumber)
+            {
+                case 0:
+                    explainationText.Text = "A simple way of accessing an account is to use brute force guessing to try every possible combination of characters until the correct password is found.";
+                    break;
+                case 1:
+                    explainationText.Text = "If a password is short and only has a few characters it will be guessed quickly by this method.";
+                    break;
+                case 2:
+                    explainationText.Text = "A long password with a mixture of different character types however will take much longer to guess, effectively becoming immune to this type of hacking.";
+                    break;
+                case 3:
+                    explainationText.Text = "Below is a tool to check to see approximately how long it would take to guess a password based on its length and the types of characters used.";
+                    break;
+                case 4:
+                    explainationText.Text = "This is only a rough guide, based on a computer able to make 4 billion attempts per second.";
+                    break;
+                case 5:
+                    explainationText.Text = "The checkboxes indicate what type of characters you have included in the password that has been entered.";
+                    break;
+            }
+
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            if (textNumber != 5)
+            {
+                textNumber++;
+                checkInfoText();
+                this.Refresh();
+            }
+
+        }
+
+        private void PreviousButton_Click(object sender, EventArgs e)
+        {
+            if (textNumber != 0)
+            {
+                textNumber--;
+                checkInfoText();
+                this.Refresh();
+            }
+        }
+
         private void passInputBox_TextChanged(object sender, EventArgs e)
         {
             checkPassword();
         }
+
+
+
     }
 }

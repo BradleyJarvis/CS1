@@ -184,4 +184,115 @@
   <data name="PubWifi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PubWifi.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="authenticationDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\authenticationDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn2FactorAuthenticator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn2FactorAuthenticator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn2FactorLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn2FactorLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn2FactorSendCode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn2FactorSendCode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnCryptPublic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnCryptPublic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnDigitalNext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnDigitalNext.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnDigitalPrevious" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnDigitalPrevious.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CryptographyFormBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CryptographyFormBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DigitalSecurityFormBackground_jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DigitalSecurityFormBackground.jpg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="greenTick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\greenTick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NetworkSecurityFormBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NetworkSecurityFormBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="redCross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redCross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnBegin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnBegin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnConvert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnConvert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnCryptNext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnCryptNext.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnCryptPrevious" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnCryptPrevious.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnDecrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnDecrypt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnEncrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnEncrypt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnFind" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnFind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnGenerate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnGenerate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnGeneratePass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnGeneratePass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnGeneratePassword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnGeneratePassword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnNetworkNext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnNetworkNext.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnNetworkPrevious" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnNetworkPrevious.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnReply" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnReply.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnRestart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnRestart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnSend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnSend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnShift" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnShift.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnUnshift" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnUnshift.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="httpsImgOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\httpsImgOne.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="httpsImgThree" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\httpsImgThree.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="httpsImgTwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\httpsImgTwo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgroundLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnMenuQuiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnMenuQuiz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

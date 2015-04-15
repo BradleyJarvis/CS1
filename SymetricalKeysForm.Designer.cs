@@ -273,7 +273,7 @@
             // 
             // RestartButton
             // 
-            this.RestartButton.Location = new System.Drawing.Point(261, 722);
+            this.RestartButton.Location = new System.Drawing.Point(306, 710);
             this.RestartButton.Name = "RestartButton";
             this.RestartButton.Size = new System.Drawing.Size(137, 23);
             this.RestartButton.TabIndex = 139;
@@ -284,7 +284,7 @@
             // 
             // Back5button
             // 
-            this.Back5button.Location = new System.Drawing.Point(12, 722);
+            this.Back5button.Location = new System.Drawing.Point(26, 709);
             this.Back5button.Name = "Back5button";
             this.Back5button.Size = new System.Drawing.Size(75, 23);
             this.Back5button.TabIndex = 140;
@@ -730,7 +730,7 @@
             // SymetricalKeysForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(1311, 733);
+            this.ClientSize = new System.Drawing.Size(1311, 741);
             this.Controls.Add(this.TitleLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -793,6 +793,7 @@
             this.Controls.Add(this.HackerTextLabel);
             this.Controls.Add(this.PrivateKeyIntroductionTextBox);
             this.Name = "SymetricalKeysForm";
+            this.Load += new System.EventHandler(this.SymetricalKeysForm_Load);
             this.Controls.SetChildIndex(this.PrivateKeyIntroductionTextBox, 0);
             this.Controls.SetChildIndex(this.HackerTextLabel, 0);
             this.Controls.SetChildIndex(this.Hackerlabel, 0);

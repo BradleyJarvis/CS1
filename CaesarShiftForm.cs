@@ -10,6 +10,8 @@ namespace Group_project
 {
     public partial class CaesarShiftForm : Group_project.InteractionBase
     {
+        int textNumber = 0;
+
         public CaesarShiftForm()
         {
             InitializeComponent();
@@ -101,8 +103,70 @@ namespace Group_project
             {
                 MessageBox.Show("Please type some text into the left hand side and choose an amount to shift the text by. Using the field in the middle of the two boxes"); //Inform the user.
             }
-        } //End of unshift
+        }
+        //End of unshift
 
+        private void checkInfoText()
+        {
+            switch (textNumber)
+            {
+                case 0:
+                    explainationText.Text = "A Caesar shift cypher is a method of encryption that is very simple but is very resilient to brute force attacks.";
+                    break;
+                case 1:
+                    explainationText.Font = new Font(explainationText.Font.FontFamily, 15);
+                    explainationText.Text = "The way it works is that it takes a word and changes each letter in it by a certain amount. For example, if you have the letter ‘H’ and you shift it by 4 it goes to ‘I’ then to ‘J’ then to ‘K’ then to ‘L’, 4 steps.";
+                    break;
+                case 2:
+                    explainationText.Font = new Font(explainationText.Font.FontFamily, 15);
+                    explainationText.Text = "If this is done on a word like “Hello World” each letter is changed by 4 giving “Lipps Asvph”. ";
+                    break;
+                case 3:
+                    explainationText.Font = new Font(explainationText.Font.FontFamily, 15);
+                    explainationText.Text = "If you look you can see that the ‘W’ has become an ‘A’. This is because it loops round on itself and a ‘Z’ shifted by 1 becomes ‘A’. ";
+                    break;
+                case 4:
+                    explainationText.Text = "You can try this yourself by typing the message you want to shift into the text box on the left, selecting the amount to shift using the number in the middle and pressing the shift button. ";
+                    break;
+                case 5:
+                    explainationText.Font = new Font(explainationText.Font.FontFamily, 15);
+                    explainationText.Text = "The shifted message will be shown in the right box. If you want to go the other way, type in the box on the right and select the amount it was shifted with the number in the middle, then press the Unshift button.  ";
+                    break;
+                case 6:
+                    explainationText.Font = new Font(explainationText.Font.FontFamily, 15);
+                    explainationText.Text = "This is a basic example of encrypting (shifting) and decrypting (unshifting).";
+                    break;
+                case 7:
+                    explainationText.Font = new Font(explainationText.Font.FontFamily, 15);
+                    explainationText.Text = "This method can be used to send messages in secret but both people must know how much the message was shifted; this number is called the key. ";
+                    break;
+                case 8:
+                    explainationText.Font = new Font(explainationText.Font.FontFamily, 15);
+                    explainationText.Text = "Because both people know the key but can’t let anyone else know it, this is called a private key. ";
+                    break;
+            }
+
+            this.Refresh();
+        }
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            if (textNumber != 8)
+            {
+                textNumber++;
+                checkInfoText();
+                this.Refresh();
+            }
+        }
+
+        private void PreviousButton_Click(object sender, EventArgs e)
+        {
+            if (textNumber != 0)
+            {
+                textNumber--;
+                checkInfoText();
+                this.Refresh();
+            }
+        }
     }
 
 }

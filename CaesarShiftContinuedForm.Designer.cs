@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CaesarShiftContinuedForm));
             this.FirstCharracterUnshiftedTextBox = new System.Windows.Forms.TextBox();
             this.FirstCharracterShiftedTextBox = new System.Windows.Forms.TextBox();
             this.FirstNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -61,8 +60,9 @@
             this.TenthNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.ShiftButton = new System.Windows.Forms.Button();
             this.Unshift = new System.Windows.Forms.Button();
-            this.CaesarShiftContinuedExplanationTextBox = new System.Windows.Forms.TextBox();
-            this.TitleLabel = new System.Windows.Forms.Label();
+            this.PreviousButton = new System.Windows.Forms.Button();
+            this.NextButton = new System.Windows.Forms.Button();
+            this.explainationText = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.FirstNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FifthNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForthNumericUpDown)).BeginInit();
@@ -77,334 +77,411 @@
             // 
             // FirstCharracterUnshiftedTextBox
             // 
-            this.FirstCharracterUnshiftedTextBox.Location = new System.Drawing.Point(17, 57);
+            this.FirstCharracterUnshiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstCharracterUnshiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.FirstCharracterUnshiftedTextBox.Location = new System.Drawing.Point(33, 310);
             this.FirstCharracterUnshiftedTextBox.MaxLength = 1;
             this.FirstCharracterUnshiftedTextBox.Name = "FirstCharracterUnshiftedTextBox";
-            this.FirstCharracterUnshiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.FirstCharracterUnshiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.FirstCharracterUnshiftedTextBox.TabIndex = 1;
             // 
             // FirstCharracterShiftedTextBox
             // 
-            this.FirstCharracterShiftedTextBox.Location = new System.Drawing.Point(17, 109);
+            this.FirstCharracterShiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstCharracterShiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.FirstCharracterShiftedTextBox.Location = new System.Drawing.Point(33, 412);
             this.FirstCharracterShiftedTextBox.MaxLength = 1;
             this.FirstCharracterShiftedTextBox.Name = "FirstCharracterShiftedTextBox";
-            this.FirstCharracterShiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.FirstCharracterShiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.FirstCharracterShiftedTextBox.TabIndex = 21;
             // 
             // FirstNumericUpDown
             // 
-            this.FirstNumericUpDown.Location = new System.Drawing.Point(17, 83);
+            this.FirstNumericUpDown.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstNumericUpDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.FirstNumericUpDown.Location = new System.Drawing.Point(33, 361);
             this.FirstNumericUpDown.Maximum = new decimal(new int[] {
             26,
             0,
             0,
             0});
             this.FirstNumericUpDown.Name = "FirstNumericUpDown";
-            this.FirstNumericUpDown.Size = new System.Drawing.Size(33, 20);
+            this.FirstNumericUpDown.Size = new System.Drawing.Size(50, 45);
             this.FirstNumericUpDown.TabIndex = 11;
             // 
             // SecondCharracterUnshiftedTextBox
             // 
-            this.SecondCharracterUnshiftedTextBox.Location = new System.Drawing.Point(56, 57);
+            this.SecondCharracterUnshiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SecondCharracterUnshiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.SecondCharracterUnshiftedTextBox.Location = new System.Drawing.Point(89, 310);
             this.SecondCharracterUnshiftedTextBox.MaxLength = 1;
             this.SecondCharracterUnshiftedTextBox.Name = "SecondCharracterUnshiftedTextBox";
-            this.SecondCharracterUnshiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.SecondCharracterUnshiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.SecondCharracterUnshiftedTextBox.TabIndex = 2;
             // 
             // ThirdCharracterUnshiftedTextBox
             // 
-            this.ThirdCharracterUnshiftedTextBox.Location = new System.Drawing.Point(95, 57);
+            this.ThirdCharracterUnshiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThirdCharracterUnshiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.ThirdCharracterUnshiftedTextBox.Location = new System.Drawing.Point(145, 310);
             this.ThirdCharracterUnshiftedTextBox.MaxLength = 1;
             this.ThirdCharracterUnshiftedTextBox.Name = "ThirdCharracterUnshiftedTextBox";
-            this.ThirdCharracterUnshiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.ThirdCharracterUnshiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.ThirdCharracterUnshiftedTextBox.TabIndex = 3;
             // 
             // ForthCharracterUnshiftedTextBox
             // 
-            this.ForthCharracterUnshiftedTextBox.Location = new System.Drawing.Point(134, 57);
+            this.ForthCharracterUnshiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForthCharracterUnshiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.ForthCharracterUnshiftedTextBox.Location = new System.Drawing.Point(201, 310);
             this.ForthCharracterUnshiftedTextBox.MaxLength = 1;
             this.ForthCharracterUnshiftedTextBox.Name = "ForthCharracterUnshiftedTextBox";
-            this.ForthCharracterUnshiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.ForthCharracterUnshiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.ForthCharracterUnshiftedTextBox.TabIndex = 4;
             // 
             // FifthCharracterUnshiftedTextBox
             // 
-            this.FifthCharracterUnshiftedTextBox.Location = new System.Drawing.Point(173, 57);
+            this.FifthCharracterUnshiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FifthCharracterUnshiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.FifthCharracterUnshiftedTextBox.Location = new System.Drawing.Point(257, 310);
             this.FifthCharracterUnshiftedTextBox.MaxLength = 1;
             this.FifthCharracterUnshiftedTextBox.Name = "FifthCharracterUnshiftedTextBox";
-            this.FifthCharracterUnshiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.FifthCharracterUnshiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.FifthCharracterUnshiftedTextBox.TabIndex = 5;
             // 
             // SixthCharracterUnshiftedTextBox
             // 
-            this.SixthCharracterUnshiftedTextBox.Location = new System.Drawing.Point(212, 57);
+            this.SixthCharracterUnshiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SixthCharracterUnshiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.SixthCharracterUnshiftedTextBox.Location = new System.Drawing.Point(313, 310);
             this.SixthCharracterUnshiftedTextBox.MaxLength = 1;
             this.SixthCharracterUnshiftedTextBox.Name = "SixthCharracterUnshiftedTextBox";
-            this.SixthCharracterUnshiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.SixthCharracterUnshiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.SixthCharracterUnshiftedTextBox.TabIndex = 6;
             // 
             // SeventhCharracterUnshiftedTextBox
             // 
-            this.SeventhCharracterUnshiftedTextBox.Location = new System.Drawing.Point(251, 57);
+            this.SeventhCharracterUnshiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeventhCharracterUnshiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.SeventhCharracterUnshiftedTextBox.Location = new System.Drawing.Point(368, 310);
             this.SeventhCharracterUnshiftedTextBox.MaxLength = 1;
             this.SeventhCharracterUnshiftedTextBox.Name = "SeventhCharracterUnshiftedTextBox";
-            this.SeventhCharracterUnshiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.SeventhCharracterUnshiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.SeventhCharracterUnshiftedTextBox.TabIndex = 7;
             // 
             // EigthCharracterUnshiftedTextBox
             // 
-            this.EigthCharracterUnshiftedTextBox.Location = new System.Drawing.Point(290, 57);
+            this.EigthCharracterUnshiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EigthCharracterUnshiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.EigthCharracterUnshiftedTextBox.Location = new System.Drawing.Point(425, 310);
             this.EigthCharracterUnshiftedTextBox.MaxLength = 1;
             this.EigthCharracterUnshiftedTextBox.Name = "EigthCharracterUnshiftedTextBox";
-            this.EigthCharracterUnshiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.EigthCharracterUnshiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.EigthCharracterUnshiftedTextBox.TabIndex = 8;
             // 
             // NinethCharracterUnshiftedTextBox
             // 
-            this.NinethCharracterUnshiftedTextBox.Location = new System.Drawing.Point(329, 57);
+            this.NinethCharracterUnshiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NinethCharracterUnshiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.NinethCharracterUnshiftedTextBox.Location = new System.Drawing.Point(481, 310);
             this.NinethCharracterUnshiftedTextBox.MaxLength = 1;
             this.NinethCharracterUnshiftedTextBox.Name = "NinethCharracterUnshiftedTextBox";
-            this.NinethCharracterUnshiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.NinethCharracterUnshiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.NinethCharracterUnshiftedTextBox.TabIndex = 9;
             // 
             // TenthCharracterUnshiftedTextBox
             // 
-            this.TenthCharracterUnshiftedTextBox.Location = new System.Drawing.Point(368, 57);
+            this.TenthCharracterUnshiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TenthCharracterUnshiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.TenthCharracterUnshiftedTextBox.Location = new System.Drawing.Point(537, 310);
             this.TenthCharracterUnshiftedTextBox.MaxLength = 1;
             this.TenthCharracterUnshiftedTextBox.Name = "TenthCharracterUnshiftedTextBox";
-            this.TenthCharracterUnshiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.TenthCharracterUnshiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.TenthCharracterUnshiftedTextBox.TabIndex = 10;
             // 
             // TenthCharracterShiftedTextBox
             // 
-            this.TenthCharracterShiftedTextBox.Location = new System.Drawing.Point(368, 109);
+            this.TenthCharracterShiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TenthCharracterShiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.TenthCharracterShiftedTextBox.Location = new System.Drawing.Point(537, 412);
             this.TenthCharracterShiftedTextBox.MaxLength = 1;
             this.TenthCharracterShiftedTextBox.Name = "TenthCharracterShiftedTextBox";
-            this.TenthCharracterShiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.TenthCharracterShiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.TenthCharracterShiftedTextBox.TabIndex = 30;
             // 
             // NinethCharracterShiftedTextBox
             // 
-            this.NinethCharracterShiftedTextBox.Location = new System.Drawing.Point(329, 109);
+            this.NinethCharracterShiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NinethCharracterShiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.NinethCharracterShiftedTextBox.Location = new System.Drawing.Point(481, 412);
             this.NinethCharracterShiftedTextBox.MaxLength = 1;
             this.NinethCharracterShiftedTextBox.Name = "NinethCharracterShiftedTextBox";
-            this.NinethCharracterShiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.NinethCharracterShiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.NinethCharracterShiftedTextBox.TabIndex = 29;
             // 
             // EigthCharracterShiftedTextBox
             // 
-            this.EigthCharracterShiftedTextBox.Location = new System.Drawing.Point(290, 109);
+            this.EigthCharracterShiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EigthCharracterShiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.EigthCharracterShiftedTextBox.Location = new System.Drawing.Point(425, 412);
             this.EigthCharracterShiftedTextBox.MaxLength = 1;
             this.EigthCharracterShiftedTextBox.Name = "EigthCharracterShiftedTextBox";
-            this.EigthCharracterShiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.EigthCharracterShiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.EigthCharracterShiftedTextBox.TabIndex = 28;
             // 
             // SeventhCharracterShiftedTextBox
             // 
-            this.SeventhCharracterShiftedTextBox.Location = new System.Drawing.Point(251, 109);
+            this.SeventhCharracterShiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeventhCharracterShiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.SeventhCharracterShiftedTextBox.Location = new System.Drawing.Point(369, 412);
             this.SeventhCharracterShiftedTextBox.MaxLength = 1;
             this.SeventhCharracterShiftedTextBox.Name = "SeventhCharracterShiftedTextBox";
-            this.SeventhCharracterShiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.SeventhCharracterShiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.SeventhCharracterShiftedTextBox.TabIndex = 27;
             // 
             // SixthCharracterShiftedTextBox
             // 
-            this.SixthCharracterShiftedTextBox.Location = new System.Drawing.Point(212, 109);
+            this.SixthCharracterShiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SixthCharracterShiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.SixthCharracterShiftedTextBox.Location = new System.Drawing.Point(313, 412);
             this.SixthCharracterShiftedTextBox.MaxLength = 1;
             this.SixthCharracterShiftedTextBox.Name = "SixthCharracterShiftedTextBox";
-            this.SixthCharracterShiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.SixthCharracterShiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.SixthCharracterShiftedTextBox.TabIndex = 26;
             // 
             // FifthCharracterShiftedTextBox
             // 
-            this.FifthCharracterShiftedTextBox.Location = new System.Drawing.Point(173, 109);
+            this.FifthCharracterShiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FifthCharracterShiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.FifthCharracterShiftedTextBox.Location = new System.Drawing.Point(257, 412);
             this.FifthCharracterShiftedTextBox.MaxLength = 1;
             this.FifthCharracterShiftedTextBox.Name = "FifthCharracterShiftedTextBox";
-            this.FifthCharracterShiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.FifthCharracterShiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.FifthCharracterShiftedTextBox.TabIndex = 25;
             // 
             // ForthCharracterShiftedTextBox
             // 
-            this.ForthCharracterShiftedTextBox.Location = new System.Drawing.Point(134, 109);
+            this.ForthCharracterShiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForthCharracterShiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.ForthCharracterShiftedTextBox.Location = new System.Drawing.Point(201, 412);
             this.ForthCharracterShiftedTextBox.MaxLength = 1;
             this.ForthCharracterShiftedTextBox.Name = "ForthCharracterShiftedTextBox";
-            this.ForthCharracterShiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.ForthCharracterShiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.ForthCharracterShiftedTextBox.TabIndex = 24;
             // 
             // ThirdCharracterShiftedTextBox
             // 
-            this.ThirdCharracterShiftedTextBox.Location = new System.Drawing.Point(95, 109);
+            this.ThirdCharracterShiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThirdCharracterShiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.ThirdCharracterShiftedTextBox.Location = new System.Drawing.Point(145, 412);
             this.ThirdCharracterShiftedTextBox.MaxLength = 1;
             this.ThirdCharracterShiftedTextBox.Name = "ThirdCharracterShiftedTextBox";
-            this.ThirdCharracterShiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.ThirdCharracterShiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.ThirdCharracterShiftedTextBox.TabIndex = 23;
             // 
             // SecondCharracterShiftedTextBox
             // 
-            this.SecondCharracterShiftedTextBox.Location = new System.Drawing.Point(56, 109);
+            this.SecondCharracterShiftedTextBox.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SecondCharracterShiftedTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.SecondCharracterShiftedTextBox.Location = new System.Drawing.Point(89, 412);
             this.SecondCharracterShiftedTextBox.MaxLength = 1;
             this.SecondCharracterShiftedTextBox.Name = "SecondCharracterShiftedTextBox";
-            this.SecondCharracterShiftedTextBox.Size = new System.Drawing.Size(33, 20);
+            this.SecondCharracterShiftedTextBox.Size = new System.Drawing.Size(50, 45);
             this.SecondCharracterShiftedTextBox.TabIndex = 22;
             // 
             // FifthNumericUpDown
             // 
-            this.FifthNumericUpDown.Location = new System.Drawing.Point(173, 83);
+            this.FifthNumericUpDown.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FifthNumericUpDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.FifthNumericUpDown.Location = new System.Drawing.Point(257, 361);
             this.FifthNumericUpDown.Maximum = new decimal(new int[] {
             26,
             0,
             0,
             0});
             this.FifthNumericUpDown.Name = "FifthNumericUpDown";
-            this.FifthNumericUpDown.Size = new System.Drawing.Size(33, 20);
+            this.FifthNumericUpDown.Size = new System.Drawing.Size(50, 45);
             this.FifthNumericUpDown.TabIndex = 15;
             // 
             // ForthNumericUpDown
             // 
-            this.ForthNumericUpDown.Location = new System.Drawing.Point(134, 83);
+            this.ForthNumericUpDown.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForthNumericUpDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.ForthNumericUpDown.Location = new System.Drawing.Point(201, 361);
             this.ForthNumericUpDown.Maximum = new decimal(new int[] {
             26,
             0,
             0,
             0});
             this.ForthNumericUpDown.Name = "ForthNumericUpDown";
-            this.ForthNumericUpDown.Size = new System.Drawing.Size(33, 20);
+            this.ForthNumericUpDown.Size = new System.Drawing.Size(50, 45);
             this.ForthNumericUpDown.TabIndex = 14;
             // 
             // ThirdNumericUpDown
             // 
-            this.ThirdNumericUpDown.Location = new System.Drawing.Point(95, 83);
+            this.ThirdNumericUpDown.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThirdNumericUpDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.ThirdNumericUpDown.Location = new System.Drawing.Point(145, 361);
             this.ThirdNumericUpDown.Maximum = new decimal(new int[] {
             26,
             0,
             0,
             0});
             this.ThirdNumericUpDown.Name = "ThirdNumericUpDown";
-            this.ThirdNumericUpDown.Size = new System.Drawing.Size(33, 20);
+            this.ThirdNumericUpDown.Size = new System.Drawing.Size(50, 45);
             this.ThirdNumericUpDown.TabIndex = 13;
             // 
             // SecondNumericUpDown
             // 
-            this.SecondNumericUpDown.Location = new System.Drawing.Point(56, 83);
+            this.SecondNumericUpDown.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SecondNumericUpDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.SecondNumericUpDown.Location = new System.Drawing.Point(89, 361);
             this.SecondNumericUpDown.Maximum = new decimal(new int[] {
             26,
             0,
             0,
             0});
             this.SecondNumericUpDown.Name = "SecondNumericUpDown";
-            this.SecondNumericUpDown.Size = new System.Drawing.Size(33, 20);
+            this.SecondNumericUpDown.Size = new System.Drawing.Size(50, 45);
             this.SecondNumericUpDown.TabIndex = 12;
             // 
             // SixthNumericUpDown
             // 
-            this.SixthNumericUpDown.Location = new System.Drawing.Point(212, 83);
+            this.SixthNumericUpDown.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SixthNumericUpDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.SixthNumericUpDown.Location = new System.Drawing.Point(313, 361);
             this.SixthNumericUpDown.Maximum = new decimal(new int[] {
             26,
             0,
             0,
             0});
             this.SixthNumericUpDown.Name = "SixthNumericUpDown";
-            this.SixthNumericUpDown.Size = new System.Drawing.Size(33, 20);
+            this.SixthNumericUpDown.Size = new System.Drawing.Size(50, 45);
             this.SixthNumericUpDown.TabIndex = 16;
             // 
             // SeventhNumericUpDown
             // 
-            this.SeventhNumericUpDown.Location = new System.Drawing.Point(251, 83);
+            this.SeventhNumericUpDown.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeventhNumericUpDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.SeventhNumericUpDown.Location = new System.Drawing.Point(369, 361);
             this.SeventhNumericUpDown.Maximum = new decimal(new int[] {
             26,
             0,
             0,
             0});
             this.SeventhNumericUpDown.Name = "SeventhNumericUpDown";
-            this.SeventhNumericUpDown.Size = new System.Drawing.Size(33, 20);
+            this.SeventhNumericUpDown.Size = new System.Drawing.Size(50, 45);
             this.SeventhNumericUpDown.TabIndex = 17;
             // 
             // EigthNumericUpDown
             // 
-            this.EigthNumericUpDown.Location = new System.Drawing.Point(290, 83);
+            this.EigthNumericUpDown.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EigthNumericUpDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.EigthNumericUpDown.Location = new System.Drawing.Point(425, 361);
             this.EigthNumericUpDown.Maximum = new decimal(new int[] {
             26,
             0,
             0,
             0});
             this.EigthNumericUpDown.Name = "EigthNumericUpDown";
-            this.EigthNumericUpDown.Size = new System.Drawing.Size(33, 20);
+            this.EigthNumericUpDown.Size = new System.Drawing.Size(50, 45);
             this.EigthNumericUpDown.TabIndex = 18;
             // 
             // NinethNumericUpDown
             // 
-            this.NinethNumericUpDown.Location = new System.Drawing.Point(329, 83);
+            this.NinethNumericUpDown.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NinethNumericUpDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.NinethNumericUpDown.Location = new System.Drawing.Point(481, 361);
             this.NinethNumericUpDown.Maximum = new decimal(new int[] {
             26,
             0,
             0,
             0});
             this.NinethNumericUpDown.Name = "NinethNumericUpDown";
-            this.NinethNumericUpDown.Size = new System.Drawing.Size(33, 20);
+            this.NinethNumericUpDown.Size = new System.Drawing.Size(50, 45);
             this.NinethNumericUpDown.TabIndex = 19;
             // 
             // TenthNumericUpDown
             // 
-            this.TenthNumericUpDown.Location = new System.Drawing.Point(368, 83);
+            this.TenthNumericUpDown.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TenthNumericUpDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.TenthNumericUpDown.Location = new System.Drawing.Point(537, 361);
             this.TenthNumericUpDown.Maximum = new decimal(new int[] {
             26,
             0,
             0,
             0});
             this.TenthNumericUpDown.Name = "TenthNumericUpDown";
-            this.TenthNumericUpDown.Size = new System.Drawing.Size(33, 20);
+            this.TenthNumericUpDown.Size = new System.Drawing.Size(50, 45);
             this.TenthNumericUpDown.TabIndex = 20;
             // 
             // ShiftButton
             // 
-            this.ShiftButton.Location = new System.Drawing.Point(407, 55);
+            this.ShiftButton.Image = global::Group_project.Properties.Resources.btnShift;
+            this.ShiftButton.Location = new System.Drawing.Point(615, 311);
             this.ShiftButton.Name = "ShiftButton";
-            this.ShiftButton.Size = new System.Drawing.Size(75, 23);
+            this.ShiftButton.Size = new System.Drawing.Size(148, 52);
             this.ShiftButton.TabIndex = 11;
-            this.ShiftButton.Text = "Shift";
             this.ShiftButton.UseVisualStyleBackColor = true;
             this.ShiftButton.Click += new System.EventHandler(this.ShiftButton_Click);
             // 
             // Unshift
             // 
-            this.Unshift.Location = new System.Drawing.Point(407, 109);
+            this.Unshift.Image = global::Group_project.Properties.Resources.btnUnshift;
+            this.Unshift.Location = new System.Drawing.Point(615, 392);
             this.Unshift.Name = "Unshift";
-            this.Unshift.Size = new System.Drawing.Size(75, 23);
+            this.Unshift.Size = new System.Drawing.Size(148, 52);
             this.Unshift.TabIndex = 31;
-            this.Unshift.Text = "Unshift";
             this.Unshift.UseVisualStyleBackColor = true;
             this.Unshift.Click += new System.EventHandler(this.Unshift_Click);
             // 
-            // CaesarShiftContinuedExplanationTextBox
+            // PreviousButton
             // 
-            this.CaesarShiftContinuedExplanationTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CaesarShiftContinuedExplanationTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CaesarShiftContinuedExplanationTextBox.Location = new System.Drawing.Point(17, 145);
-            this.CaesarShiftContinuedExplanationTextBox.Multiline = true;
-            this.CaesarShiftContinuedExplanationTextBox.Name = "CaesarShiftContinuedExplanationTextBox";
-            this.CaesarShiftContinuedExplanationTextBox.ReadOnly = true;
-            this.CaesarShiftContinuedExplanationTextBox.Size = new System.Drawing.Size(776, 229);
-            this.CaesarShiftContinuedExplanationTextBox.TabIndex = 41;
-            this.CaesarShiftContinuedExplanationTextBox.TabStop = false;
-            this.CaesarShiftContinuedExplanationTextBox.Text = resources.GetString("CaesarShiftContinuedExplanationTextBox.Text");
+            this.PreviousButton.Image = global::Group_project.Properties.Resources.btnCryptPrevious;
+            this.PreviousButton.Location = new System.Drawing.Point(10, 195);
+            this.PreviousButton.Name = "PreviousButton";
+            this.PreviousButton.Size = new System.Drawing.Size(55, 45);
+            this.PreviousButton.TabIndex = 60;
+            this.PreviousButton.UseVisualStyleBackColor = true;
+            this.PreviousButton.Click += new System.EventHandler(this.PreviousButton_Click);
             // 
-            // TitleLabel
+            // NextButton
             // 
-            this.TitleLabel.AutoSize = true;
-            this.TitleLabel.Font = new System.Drawing.Font("Tahoma", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitleLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.TitleLabel.Location = new System.Drawing.Point(12, 24);
-            this.TitleLabel.Name = "TitleLabel";
-            this.TitleLabel.Size = new System.Drawing.Size(251, 25);
-            this.TitleLabel.TabIndex = 42;
-            this.TitleLabel.Text = "Caesar Shift Continued";
+            this.NextButton.Image = global::Group_project.Properties.Resources.btnCryptNext;
+            this.NextButton.Location = new System.Drawing.Point(709, 195);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(55, 45);
+            this.NextButton.TabIndex = 59;
+            this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            // 
+            // explainationText
+            // 
+            this.explainationText.BackColor = System.Drawing.Color.LavenderBlush;
+            this.explainationText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.explainationText.Cursor = System.Windows.Forms.Cursors.Default;
+            this.explainationText.Font = new System.Drawing.Font("Segoe WP SemiLight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.explainationText.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.explainationText.Location = new System.Drawing.Point(71, 138);
+            this.explainationText.Multiline = true;
+            this.explainationText.Name = "explainationText";
+            this.explainationText.ReadOnly = true;
+            this.explainationText.Size = new System.Drawing.Size(632, 155);
+            this.explainationText.TabIndex = 58;
+            this.explainationText.TabStop = false;
+            this.explainationText.Text = "A Caesar shift alone is weak to statistical analysis of the distribution of chara" +
+    "cters. This weakness can be overcome by using a different shift amount for each " +
+    "for each character.";
+            this.explainationText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // CaesarShiftContinuedForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(799, 379);
-            this.Controls.Add(this.TitleLabel);
-            this.Controls.Add(this.CaesarShiftContinuedExplanationTextBox);
+            this.BackgroundImage = global::Group_project.Properties.Resources.CryptographyFormBackground;
+            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.PreviousButton);
+            this.Controls.Add(this.NextButton);
+            this.Controls.Add(this.explainationText);
             this.Controls.Add(this.Unshift);
             this.Controls.Add(this.ShiftButton);
             this.Controls.Add(this.TenthNumericUpDown);
@@ -438,6 +515,7 @@
             this.Controls.Add(this.FirstCharracterShiftedTextBox);
             this.Controls.Add(this.FirstCharracterUnshiftedTextBox);
             this.Name = "CaesarShiftContinuedForm";
+            this.Text = "Caesar Shift Continued";
             this.Controls.SetChildIndex(this.FirstCharracterUnshiftedTextBox, 0);
             this.Controls.SetChildIndex(this.FirstCharracterShiftedTextBox, 0);
             this.Controls.SetChildIndex(this.FirstNumericUpDown, 0);
@@ -470,8 +548,9 @@
             this.Controls.SetChildIndex(this.TenthNumericUpDown, 0);
             this.Controls.SetChildIndex(this.ShiftButton, 0);
             this.Controls.SetChildIndex(this.Unshift, 0);
-            this.Controls.SetChildIndex(this.CaesarShiftContinuedExplanationTextBox, 0);
-            this.Controls.SetChildIndex(this.TitleLabel, 0);
+            this.Controls.SetChildIndex(this.explainationText, 0);
+            this.Controls.SetChildIndex(this.NextButton, 0);
+            this.Controls.SetChildIndex(this.PreviousButton, 0);
             ((System.ComponentModel.ISupportInitialize)(this.FirstNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FifthNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForthNumericUpDown)).EndInit();
@@ -521,7 +600,8 @@
         private System.Windows.Forms.NumericUpDown TenthNumericUpDown;
         private System.Windows.Forms.Button ShiftButton;
         private System.Windows.Forms.Button Unshift;
-        private System.Windows.Forms.TextBox CaesarShiftContinuedExplanationTextBox;
-        private System.Windows.Forms.Label TitleLabel;
+        private System.Windows.Forms.Button PreviousButton;
+        private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.TextBox explainationText;
     }
 }

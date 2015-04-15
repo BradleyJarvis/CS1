@@ -13,6 +13,7 @@ namespace Group_project
         // Characters array used to hold all characters that can be chosen for the generated password
         char[] characters = new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '!', '"', '£', '$', '%', '^', '&', '*', '(', ')', '_', '-', '=', '+', '[', '{', ']', '}', ';', ':', '\'', '@', '#', '~', '/', '?', '.', '>', ',', '<', '\\', '|', ' '};
         Random rnd = new Random(); // Create the RNG object
+        int textNumber = 0;
 
         public PasswordManagersForm()
         {
@@ -36,5 +37,55 @@ namespace Group_project
             passOutputBox.Text = password;
             passOutputBox.Select();
         }
+        private void checkInfoText()
+        {
+            switch (textNumber)
+            {
+                case 0:
+                    explainationText.Text = "A good password is one that is difficult to guess. A simple way of creating one is to simply randomly generate one.";
+                    break;
+                case 1:
+                    explainationText.Font = new Font(explainationText.Font.FontFamily, 17);
+                    explainationText.Text = "The above tool allows you to generate a password of a length of your choice that will be near impossible for a human to guess and harder to crack using a brute force attack. ";
+                    break;
+                case 2:
+                    explainationText.Font = new Font(explainationText.Font.FontFamily, 15);
+                    explainationText.Text = "Many, but not all, services allow the use of special characters (such as ! and ?) in passwords so the checkbox above can be used to prevent the generated password from including these characters.";
+                    break;
+                case 3:
+                    explainationText.Font = new Font(explainationText.Font.FontFamily, 15);
+                    explainationText.Text = "These randomly generated passwords are by their random nature, very hard to remember, so it is recommended that a password manager is used as well as these generated passwords. ";
+                    break;
+                case 4:
+                    explainationText.Text = "A password manager will store passwords for all the services you use so that you don't need to remember them all.";
+                    break;
+                case 5:
+                    explainationText.Font = new Font(explainationText.Font.FontFamily, 15);
+                    explainationText.Text = "You only need to remember the password for the password manager, then you can use a different, randomly generated password for every service you use, without needing to remember them all.";
+                    break;
+            }
+
+            this.Refresh();
+        }
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            if (textNumber != 5)
+            {
+                textNumber++;
+                checkInfoText();
+                this.Refresh();
+            }
+        }
+
+        private void PreviousButton_Click(object sender, EventArgs e)
+        {
+            if (textNumber != 0)
+            {
+                textNumber--;
+                checkInfoText();
+                this.Refresh();
+            }
+        }
+
     }
 }
