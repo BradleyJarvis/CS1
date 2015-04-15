@@ -48,8 +48,9 @@
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.textBox1);
             this.Name = "HelpForm";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "HelpForm";
+            this.Text = "Edu-Cyber Scelus Help";
             this.ResumeLayout(false);
             this.PerformLayout();
 

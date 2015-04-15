@@ -117,4 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Edu-Cyber Scelus, meaning ‘educating cyber crime,’ is an application designed to initially raise awareness of a global issue in cyber crime, and present alternate methods in which to tackle this problem. Through informative text extracts, interactive exercises and quizzes, this application provides a platform to do just that.
+
+The design of the application is simple thus creating a user-friendly experience throughout with no navigational issues. 
+
+Key terms are defined, important issues are addressed, the quizzes are challenging, and the complex scenarios come with detailed examples. Each of these features combined with the easy-on-the-eye design of the application, create a complete experience.
+
+Enjoy!
+</value>
+  </data>
 </root>
