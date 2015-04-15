@@ -657,16 +657,6 @@
             this.label8.TabIndex = 164;
             this.label8.Text = "__";
             // 
-            // imgTitle
-            // 
-            this.imgTitle.BackColor = System.Drawing.Color.Transparent;
-            this.imgTitle.Image = global::Group_project.Properties.Resources.titleSymmetricalKeys;
-            this.imgTitle.Location = new System.Drawing.Point(166, 27);
-            this.imgTitle.Name = "imgTitle";
-            this.imgTitle.Size = new System.Drawing.Size(438, 51);
-            this.imgTitle.TabIndex = 165;
-            this.imgTitle.TabStop = false;
-            // 
             // SymetricalKeysForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

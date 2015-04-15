@@ -514,12 +514,10 @@
             // 
             // imgTitle
             // 
-            this.imgTitle.BackColor = System.Drawing.Color.Transparent;
-            this.imgTitle.Image = global::Group_project.Properties.Resources.titlePublicKeys;
-            this.imgTitle.Location = new System.Drawing.Point(114, 27);
+            this.imgTitle.Location = new System.Drawing.Point(132, 27);
             this.imgTitle.Name = "imgTitle";
-            this.imgTitle.Size = new System.Drawing.Size(525, 51);
-            this.imgTitle.TabIndex = 195;
+            this.imgTitle.Size = new System.Drawing.Size(100, 50);
+            this.imgTitle.TabIndex = 199;
             this.imgTitle.TabStop = false;
             // 
             // PreviousButton
