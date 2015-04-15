@@ -241,9 +241,9 @@
             // RestartButton
             // 
             this.RestartButton.Image = global::Group_project.Properties.Resources.btnRestart;
-            this.RestartButton.Location = new System.Drawing.Point(12, 402);
+            this.RestartButton.Location = new System.Drawing.Point(22, 387);
             this.RestartButton.Name = "RestartButton";
-            this.RestartButton.Size = new System.Drawing.Size(155, 43);
+            this.RestartButton.Size = new System.Drawing.Size(155, 57);
             this.RestartButton.TabIndex = 139;
             this.RestartButton.UseVisualStyleBackColor = true;
             this.RestartButton.Visible = false;
@@ -295,9 +295,9 @@
             // FindCommonNumberButton
             // 
             this.FindCommonNumberButton.Image = global::Group_project.Properties.Resources.btnFind;
-            this.FindCommonNumberButton.Location = new System.Drawing.Point(12, 392);
+            this.FindCommonNumberButton.Location = new System.Drawing.Point(23, 394);
             this.FindCommonNumberButton.Name = "FindCommonNumberButton";
-            this.FindCommonNumberButton.Size = new System.Drawing.Size(156, 60);
+            this.FindCommonNumberButton.Size = new System.Drawing.Size(154, 42);
             this.FindCommonNumberButton.TabIndex = 133;
             this.FindCommonNumberButton.UseVisualStyleBackColor = true;
             this.FindCommonNumberButton.Visible = false;
@@ -365,9 +365,9 @@
             // Replybutton
             // 
             this.Replybutton.Image = global::Group_project.Properties.Resources.btnReply;
-            this.Replybutton.Location = new System.Drawing.Point(2, 394);
+            this.Replybutton.Location = new System.Drawing.Point(23, 386);
             this.Replybutton.Name = "Replybutton";
-            this.Replybutton.Size = new System.Drawing.Size(173, 56);
+            this.Replybutton.Size = new System.Drawing.Size(155, 58);
             this.Replybutton.TabIndex = 126;
             this.Replybutton.UseVisualStyleBackColor = true;
             this.Replybutton.Visible = false;
@@ -387,9 +387,9 @@
             // Send1button
             // 
             this.Send1button.BackgroundImage = global::Group_project.Properties.Resources.btnSend;
-            this.Send1button.Location = new System.Drawing.Point(12, 396);
+            this.Send1button.Location = new System.Drawing.Point(28, 390);
             this.Send1button.Name = "Send1button";
-            this.Send1button.Size = new System.Drawing.Size(149, 54);
+            this.Send1button.Size = new System.Drawing.Size(145, 49);
             this.Send1button.TabIndex = 123;
             this.Send1button.UseVisualStyleBackColor = true;
             this.Send1button.Visible = false;
@@ -398,9 +398,9 @@
             // FindAnswerbutton
             // 
             this.FindAnswerbutton.BackgroundImage = global::Group_project.Properties.Resources.btnFind;
-            this.FindAnswerbutton.Location = new System.Drawing.Point(14, 397);
+            this.FindAnswerbutton.Location = new System.Drawing.Point(23, 392);
             this.FindAnswerbutton.Name = "FindAnswerbutton";
-            this.FindAnswerbutton.Size = new System.Drawing.Size(154, 50);
+            this.FindAnswerbutton.Size = new System.Drawing.Size(154, 47);
             this.FindAnswerbutton.TabIndex = 4;
             this.FindAnswerbutton.UseVisualStyleBackColor = true;
             this.FindAnswerbutton.Visible = false;
@@ -522,9 +522,9 @@
             // 
             this.GenerateSecretNumbersButton.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.GenerateSecretNumbersButton.BackgroundImage = global::Group_project.Properties.Resources.btnGenerate;
-            this.GenerateSecretNumbersButton.Location = new System.Drawing.Point(2, 400);
+            this.GenerateSecretNumbersButton.Location = new System.Drawing.Point(15, 390);
             this.GenerateSecretNumbersButton.Name = "GenerateSecretNumbersButton";
-            this.GenerateSecretNumbersButton.Size = new System.Drawing.Size(173, 50);
+            this.GenerateSecretNumbersButton.Size = new System.Drawing.Size(170, 51);
             this.GenerateSecretNumbersButton.TabIndex = 4;
             this.GenerateSecretNumbersButton.UseVisualStyleBackColor = true;
             this.GenerateSecretNumbersButton.Click += new System.EventHandler(this.GenerateSecretNumbersButton_Click);
@@ -656,6 +656,16 @@
             this.label8.Size = new System.Drawing.Size(19, 13);
             this.label8.TabIndex = 164;
             this.label8.Text = "__";
+            // 
+            // imgTitle
+            // 
+            this.imgTitle.BackColor = System.Drawing.Color.Transparent;
+            this.imgTitle.Image = global::Group_project.Properties.Resources.titlePublicKeys;
+            this.imgTitle.Location = new System.Drawing.Point(117, 34);
+            this.imgTitle.Name = "imgTitle";
+            this.imgTitle.Size = new System.Drawing.Size(530, 50);
+            this.imgTitle.TabIndex = 8;
+            this.imgTitle.TabStop = false;
             // 
             // SymetricalKeysForm
             // 
