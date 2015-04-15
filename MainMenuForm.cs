@@ -25,45 +25,154 @@ namespace Group_project
         #region Window resize code
         private void buttonSection1Click(object sender, EventArgs e)
         {
+            if (CaesarShift.Visible == true)
+            {
+                CaesarShift.Visible = false;
+            }
+            else
+            {
+                CaesarShift.Visible = true;
+            }
 
-            CaesarShift.BringToFront();
-            CaesarShift.Visible = true;
-            CaesarShiftContinued.BringToFront();
-            CaesarShiftContinued.Visible = true;
-            SymetricalKeys.BringToFront();
-            SymetricalKeys.Visible = true;
-            PublicKeys.Visible = true;
-            PublicKeys.BringToFront();
-            this.Refresh();
+            if (CaesarShiftContinued.Visible == true)
+            {
+                CaesarShiftContinued.Visible = false;
+            }
+            else
+            {
+                CaesarShiftContinued.Visible = true;
+            }
+
+            if (SymetricalKeys.Visible == true)
+            {
+                SymetricalKeys.Visible = false;
+            }
+            else
+            {
+                SymetricalKeys.Visible = true;
+            }
+
+            if (PublicKeys.Visible == true)
+            {
+                PublicKeys.Visible = false;
+            }
+            else
+            {
+                PublicKeys.Visible = true;
+            }
+            if (this.Height < 500)
+            {
+                this.Height = 610;
+            }
+            else
+            {
+                if ((CaesarShift.Visible == false) && (PasswordStrength.Visible == false) && (PhysicalHacking.Visible == false))
+                {
+                    this.Height = 351;
+                }
+            }
+
         }
 
         private void PasswordsAndDigitalSecurity_Click(object sender, EventArgs e)
         {
-            PasswordStrength.Visible = true;
-            PasswordStrength.BringToFront();
-            PasswordManagers.Visible = true;
-            PasswordManagers.BringToFront();
-            DigitalCertificatesAndHttps.Visible = true;
-            DigitalCertificatesAndHttps.BringToFront();
-            TwoFactorAuthentication.Visible = true;
-            TwoFactorAuthentication.BringToFront();
+            if (PasswordStrength.Visible == true)
+            {
+                PasswordStrength.Visible = false;
+            }
+            else
+            {
+                PasswordStrength.Visible = true;
+            }
 
-            this.Refresh();
+            if (PasswordManagers.Visible == true)
+            {
+                PasswordManagers.Visible = false;
+            }
+            else
+            {
+                PasswordManagers.Visible = true;
+            }
+
+            if (DigitalCertificatesAndHttps.Visible == true)
+            {
+                DigitalCertificatesAndHttps.Visible = false;
+            }
+            else
+            {
+                DigitalCertificatesAndHttps.Visible = true;
+            }
+
+            if (TwoFactorAuthentication.Visible == true)
+            {
+                TwoFactorAuthentication.Visible = false;
+            }
+            else
+            {
+                TwoFactorAuthentication.Visible = true;
+            }
+            if (this.Height < 500)
+            {
+                this.Height = 610;
+            }
+            else
+            {
+            if ((CaesarShift.Visible == false)&&(PasswordStrength.Visible == false)&&(PhysicalHacking.Visible == false))
+            {
+                this.Height = 351;
+            }
+            }
 
         }
         private void NetworkSecurity_Click(object sender, EventArgs e)
         {
+            if (PhysicalHacking.Visible == true)
+            {
+                PhysicalHacking.Visible = false;
+            }
+            else
+            {
+                PhysicalHacking.Visible = true;
+            }
 
-            PhysicalHacking.BringToFront();
-            PhysicalHacking.Visible = true;
-            PublicWifi.BringToFront();
-            PublicWifi.Visible = true;
-            NetworkFirewalls.BringToFront();
-            NetworkFirewalls.Visible = true;
-            WhitelistsAndEncryption.BringToFront();
-            WhitelistsAndEncryption.Visible = true;
+            if (PublicWifi.Visible == true)
+            {
+                PublicWifi.Visible = false;
+            }
+            else
+            {
+                PublicWifi.Visible = true;
+            }
 
-            this.Refresh();
+            if (NetworkFirewalls.Visible == true)
+            {
+                NetworkFirewalls.Visible = false;
+            }
+            else
+            {
+                NetworkFirewalls.Visible = true;
+            }
+
+            if (WhitelistsAndEncryption.Visible == true)
+            {
+                WhitelistsAndEncryption.Visible = false;
+            }
+            else
+            {
+                WhitelistsAndEncryption.Visible = true;
+            }
+            if (this.Height < 500)
+            {
+                this.Height = 610;
+            }
+            else
+            {
+            if ((CaesarShift.Visible == false)&&(PasswordStrength.Visible == false)&&(PhysicalHacking.Visible == false))
+            {
+                this.Height = 351;
+            }
+            }
+
         }
         #endregion
 
@@ -268,11 +377,5 @@ namespace Group_project
             WhitelistF.Show();
         }
         #endregion
-
-        private void MainMenuForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

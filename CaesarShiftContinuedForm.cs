@@ -10,9 +10,6 @@ namespace Group_project
 {
     public partial class CaesarShiftContinuedForm : Group_project.InteractionBase
     {
-
-        int textNumber = 0;
-
         public CaesarShiftContinuedForm()
         {
             InitializeComponent();
@@ -539,57 +536,6 @@ namespace Group_project
 
 
 
-        }
-
-        private void checkInfoText()
-        {
-            switch (textNumber)
-            {
-                case 0:
-                    explainationText.Text = "A Caesar shift alone is weak to statistical analysis of the distribution of characters. This weakness can be overcome by using a different shift amount for each for each character.";
-                    break;
-                case 1:
-                    explainationText.Font = new Font(explainationText.Font.FontFamily, 15);
-                    explainationText.Text = "This method can be tried above, put a letter in the top box and choose the amount to shift it by using the number below and press shift, it will then be encrypted and filled in below.  ";                    
-                    break;
-                case 2:
-                    explainationText.Font = new Font(explainationText.Font.FontFamily, 18);
-                    explainationText.Text = "Like before you can decrypt using the unshift button and filling in the bottom field.";                    
-                    break;
-                case 3:
-                    explainationText.Font = new Font(explainationText.Font.FontFamily, 15);
-                    explainationText.Text = "This method requires you to have a different number for each character you want to encrypt and for the code to be secure the sequence of the numbers must be absolutely random. "; 
-                    break;
-                case 4:
-                    explainationText.Text = "If and only if both of these things are true then this encryption is unbreakable without the key. This however is a very inefficient way to send information and the key must be kept private at all times."; 
-                    break;
-                case 5:
-                    explainationText.Font = new Font(explainationText.Font.FontFamily, 18);
-                    explainationText.Text = "This is often referred to as a onetime pad method of cryptography."; 
-                    break;
-                
-            }
-
-            this.Refresh();
-        }
-        private void NextButton_Click(object sender, EventArgs e)
-        {
-            if (textNumber != 8)
-            {
-                textNumber++;
-                checkInfoText();
-                this.Refresh();
-            }
-        }
-
-        private void PreviousButton_Click(object sender, EventArgs e)
-        {
-            if (textNumber != 0)
-            {
-                textNumber--;
-                checkInfoText();
-                this.Refresh();
-            }
         }
 
 
