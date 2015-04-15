@@ -10,6 +10,8 @@ namespace Group_project
 {
     public partial class SymetricalKeysForm : Group_project.InteractionBase //takes the menu strip and basic properties of the interaction base
     {
+        int textNumber = 0;
+
         public SymetricalKeysForm()// generic initilisation
         {
             InitializeComponent(); 
@@ -38,10 +40,8 @@ namespace Group_project
             SenderSecretKeyNumberLabel.Text = Convert.ToString(SenderSecretKeyNumber); //change the secret numbers for each party to the values that where just created
             RecieverSecretKeyNumberLabel.Text = Convert.ToString(RecieverSecretKeyNumber);
 
-            GeneraterandomtextBox.Visible = false; //hide this section
             GenerateSecretNumbersButton.Visible = false;
 
-            FindModtextbox.Visible = true; //show the next section
             FindAnswerbutton.Visible = true;
             Backbutton.Visible = true;
 
@@ -57,11 +57,9 @@ namespace Group_project
 
             SenderTextLabel.Text = Convert.ToString((Math.Pow(3, Convert.ToInt64(SenderSecretKeyNumberLabel.Text))) % 17); //find 3^SecretSenderNumber MOD 17 and put that in the senders text label
 
-            FindModtextbox.Visible = false;//hide this section
             FindAnswerbutton.Visible = false;
             Backbutton.Visible = false;
 
-            Send1textBox.Visible = true;//show the next section
             Send1button.Visible = true;
             Back2button.Visible = true;
 
@@ -80,13 +78,11 @@ namespace Group_project
             RecieverTextLabel.Text = SenderTextLabel.Text;
             HackerTextLabel.Text = SenderTextLabel.Text;
 
-            Send1textBox.Visible = false;//hide this section
             Send1button.Visible = false;
             Back2button.Visible = false;
 
             Replybutton.Visible = true;//show the next section
             Back3button.Visible = true;
-            ReplytextBox.Visible = true;
 
             Replybutton.Select(); //select the next button
         }
@@ -110,8 +106,6 @@ namespace Group_project
 
             Replybutton.Visible = false;//hide this section
             Back3button.Visible = false;
-            ReplytextBox.Visible = false;
-
 
             MessageReplyLabel.Visible = true;//show the newly filled labels
             SenderReplyLabel.Visible = true;
@@ -120,7 +114,6 @@ namespace Group_project
 
             Back4button.Visible = true;//show the next section
             FindCommonNumberButton.Visible = true;
-            FindCommontextBox.Visible = true;
 
             FindCommonNumberButton.Select();//select the next button
         }
@@ -140,10 +133,8 @@ namespace Group_project
 
             Back4button.Visible = false;//hide this section
             FindCommonNumberButton.Visible = false;
-            FindCommontextBox.Visible = false;
 
             Back5button.Visible = true;//show the next section
-            FinnishedTextBox.Visible = true;
             RestartButton.Visible = true;
 
             RestartButton.Select(); //select the next button
@@ -157,10 +148,8 @@ namespace Group_project
             SenderSecretKeyNumberLabel.Text = "_";//reset all the labels to there initial values
             RecieverSecretKeyNumberLabel.Text = "_";
 
-            GeneraterandomtextBox.Visible = true;//show the previous section
             GenerateSecretNumbersButton.Visible = true;
 
-            FindModtextbox.Visible = false;//hide this section
             FindAnswerbutton.Visible = false;
             Backbutton.Visible = false;
 
@@ -176,11 +165,9 @@ namespace Group_project
 
             SenderTextLabel.Text = "Sender Text";//reset all the labels to there initial values
 
-            FindModtextbox.Visible = true;//show the previous section
             FindAnswerbutton.Visible = true;
             Backbutton.Visible = true;
 
-            Send1textBox.Visible = false;//hide this section
             Send1button.Visible = false;
             Back2button.Visible = false;
 
@@ -199,13 +186,11 @@ namespace Group_project
             RecieverTextLabel.Text = "Reciever Text";
             HackerTextLabel.Text = "Hacker Text";
 
-            Send1textBox.Visible = true;//show the previous section
             Send1button.Visible = true;
             Back2button.Visible = true;
 
             Replybutton.Visible = false;//hide this section
             Back3button.Visible = false;
-            ReplytextBox.Visible = false;
 
             Send1button.Select(); //select the next button
         }
@@ -228,7 +213,6 @@ namespace Group_project
 
             Replybutton.Visible = true;//show the previous section
             Back3button.Visible = true;
-            ReplytextBox.Visible = true;
 
             MessageReplyLabel.Visible = false;//hide the newly revealed labels
             SenderReplyLabel.Visible = false;
@@ -237,7 +221,6 @@ namespace Group_project
 
             Back4button.Visible = false;//hide this section
             FindCommonNumberButton.Visible = false;
-            FindCommontextBox.Visible = false;
 
             Replybutton.Select(); //select the next button
         }
@@ -255,10 +238,8 @@ namespace Group_project
 
             Back4button.Visible = true;//show the previous section
             FindCommonNumberButton.Visible = true;
-            FindCommontextBox.Visible = true;
 
             Back5button.Visible = false;//hide this section
-            FinnishedTextBox.Visible = false;
             RestartButton.Visible = false;
 
             FindCommonNumberButton.Select();//select the next button
@@ -283,13 +264,10 @@ namespace Group_project
 
             SharedSecretNumberLabel.Text = "_";
 
-
-            GeneraterandomtextBox.Visible = true;//show the previous section
             GenerateSecretNumbersButton.Visible = true;
             
 
             Back5button.Visible = false;//hide this section
-            FinnishedTextBox.Visible = false;
             RestartButton.Visible = false;
 
             MessageReplyLabel.Visible = false;//hide the revealed labels
@@ -356,6 +334,95 @@ namespace Group_project
         private void SymetricalKeysForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkInfoText()
+        {
+            switch (textNumber)
+            {
+                case 0:
+                    explainationText.Text = "Now we have looked at how a simple substitution cipher can be used to protect information. We used symmetrical key algorithms. What this means is that both parties require a copy of the key in order to read the message. ";
+                    break;
+                case 1:
+                    explainationText.Text = "Any person who intercepts a message between the two will not know what it says. While it is true that they can break through this encryption, it will take time (the amount of time depends on the algorithm). ";
+                    break;
+                case 2:
+                    explainationText.Text = "The example to the right uses a Caesar Shift, enter the text, choose the amount to shift by and click send to see how it works with a hacker listening in.";
+                    break;
+                case 3:
+                    explainationText.Text = "In the previous section we have two people who each had a access to a secret key that they both used, however the problem with this is both parties must secretly decide what the key will be and they must also ensure that no one else knows it. ";
+                    break;
+                case 4:
+                    explainationText.Text = "This is fine if you want to communicate to a friend but if you are wanting to communicate with someone you can’t physically exchange the key with, how will you be able tell it to each other without the hacker also finding it.";
+                    break;
+                case 5:
+                    explainationText.Text = "To solve this problem computer scientists came up with an algorithm that is easy to compute an answer for but that is difficult to undo unless you are the person who the message was intended for or the person it was sent by. ";
+                    break;
+                case 6:
+                    explainationText.Text = "What's more the algorithm must still be hard to undo even when someone knows what the algorithm is. This may sound impossible but the maths involved is quite simple. It is called the Diffie–Hellman key exchange.";
+                    break;
+                case 7:
+                    explainationText.Text = "If you look to the bottom of the page there is an example of the solution to this conundrum. The algorithm in this case uses the numbers 3 and 17 because they share no common factors. It is very important that they are prime numbers. ";
+                    break;
+                case 8:
+                    explainationText.Text = "The reason is because of a mathematical operation called MOD. What this operation does is find out what the remainder is when two numbers are divided. For example 20 divided by 6 would be 3 remainder 2 because 6 x 3 is 18 and 18 is 2 away from 20, therefore we can say that 20 MOD 6 = 2. ";
+                    break;
+                case 9:
+                    explainationText.Text = "The interesting thing about this function is that when you take a prime number raised to a power and MOD it with another prime number the result changes a lot depending on what the power was. For example: 3^4 MOD 17 = 13		3^5 MOD 17 = 5		3^6 MOD 17 = 15";
+                    break;
+                case 10:
+                    explainationText.Text = "These results are very different and the most important thing is that given the number 15 it is very hard to find out what the power of 3 was.";
+                    break;
+                case 11:
+                    explainationText.Text = " Using the numbers 3 and 17 means that a number between 0 and 16 can be stored (because of the 17) and that the answer can probably be found relatively quickly due to the fact 3 is a small number. ";
+                    break;
+                case 12:
+                    explainationText.Text = "However in real applications prime numbers that are thousands bits, truly huge numbers. This way, even though it is possible to crack, the time required is extreme and more importantly there is no quick way to do it.";
+                    break;
+                case 13:
+                    explainationText.Text = "Let’s look at how this works with an example. 1st both parties randomly select a number. Press 'Generate' to do this.";
+                    break;
+                case 14:
+                    explainationText.Text = "Now that both sides have their secret numbers the sender uses it in the function 3^x MOD 17 where x is its secret number. Press 'Find' to generate the answer to that sum.";
+                    break;
+                case 15:
+                    explainationText.Text = "This number is then sent to the receiver, however a hacker is listening in on their communications and they also receive the number. Press 'Send' to send the number.";
+                    break;
+                case 16:
+                    explainationText.Text = "The receiver then does the same by finding the 3^x MOD 17 where x is his secret number. and sends this as a response. Once again the hacker listens in on this communication. Press 'Reply' to work out the answer to the MOD equation and send it.";
+                    break;
+                case 17:
+                    explainationText.Text = "Now comes the most important part. Both the sender and the receiver take the number that they received and raise it to the power of their secret number then find the remainder when divided by 17 , so that’s Received^Secret MOD 17. ";
+                    break;
+                case 18:
+                    explainationText.Text = "This will give the same result for both the sender and the receiver. Press 'Find' to find the number that the sender and receiver now know. It is worth noting that the hacker has received the same information that was sent but without either secret number they cannot know the commonly found number without a very large amount of computing time.";
+                    break;
+                case 19:
+                    explainationText.Text = "Now that the shared secret message has been sent it can be used with private key cryptography to protect data. If you would like to start again and try using different numbers press 'Restart'";
+                    break;
+            }
+
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            if (textNumber != 19)
+            {
+                textNumber++;
+                checkInfoText();
+                this.Refresh();
+            }
+
+        }
+
+        private void PreviousButton_Click(object sender, EventArgs e)
+        {
+            if (textNumber != 0)
+            {
+                textNumber--;
+                checkInfoText();
+                this.Refresh();
+            }
         }
 
 

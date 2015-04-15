@@ -117,51 +117,320 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="IntroductionTextBox.Text" xml:space="preserve">
-    <value>Before we looked at how if both user had a secret shared number they could send information between each other safely and securely. However there are a number of problems with that system, mainly that the process must be used every time that a new person wants to communicate. Is the sender is a bank for example the idea of having a large unique set of keys for every customer every time they connect is impractical. It would be far easier if the was only one key that the bank had to remember. This is where RSA Encryption is useful.</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Back1Button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        rkJggg==
+</value>
   </data>
-  <data name="OutlineTextBox.Text" xml:space="preserve">
-    <value>Imagine encrypting and decrypting as separate functions. The customer would only need to know how to encrypt not how to decrypt. So is the bank where to give the customer a way to encrypt but not to decrypt they would only need one key that they could share with everyone.
-
-In the last section we saw how using  Received^Secret MOD RandomNumber= gave a result that is easy to compute in if you know all those values but given the answer and not the secret number was hard. We can call this equation m^e MOD N = c .
-
-What we need is a way to change the equation so that you can undo this equation without knowing m but without letting the customer or any other ne'er do wells  be able to do this.
-
-If this could be done by c^d MOD N = m where d if the key only the bank knows, and if this decryption key (d) could be used so that m^ed MOD N = m it would make a hard problem easy, but only if you have d. This however requires another one way function (a function that is easy to do but hard to undo).</value>
+  <data name="Back2Button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        rkJggg==
+</value>
   </data>
-  <data name="FacorisingIntroductionTextBox.Text" xml:space="preserve">
-    <value>For this problem we have to look at prime factorisation. Prime factorisation means finding how a number can be created by multiplying prime numbers (except 1). For example the prime factorisation of 30 = 5 x 3 x 2 . There exactly one combination of prime numbers for each number. Prime factorisation however is a fundamentally hard problem and the time required to compute the prime factors of numbers increases exponentially.  </value>
+  <data name="Back3Button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        rkJggg==
+</value>
   </data>
-  <data name="StartingTextBox.Text" xml:space="preserve">
-    <value>Lets work through an example using two prime numbers under 100, these in reality would be thousands of bits long and randomly generated. The first step is to multiply them together. Press “Generate and Multiply” to fill in the prime numbers and multiply them together.
-
-Because we know the two prime numbers that multiplied to create this new number we know its prime factorisation but it would be hard to find that without knowing the 2 prime numbers we started with (especially when the numbers involved are thousands of digits long). </value>
+  <data name="Back4Button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        rkJggg==
+</value>
   </data>
-  <data name="PhiTextBox.Text" xml:space="preserve">
-    <value>We can use something called the Phi (Փ) function. The Phi(Փ) of a number is the amount of integers that are less than or equal to it that do not share any factors with it. For example if we look at the number 12 we would list all the numbers from 1 to 12 then we would count how many integers do not share a factor with it. (this ignores 1 as a factor)
-1̲ 2 3 4 5̲ 6 7̲ 8 9 10 1̲1̲ 12
-The numbers that share no factor are underlined above. In this case there are 4 so the Phi(Փ) of 12 is 4.
-Finding the Փ of a number is hard to do unless the number is prime. If a number is prime then its Փ is itself - 1. So if we know that 21377 is prime we know Փ(21377) = 21376 easy to compute compared to non prime numbers. However the Փ function is also multiplicative so Փ(AxB) = Փ(A) x Փ(B) so knowing this we can find the Փ of our number we made before with ease compared to someone who did not know its prime factorisation. For example is we had the prime numbers 71 and 59 we could find the Փ easily. It’s just 
-Փ(4189) = (71 - 1) x (59 -1) = 4060. Press “Find Փ” to fill in this detail for the prime numbers we are using in the example.</value>
+  <data name="Back5Button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        rkJggg==
+</value>
   </data>
-  <data name="DTextBox.Text" xml:space="preserve">
-    <value>In order to use this in cryptography the Փ of a number was connected to the MOD function using Euler’s theorem. This theorem states that m^Փ(n) ≡ 1 MOD n. It is also known that 1 to the power of any number is 1, so 1 ^k = 1. Therefore m^k*Փ(n) ≡ 1 MOD n. It is also known that 1 * m = m where m is any number. So my multiplying both sides of the equation by m we arrive at m*m^k*Փ(n)≡ m MOD n or to simplify 
-m^k*Փ(n)+1≡ m MOD n
-This equation can be used so that in m^ed ≡ m MOD n it is only easy to find d if the factorisation of n is known. because it can be simplified to d = (k*Փ(n)+1)/e. Therefore d should be the private key.
-Lets fill out our example, say the exponent (e) is a random number between 3 and 20 that would mean that  would mean that 
-d= (2*(Phi Secret) +1 ) / Exponent
-Press "Find d" to do this equation</value>
+  <data name="Back6Button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        rkJggg==
+</value>
   </data>
-  <data name="ConverToNumberTextBox.Text" xml:space="preserve">
-    <value>We now have D, the private key. Now to send the data. First the bank or whoever created this key, sends the public portion of the key to anyone who wants to send them information, remember that the public key is the  two  prime numbers multiplied together and the exponent.Lets say that you are a person who wants to send a message to the bank without anyone knowing. Characters are stored in binary. the letter h for example would be 104. So if the sender wanted to send the message hello, it would convert into 104, 101, 108, 108, 111 the ASCII values. They could send this all as one number or as several messages. For this example we will send one letter with "A" being 1 and "Z" being 26. Select the letter you want to send and press "Convert to a number".</value>
-  </data>
-  <data name="EncryptAndSendTextbox.Text" xml:space="preserve">
-    <value>To encrypt there message the customer takes the message they want to send (m) raise it to the exponent in the public key (e) and then MOD by the two  prime numbers multiplied together (n) which is also part of the public key. So you have m^e MOD n = The encrypted message. this is then sent to the bank. However there is also an eavesdropper who has been listening in the whole time as so they know all the information that has been sent. Press “Encrypt Message and Send” to use the encryption formula on the letter you wanted to send and also fill in the information that the eavesdropper has access to.</value>
-  </data>
-  <data name="DecryptTextBox.Text" xml:space="preserve">
-    <value>Now for the decryption, the bank uses their private key, the phi of the prime numbers timesed together. She uses it in the equation encrypted message ^ Phi of primes ≡ Decrypted Message MOD 3127 or rather Decrypted = Encrypted ^ The modular multiplicative inverse MOD the two primes timesed together.. Since only the bank knows this private key the eavesdropper cannot decypher the message unless that can discover the prime factorisation of the two prime numbers a problem that takes an extremely long time for big numbers. Press “Decrypt” to find the decrypted message. (The message will be turned into the appropriate letter)</value>
-  </data>
-  <data name="RestartTextBox.Text" xml:space="preserve">
-    <value>Hopefully this makes sense and if it doesn't,  don't worry, its not the maths itself that's important it is the principals behind it. The idea of having a function that is easy to do as long as you have a private key and hard to do without. The idea of a public key being useful for encrypting messages but not decrypting them and the idea that the bigger the numbers used the longer it would take to simply work out what the private key is. Press “Restart” if you would like to go over the example again.</value>
+  <data name="explainationText.Text" xml:space="preserve">
+    <value>Before we looked at how, if both users had a secret shared number, they could send information between each other safely and securely. However there are a number of problems with that system, mainly that the process must be used every time that a new person wants to communicate. </value>
   </data>
 </root>

@@ -8,8 +8,12 @@ using System.Windows.Forms;
 
 namespace Group_project
 {
+
     public partial class PublicKeysForm : Group_project.InteractionBase
     {
+
+        int textNumber = 0;
+
         public PublicKeysForm()
         {
             InitializeComponent();
@@ -51,12 +55,10 @@ namespace Group_project
             FirstPrimeNumberTimesSecondPrimeNumberLabel.Visible = true;
             FirstPrimeNumberTimesSecondPrimeNumberTextLabel.Visible = true; //show what has been worked out so far
 
-            PhiTextBox.Visible = true; // show the next section
             FindPhiButton.Visible = true;
             Back1Button.Visible = true;
 
 
-            StartingTextBox.Visible = false;
             GenerateAndMultiplyButton.Visible = false; //hide this section
 
 
@@ -80,11 +82,9 @@ namespace Group_project
             FirstPrimeNumberTimesSecondPrimeNumberLabel.Visible = false;
             FirstPrimeNumberTimesSecondPrimeNumberTextLabel.Visible = false;
 
-            PhiTextBox.Visible = false;
             FindPhiButton.Visible = false; //hide this section
             Back1Button.Visible = false;
 
-            StartingTextBox.Visible = true;
             GenerateAndMultiplyButton.Visible = true; //show previous section
 
             GenerateAndMultiplyButton.Select();//select previous button
@@ -135,10 +135,8 @@ namespace Group_project
             PhiPrivateLabel.Visible = true;
 
             FindDButton.Visible = true;// show the next section
-            DTextBox.Visible = true;
             Back2Button.Visible = true;
 
-            PhiTextBox.Visible = false;
             FindPhiButton.Visible = false; //hide this section
             Back1Button.Visible = false;
 
@@ -159,10 +157,8 @@ namespace Group_project
             PhiPrivateLabel.Visible = false;//hide now reset labels
 
             FindDButton.Visible = false;
-            DTextBox.Visible = false;//hide this section
             Back2Button.Visible = false;
 
-            PhiTextBox.Visible = true;
             FindPhiButton.Visible = true;//show previous section
             Back1Button.Visible = true;
 
@@ -189,12 +185,10 @@ namespace Group_project
             MessageCharTextBox.Visible = true;
             MessageLetterLabel.Visible = true;
 
-            ConverToNumberTextBox.Visible = true;
             ConvertToANumberButton.Visible = true;
             Back3Button.Visible = true;
 
             FindDButton.Visible = false;
-            DTextBox.Visible = false;
             Back2Button.Visible = false;
 
             ConvertToANumberButton.Select();
@@ -217,12 +211,10 @@ namespace Group_project
             MessageCharTextBox.Visible = false;
             MessageLetterLabel.Visible = false;
 
-            ConverToNumberTextBox.Visible = false;
             ConvertToANumberButton.Visible = false;
             Back3Button.Visible = false;
 
             FindDButton.Visible = true;
-            DTextBox.Visible = true;
             Back2Button.Visible = true;
 
             FindDButton.Select();
@@ -258,14 +250,12 @@ namespace Group_project
             }
             MessageNumberLabel.Text = Convert.ToString(((Convert.ToInt16(MessageCharTextBox.Text[0])) - 64) % 32);    //convert the letter to a number with a being 1 and b being 2 etc, ignore caps lock.
 
-            ConverToNumberTextBox.Visible = false;
             ConvertToANumberButton.Visible = false;
             Back3Button.Visible = false;
 
             MessageNumberLabel.Visible = true;
             MessageNumberTextLabel.Visible = true;
 
-            EncryptAndSendTextbox.Visible = true;
             EncryptMessageAndSendButton.Visible = true;
             Back4Button.Visible = true;
 
@@ -285,14 +275,12 @@ namespace Group_project
             MessageCharTextBox.Text = "";
             MessageNumberLabel.Text = "_";
 
-            ConverToNumberTextBox.Visible = true;
             ConvertToANumberButton.Visible = true;
             Back3Button.Visible = true;
 
             MessageNumberLabel.Visible = false;
             MessageNumberTextLabel.Visible = false;
 
-            EncryptAndSendTextbox.Visible = false;
             EncryptMessageAndSendButton.Visible = false;
             Back4Button.Visible = false;
 
@@ -329,10 +317,8 @@ namespace Group_project
             EavesdropperNLabel.Visible = true;
 
             DecryptButton.Visible = true;
-            DecryptTextBox.Visible = true;
             Back5Button.Visible = true;
 
-            EncryptAndSendTextbox.Visible = false;
             EncryptMessageAndSendButton.Visible = false;
             Back4Button.Visible = false;
 
@@ -357,11 +343,9 @@ namespace Group_project
             DecryptedLabel.Visible = true;
 
             RestartButton.Visible = true;
-            RestartTextBox.Visible = true;
             Back6Button.Visible = true;
 
             DecryptButton.Visible = false;
-            DecryptTextBox.Visible = false;
             Back5Button.Visible = false;
 
             RestartButton.Visible = true;
@@ -399,10 +383,8 @@ namespace Group_project
             EavesdropperNLabel.Visible = false;
 
             DecryptButton.Visible = false;
-            DecryptTextBox.Visible = false;
             Back5Button.Visible = false;
 
-            EncryptAndSendTextbox.Visible = true;
             EncryptMessageAndSendButton.Visible = true;
             Back4Button.Visible = true;
 
@@ -427,11 +409,9 @@ namespace Group_project
             DecryptedLabel.Visible = false;
 
             RestartButton.Visible = false;
-            RestartTextBox.Visible = false;
             Back6Button.Visible = false;
 
             DecryptButton.Visible = true;
-            DecryptTextBox.Visible = true;
             Back5Button.Visible = true;
 
             DecryptButton.Select();
@@ -465,11 +445,9 @@ namespace Group_project
             SecondPrimeNumberLabel.Text = "_";
             FirstPrimeNumberTimesSecondPrimeNumberLabel.Text = "_";
 
-            StartingTextBox.Visible = true;
             GenerateAndMultiplyButton.Visible = true;
 
             RestartButton.Visible = false;
-            RestartTextBox.Visible = false;
             Back6Button.Visible = false;
 
             DecryptedTextLabel.Visible = false;
@@ -508,6 +486,110 @@ namespace Group_project
 
             GenerateAndMultiplyButton.Select();
 
+        }
+
+        private void PublicKeysForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkInfoText()
+        {
+            switch (textNumber)
+            {
+                case 0:
+                    explainationText.Text = "Before we looked at how, if both users had a secret shared number, they could send information between each other safely and securely. However there are a number of problems with that system, mainly that the process must be used every time that a new person wants to communicate. ";
+                    break;
+                case 1:
+                    explainationText.Text = "Is the sender is a bank for example the idea of having a large unique set of keys for every customer every time they connect is impractical. It would be far easier if the was only one key that the bank had to remember. This is where RSA Encryption is useful.";
+                    break;
+                case 2:
+                    explainationText.Text = "Imagine encrypting and decrypting as separate functions. The customer would only need to know how to encrypt not how to decrypt. So is the bank where to give the customer a way to encrypt but not to decrypt they would only need one key that they could share with everyone.";
+                    break;
+                case 3:
+                    explainationText.Text = "In the last section we saw how using  ‘ Received^Secret MOD RandomNumber= ‘ gave a result that is easy to compute in if you know all those values but given the answer and not the secret number was hard. We can call this equation ‘ m^e MOD N = c ‘.";
+                    break;
+                case 4:
+                    explainationText.Text = "What we need is a way to change the equation so that you can undo this equation without knowing m but without letting the customer or any other ne'er do wells be able to do this.";
+                    break;
+                case 5:
+                    explainationText.Text = "If this could be done by ‘ c^d MOD N = m ‘ where d if the key only the bank knows, and if this decryption key (d) could be used so that ‘ m^ed MOD N = m ‘it would make a hard problem easy, but only if you have d. This however requires another one way function (a function that is easy to do but hard to undo).";
+                    break;
+                case 6:
+                    explainationText.Text = "For this problem we have to look at prime factorisation. Prime factorisation means finding how a number can be created by multiplying prime numbers (except 1). For example the prime factorisation of 30 = 5 x 3 x 2. There exactly one combination of prime numbers for each number. Prime factorisation however is a fundamentally hard problem and the time required to compute the prime factors of numbers increases exponentially.  ";
+                    break;
+                case 7:
+                    explainationText.Text = "Let’s work through an example using two prime numbers under 100; these in reality would be thousands of bits long and randomly generated. The first step is to multiply them together. Press ‘Generate’ to fill in the prime numbers and multiply them together.";
+                    break;
+                case 8:
+                    explainationText.Text = "Because we know the two prime numbers that multiplied to create this new number we know its prime factorisation but it would be hard to find that without knowing the 2 prime numbers we started with (especially when the numbers involved are thousands of digits long).";
+                    break;
+                case 9:
+                    explainationText.Text = "We can use something called the Phi (Փ) function. The Phi(Փ) of a number is the amount of integers that are less than or equal to it that do not share any factors with it. For example if we look at the number 12 we would list all the numbers from 1 to 12 then we would count how many integers do not share a factor with it. (This ignores 1 as a factor) 1̲ 2 3 4 5̲ 6 7̲ 8 9 10 1̲1̲ 12";
+                    break;
+                case 10:
+                    explainationText.Text = "The numbers that share no factor are underlined above. In this case there are 4 so the Phi(Փ) of 12 is 4.";
+                    break;
+                case 11:
+                    explainationText.Text = "Finding the Փ of a number is hard to do unless the number is prime. If a number is prime then its Փ is itself - 1. So if we know that 21377 is prime we know Փ(21377) = 21376 easy to compute compared to non-prime numbers. However the Փ function is also multiplicative so Փ(AxB) = Փ(A) x Փ(B) so knowing this we can find the Փ of our number we made before with ease compared to someone who did not know its prime factorisation. For example is we had the prime numbers 71 and 59 we could find the Փ easily.";
+                    break;
+                case 12:
+                    explainationText.Text = "It’s just Փ(4189) = (71 - 1) x (59 -1) = 4060. Press ‘Find’ to fill in this detail for the prime numbers we are using in the example.";
+                    break;
+                case 13:
+                    explainationText.Text = "In order to use this in cryptography the Փ of a number was connected to the MOD function using Euler’s theorem. This theorem states that m^Փ(n) ≡ 1 MOD n. It is also known that 1 to the power of any number is 1, so 1 ^k = 1. Therefore m^k*Փ(n) ≡ 1 MOD n. It is also known that 1 * m = m where m is any number. So my multiplying both sides of the equation by m we arrive at m*m^k*Փ(n)≡ m MOD n or to simplify - ‘ m^k*Փ(n)+1≡ m MOD n ‘.";
+                    break;
+                case 14:
+                    explainationText.Text = "This equation can be used so that in ‘ m^ed ≡ m MOD n ‘it is only easy to find d if the factorisation of n is known.  Because it can be simplified to d = (k*Փ(n)+1)/e. Therefore d should be the private key.";
+                    break;
+                case 15:
+                    explainationText.Text = "Let’s fill out our example, say the exponent (e) is a random number between 3 and 20 that would mean that  would mean that ‘d= (2*(Phi Secret) +1 ) / Exponent’. Press ‘Find’ to do this equation.";
+                    break;
+                case 16:
+                    explainationText.Text = "We now have D, the private key. To send the data; first the bank or whoever created this key, sends the public portion of the key to anyone who wants to send them information, remember that the public key is the  two  prime numbers multiplied together and the exponent. ";
+                    break;
+                case 17:
+                    explainationText.Text = "Let’s say that you are a person who wants to send a message to the bank without anyone knowing. Characters are stored in binary. The letter h for example would be 104. So if the sender wanted to send the message hello, it would convert into 104, 101, 108, 108, 111 the ASCII values. They could send this all as one number or as several messages. For this example we will send one letter with 'A' being 1 and 'A' being 26. Select the letter you want to send and press 'Convert'.";
+                    break;
+                case 18:
+                    explainationText.Text = "To encrypt there message the customer takes the message they want to send (m) raise it to the exponent in the public key (e) and then MOD by the two  prime numbers multiplied together (n) which is also part of the public key. So you have m^e MOD n = The encrypted message. This is then sent to the bank. ";
+                    break;
+                case 19:
+                    explainationText.Text = "However there is also an eavesdropper who has been listening in the whole time as so they know all the information that has been sent. Press ‘Encrypt’ to use the encryption formula on the letter you wanted to send and also fill in the information that the eavesdropper has access to.";
+                    break;
+                case 20:
+                    explainationText.Text = "Now for the decryption, the bank uses their private key, the phi of the prime numbers multiplied together. She uses it in the equation encrypted message ^ Phi of primes ≡ Decrypted Message MOD 3127 or rather Decrypted = Encrypted ^ The modular multiplicative inverse MOD the two primes multiplied together. Since only the bank knows this private key the eavesdropper cannot de-cypher the message unless that can discover the prime factorisation of the two prime numbers a problem that takes an extremely long time for big numbers. Press ‘Decrypt’ to find the decrypted message. (The message will be turned into the appropriate letter).";
+                    break;
+                case 21:
+                    explainationText.Text = "Hopefully this makes sense and if it doesn't, don't worry, it’s not the maths itself that's important it is the principals behind it. The idea of having a function that is easy to do as long as you have a private key and hard to do without. ";
+                    break;
+                case 22:
+                    explainationText.Text = "The idea of a public key being useful for encrypting messages, but not decrypting them, and the idea that the bigger the numbers used the longer it would take to simply work out what the private key is. Press ‘Restart’ if you would like to go over the example again.";
+                    break;
+             
+            }
+
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            if (textNumber != 22)
+            {
+                textNumber++;
+                checkInfoText();
+                this.Refresh();
+            }
+
+        }
+
+        private void PreviousButton_Click(object sender, EventArgs e)
+        {
+            if (textNumber != 0)
+            {
+                textNumber--;
+                checkInfoText();
+                this.Refresh();
+            }
         }
     }
 }
