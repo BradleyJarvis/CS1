@@ -423,6 +423,45 @@
   <ItemGroup>
     <None Include="Resources\btnMenuQuiz.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titleCaesarShift.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titleCertificates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titleNetworkFirewalls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titlePassManager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titlePasswordStrength.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titlePhysicalHacking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titlePublicKeys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titlePublicWiFi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titleQuiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titleSymmetricalKeys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titleTwoFactor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titleWhitelists.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titleCaesarCont.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

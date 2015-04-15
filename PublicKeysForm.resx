@@ -427,4 +427,7 @@
   <data name="explainationText.Text" xml:space="preserve">
     <value>Before we looked at how, if both users had a secret shared number, they could send information between each other safely and securely. However there are a number of problems with that system, mainly that the process must be used every time that a new person wants to communicate. </value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>81</value>
+  </metadata>
 </root>

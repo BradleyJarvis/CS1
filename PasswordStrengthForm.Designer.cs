@@ -43,11 +43,13 @@
             this.imgLowerCase = new System.Windows.Forms.PictureBox();
             this.imgSpecialChar = new System.Windows.Forms.PictureBox();
             this.imgNumberPresent = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgPadlock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgUpperCase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLowerCase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpecialChar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgNumberPresent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // explainationText
@@ -220,11 +222,22 @@
             this.imgNumberPresent.TabIndex = 58;
             this.imgNumberPresent.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::Group_project.Properties.Resources.titlePasswordStrength;
+            this.pictureBox2.Location = new System.Drawing.Point(126, 46);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(532, 62);
+            this.pictureBox2.TabIndex = 64;
+            this.pictureBox2.TabStop = false;
+            // 
             // PasswordStrengthForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.BackgroundImage = global::Group_project.Properties.Resources.DigitalSecurityFormBackground_jpg;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.imgNumberPresent);
             this.Controls.Add(this.imgSpecialChar);
             this.Controls.Add(this.imgLowerCase);
@@ -255,11 +268,13 @@
             this.Controls.SetChildIndex(this.imgLowerCase, 0);
             this.Controls.SetChildIndex(this.imgSpecialChar, 0);
             this.Controls.SetChildIndex(this.imgNumberPresent, 0);
+            this.Controls.SetChildIndex(this.pictureBox2, 0);
             ((System.ComponentModel.ISupportInitialize)(this.imgPadlock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgUpperCase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLowerCase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpecialChar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgNumberPresent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,5 +296,6 @@
         private System.Windows.Forms.PictureBox imgLowerCase;
         private System.Windows.Forms.PictureBox imgSpecialChar;
         private System.Windows.Forms.PictureBox imgNumberPresent;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

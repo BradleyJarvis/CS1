@@ -71,11 +71,11 @@
             this.DecryptedLabel = new System.Windows.Forms.Label();
             this.Back6Button = new System.Windows.Forms.Button();
             this.RestartButton = new System.Windows.Forms.Button();
-            this.imgTitle = new System.Windows.Forms.PictureBox();
             this.PreviousButton = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
             this.explainationText = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.imgTitle)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // Back1Button
@@ -512,14 +512,6 @@
             this.RestartButton.Visible = false;
             this.RestartButton.Click += new System.EventHandler(this.RestartButton_Click);
             // 
-            // imgTitle
-            // 
-            this.imgTitle.Location = new System.Drawing.Point(132, 27);
-            this.imgTitle.Name = "imgTitle";
-            this.imgTitle.Size = new System.Drawing.Size(100, 50);
-            this.imgTitle.TabIndex = 199;
-            this.imgTitle.TabStop = false;
-            // 
             // PreviousButton
             // 
             this.PreviousButton.Image = global::Group_project.Properties.Resources.btnNetworkPrevious;
@@ -557,15 +549,25 @@
             this.explainationText.Text = resources.GetString("explainationText.Text");
             this.explainationText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::Group_project.Properties.Resources.titleSymmetricalKeys;
+            this.pictureBox2.Location = new System.Drawing.Point(172, 36);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(449, 62);
+            this.pictureBox2.TabIndex = 199;
+            this.pictureBox2.TabStop = false;
+            // 
             // PublicKeysForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.BackgroundImage = global::Group_project.Properties.Resources.CryptographyFormBackground;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.PreviousButton);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.explainationText);
-            this.Controls.Add(this.imgTitle);
             this.Controls.Add(this.RestartButton);
             this.Controls.Add(this.Back6Button);
             this.Controls.Add(this.DecryptedLabel);
@@ -653,11 +655,11 @@
             this.Controls.SetChildIndex(this.DecryptedLabel, 0);
             this.Controls.SetChildIndex(this.Back6Button, 0);
             this.Controls.SetChildIndex(this.RestartButton, 0);
-            this.Controls.SetChildIndex(this.imgTitle, 0);
             this.Controls.SetChildIndex(this.explainationText, 0);
             this.Controls.SetChildIndex(this.NextButton, 0);
             this.Controls.SetChildIndex(this.PreviousButton, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.imgTitle)).EndInit();
+            this.Controls.SetChildIndex(this.pictureBox2, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -707,10 +709,10 @@
         private System.Windows.Forms.Label DecryptedLabel;
         private System.Windows.Forms.Button Back6Button;
         private System.Windows.Forms.Button RestartButton;
-        private System.Windows.Forms.PictureBox imgTitle;
         private System.Windows.Forms.Button PreviousButton;
         private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.TextBox explainationText;
+        private System.Windows.Forms.PictureBox pictureBox2;
 
     }
 }
