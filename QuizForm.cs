@@ -125,6 +125,7 @@ namespace Group_project
             {
                 MessageBox.Show("This is the end of the quiz. Your scores are as follows:\nCryptography: " + cryptScore + "\nDigital security: " + digitalScore + "\nNetwork security: " + netScore + "\nYour total score is " + (cryptScore + digitalScore + netScore) + " / " + allQuestions.Count);
                 buttonPanel.Enabled = false;
+                closeForm();
                 return;
             }
 
@@ -146,6 +147,11 @@ namespace Group_project
                 default:
                     break;
             }
+        }
+
+        void closeForm()
+        {
+            this.Close();
         }
     }
     public class question

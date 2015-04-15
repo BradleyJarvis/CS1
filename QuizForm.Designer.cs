@@ -136,7 +136,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Group_project.Properties.Resources.titleQuiz;
-            this.pictureBox1.Location = new System.Drawing.Point(282, 52);
+            this.pictureBox1.Location = new System.Drawing.Point(282, 39);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(214, 92);
             this.pictureBox1.TabIndex = 15;
