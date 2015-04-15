@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>On the main menu you can click the main category buttons to show the different sections in that category. Clicking on any of these will open that section.
+
+In the information sections you can click the arrows to the sides of the text to go through the information.
+Several pages have interactive elements in them, these are explained in the text on the page.
+
+At any time you can jump to any other page using the navigation bar at the top of the window. You can also return to the main menu by closing the current window.</value>
+  </data>
 </root>

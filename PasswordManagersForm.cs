@@ -46,7 +46,7 @@ namespace Group_project
                     break;
                 case 1:
                     explainationText.Font = new Font(explainationText.Font.FontFamily, 17);
-                    explainationText.Text = "The above tool allows you to generate a password of a length of your choice that will be near impossible for a human to guess and harder to crack using a brute force attack. ";
+                    explainationText.Text = "The tool below allows you to generate a password of a length of your choice that will be near impossible for a human to guess and harder to crack using a brute force attack. ";
                     break;
                 case 2:
                     explainationText.Font = new Font(explainationText.Font.FontFamily, 15);

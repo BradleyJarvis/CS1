@@ -38,6 +38,7 @@ namespace Group_project
             allQuestions.Add(new question("What can a listener find if you are using an unsecured Wifi network?", "All unencrypted information", "Emails", "Financial data", "Websites visited", "net"));
             allQuestions.Add(new question("If you were knew someone was using a Ceaser shift to encrypt the word \"Cheese\" and the result is \"Gliiwi\", what value was it shifted by?", "4", "3", "8", "10", "crypt"));
             allQuestions.Add(new question("What does two factor authentication require as well as normal login and password?", "A one use code sent to the user when they log in", "A second password", "Permission to be granted by another person", "Nothing, it is another name for username and password", "digital"));
+            allQuestions.Add(new question("What does encryption do?","Makes data unreadble without decryption keys","Makes it so data can't be accessed without permission","Prevents data from being sent","Transmits data annonymously","net"));
             allQuestions.Add(new question("Which of the following passwords would (in theory) take longest to crack?", "14 characters, upper and lowercase letters, numbers, special characters", "16 lowercase letters", "20 characters, all numbers", "18 characters, uppercase letters and numbers", "digital"));
             #endregion
             showNewQuestion(allQuestions[0]);
