@@ -492,6 +492,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainMenuForm";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edu-cyber scelus";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.mainMenuClose);
